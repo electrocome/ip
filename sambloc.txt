@@ -372,7 +372,6 @@ googleads.g.doubleclick.net
 gpm.samsungqbe.com
 observatory.mozilla.org
 fr.app.chat.global.xiaomi.net
-lcprd1.samsungcloudsolution.net
 apis.zimoapps.com
 deff.nelreports.net
 resolver.msg.global.xiaomi.net
