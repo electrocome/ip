@@ -1,5 +1,8 @@
 alcojoldwograpciw.shop
+update.easeus.com
 ad.doubleclick.net
+track.easeus.com
+easeusinfo.us-east-1.log.aliyuncs.com
 stats.g.doubleclick.net
 static.doubleclick.net
 m.doubleclick.net
