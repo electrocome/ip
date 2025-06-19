@@ -4,6 +4,8 @@ telemetry.urs.microsoft.com
 d179kwmlpc4o47.cloudfront.net
 samsungqbe.com
 mozilla.org
+api-hdm.samsungyosemite.com
+sas.samsungcloud.com
 us-api.samsungyosemite.com
 apu.samsungelectronics.com
 fkp.samsungcloudsolution.net
