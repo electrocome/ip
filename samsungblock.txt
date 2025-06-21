@@ -64,7 +64,6 @@ osb-eusvc.samsungqbe.com
 openapi.samsung.com
 watson.telemetry.microsoft.com
 i-stream.pl
-noticecdn.samsungcloudsolution.com
 d1oxlq5h9kq8q5.cloudfront.net
 rd.samsungadhub.com
 d2tnx644ijgq6i.cloudfront.net
