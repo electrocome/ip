@@ -9,6 +9,7 @@ waw02s16-in-f14.1e100.net
 26.112.82.140.in-addr.arpa
 alcojoldwograpciw.shop
 a2-19-197-19.deploy.static.akamaitechnologies.com
+a23-200-161-197.deploy.static.akamaitechnologies.com
 a23-218-210-69.deploy.static.akamaitechnologies.com
 a2-23-154-138.deploy.static.akamaitechnologies.com
 akamaitechnologies.com
