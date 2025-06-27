@@ -1,6 +1,12 @@
 (.|\b)akamaitechnologies\.com$
 (.|\b)1e100\.net$
+(.|\b)in-addr\.arpa$
 waw02s16-in-f14.1e100.net
+172.177.122.195.in-addr.arpa
+254.88.168.192.in-addr.arpa
+139.154.23.2.in-addr.arpa
+233.38.18.104.in-addr.arpa
+26.112.82.140.in-addr.arpa
 alcojoldwograpciw.shop
 a2-19-197-19.deploy.static.akamaitechnologies.com
 a23-218-210-69.deploy.static.akamaitechnologies.com
