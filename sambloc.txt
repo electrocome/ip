@@ -1,4 +1,6 @@
 (.|\b)akamaitechnologies\.com$
+(.|\b)1e100\.net$
+waw02s16-in-f14.1e100.net
 alcojoldwograpciw.shop
 a2-19-197-19.deploy.static.akamaitechnologies.com
 a23-218-210-69.deploy.static.akamaitechnologies.com
