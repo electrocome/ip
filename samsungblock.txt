@@ -1,6 +1,7 @@
 ads.samsungads.com.home.arpa
 upu.samsungelectronics.com
 telemetry.urs.microsoft.com
+rd-blk-signal.auto.mydlink.com
 d179kwmlpc4o47.cloudfront.net
 samsungqbe.com
 mozilla.org
