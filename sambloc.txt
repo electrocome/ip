@@ -1,7 +1,9 @@
 /akamaitechnologies\.com$/  
 /1e100\.net$/  
 /in-addr\.arpa$/
+/^fcm\.googleapis\.com$/
 sgepodownload.mediatek.com
+fcm.googleapis.com
 federatedcompute-pa.googleapis.com
 geller-pa.googleapis.com
 federatedcompute-pa.googleapis.com
