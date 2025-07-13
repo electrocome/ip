@@ -2,6 +2,8 @@
 /1e100\.net$/  
 /in-addr\.arpa$/
 /^fcm\.googleapis\.com$/
+socialuserlocation.googleapis.com
+spot-pa.googleapis.com
 sgepodownload.mediatek.com
 fcm.googleapis.com
 federatedcompute-pa.googleapis.com
