@@ -456,7 +456,6 @@ sca.samsung.com
 sas.samsungcloudsolution.com
 samsungqbe.com
 samsungcloudsolution.net
-samsungcloudsolution.com
 samsungadhub.com
 samsungacr.com
 rwww.samsungotn.net
