@@ -5,3 +5,9 @@ fonts.gstatic.com
 fonts.googleapis.com
 youtubei.googleapis.com
 lh3.googleusercontent.com
+youtube.com
+www.youtube.com
+m.youtube.com
+lh3.googleusercontent.com
+googlevideo.com
+ggpht.com
