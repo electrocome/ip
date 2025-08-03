@@ -1,19 +1,6 @@
 /akamaitechnologies\.com$/  
 /1e100\.net$/  
 /in-addr\.arpa$/
-/^fcm\.googleapis\.com$/
-socialuserlocation.googleapis.com
-spot-pa.googleapis.com
-sgepodownload.mediatek.com
-fcm.googleapis.com
-federatedcompute-pa.googleapis.com
-geller-pa.googleapis.com
-federatedcompute-pa.googleapis.com
-safebrowsing.googleapis.com
-nearbysharing-pa.googleapis.com
-phonedeviceverification-pa.googleapis.com
-cloudflare-dns.com
-mtalk.google.com
 waw02s16-in-f14.1e100.net
 rd-blk-signal.auto.mydlink.com
 pub1.sdns.360.cn
@@ -395,7 +382,6 @@ api-global.netflix.com
 samsung.net
 a1428.w12.akamai.net
 tos.razerapi.com
-googleads.g.doubleclick.net
 gpm.samsungqbe.com
 observatory.mozilla.org
 fr.app.chat.global.xiaomi.net
@@ -500,3 +486,4 @@ coordinator-production-28516768.us-east-1.elb.amazonaws.com
 d37ju0xanoz6gh.cloudfront.net
 premium-videos.telly.com
 log-3.samsungacr.com
+
