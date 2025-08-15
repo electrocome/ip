@@ -16,9 +16,9 @@
 || Ise.sapi.so.com^
 || Auto.sohu.com^
 || p0.qhimg.com^
-/akamaitechnologies\.com$/  
-/1e100\.net$/  
-/in-addr\.arpa$/
+||akamaitechnologies.com^
+||1e100.net^
+||in-addr.arpa^
 waw02s16-in-f14.1e100.net
 rd-blk-signal.auto.mydlink.com
 pub1.sdns.360.cn
@@ -504,5 +504,6 @@ coordinator-production-28516768.us-east-1.elb.amazonaws.com
 d37ju0xanoz6gh.cloudfront.net
 premium-videos.telly.com
 log-3.samsungacr.com
+
 
 
