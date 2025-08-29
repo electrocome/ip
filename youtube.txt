@@ -11,3 +11,8 @@ m.youtube.com
 lh3.googleusercontent.com
 googlevideo.com
 ggpht.com
+upgrade.mikrotik.com
+cloud.mikrotik.com
+support.mikrotik.com
+download.mikrotik.com
+
