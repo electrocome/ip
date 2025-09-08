@@ -169,8 +169,6 @@ zephyr.miningocean.org
 mayanboats.com
 sqjeans.com
 document-cdn.org
-asia.microsoft.com
-download.windowsupdate.com
 larrysteaks.com
 melsicon.com
 pizzais.com
@@ -516,6 +514,7 @@ coordinator-production-28516768.us-east-1.elb.amazonaws.com
 d37ju0xanoz6gh.cloudfront.net
 premium-videos.telly.com
 log-3.samsungacr.com
+
 
 
 
