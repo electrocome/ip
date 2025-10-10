@@ -47,10 +47,6 @@ a2-23-154-138.deploy.static.akamaitechnologies.com
 akamaitechnologies.com
 par10s21-in-f202.1e100.net
 waw02s16-in-f10.1e100.net
-update.easeus.com
-ad.doubleclick.net
-track.easeus.com
-easeusinfo.us-east-1.log.aliyuncs.com
 stats.g.doubleclick.net
 static.doubleclick.net
 m.doubleclick.net
@@ -510,10 +506,10 @@ i-stream.pl
 noticecdn.samsungcloudsolution.com
 d2tnx644ijgq6i.cloudfront.net
 telemetry.microsoft.com
-coordinator-production-28516768.us-east-1.elb.amazonaws.com
 d37ju0xanoz6gh.cloudfront.net
 premium-videos.telly.com
 log-3.samsungacr.com
+
 
 
 
