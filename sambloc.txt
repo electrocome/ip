@@ -1,4 +1,6 @@
 cloud.browser.360.cn
+track.easeus.com
+activation.easeus.com
 browser.360.cn.wsglb0.com
 dl.360tpcdn.com.dl.360qhcdn.com
 cdn.statically.io
@@ -112,6 +114,7 @@ noticecdn.samsungcloudsolution.com
 telemetry.microsoft.com
 premium-videos.telly.com
 log-3.samsungacr.com
+
 
 
 
