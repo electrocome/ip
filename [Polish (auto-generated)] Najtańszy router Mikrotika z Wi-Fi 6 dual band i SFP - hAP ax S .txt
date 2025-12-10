@@ -1,569 +1,425 @@
-Cześć. Dziś mam ze sobą najtańszy router
-Mikrotica z dwupasmowym WiFi 6. Jestem
-bardzo ciekaw, co potrafi ten sprzęt i
-czy uda mi się wreszcie przekroczyć
-gigabit po Wi-Fi w jakimś routerze
-Mikrotica.
-HXS to router, który konstrukcyjnie jest
-bliźniakiem nowego Hexa S, którego test
-już kiedyś był na kanale. Jednak ze
-względu na to, że ten router ma WiFi, no
-to Microti zdecydował się przypisać go
-do serii urządzeń HAP. No bo w końcu
-mamy tutaj domowo-biurowe urządzenie z
-WiFi 6. Co mamy w pudełku z tym
-urządzeniem?
-Można powiedzieć standardowo jakaś
-papierologia wymagana przez Unię
-Europejską. Mamy samurządzenie i mamy
-zasilacz. Powiem wam, że router bardzo
-ciężki.
-Aż byłem zdziwiony, że to pudełko tyle
-waży. W ogóle paczka jak odebrałem z
-paczkomatu. Patrząc od góry tutaj mamy
-jakieś diody na pewno coś sygnalizujące
-nam. Zasilanie SFP z tego co widzę 2 i 5
-czyli i znaczek bezprzewodowy czyli
-pewnie pracę interfejsu Wi-Fi i tego
-SFP.
-Z tej strony jak sobie popatrzymy, no to
-mamy od lewej strony gniazdo SFP 2,5
-Gbita,
-gniazdo zasilania 5,5 na 2,1.
-Nie napisali, co ciekawsze, jaki zakres
-napięć zasilających jest. Zawsze na
-Microticu było to napisane. Tutaj tego
-nie ma, co mnie szczerze mówiąc dziwi.
-Dalej mamy porty LAN gigabitowe.
-Pierwszy port może pełnić rolę wejścia
-POE. Ostatni port może pełnić rolę
-wyjścia POE. To nawet widać, że jest
-inny kolor diody w tym miejscu.
-Wszystkie porty, tak jak powiedziałem,
-gigabitowe. Z boku urządzenia mamy
-przycisk reset i mamy gniazdo USB.
-Niestety tylko USB 2.0. Zasilacz
-dołączony do zestawu jest na 24 V. prąd
-1,5 amp
-mocy. No i w samym pudełku tak naprawdę
-nie ma nic więcej. Jedynie router i
-zasilacz. Jak sobie popatrzymy na tylną
-etykietę, to tutaj jest napisane jaki
-mamy zakres napięć zasilających, czyli
-niestety tylko od 12 do 28 V. Nie ma
-oczywiście POEA FAT. No i niestety też
-tak jak to we wszystkich nowych
-urządzeniach Mikrotica dla każdego
-urządzenia jest indywidualne hasło.
-Jeśli porównamy sobie tego HPA XS z 951
-klasyczną, no to jak widzicie forma jest
-bardzo podobna jeżeli chodzi o kształt.
-Natomiast no ten nowy HP jest wyraźnie
-większy. Bardziej uważnych widzów może
-nieco zdziwić fakt, że HP XS ma jedynie
-port USB 2.0. W końcu Hexas S 2025,
-który ma ten sam procesor, jest
-wyposażony w port USB 3.0. Otóż okazuje
-się, że przyczyną braku USB 3.0 w wielu
-routerach Mikotica, które mają Wi-Fi w
-paśmie 5 GHz są po prostu zakłócenia.
-Okazuje się, że USB 3.0 zakłóca Wi-Fi w
-5 GHz i wymaga odpowiedniego
-zaprojektowania z samego routera. No
-tak, aby interfejs radiowy był
-odseparowany od portu USB 3.0.
-Oczywiście podnosi to koszty konstrukcji
-albo powoduje, że router musi być
-fizycznie większy.
-HP AXS nie jest pierwszym routerem
-Microtica z WiFi 6, jednak jest
-pierwszym routerem Microtic z WiFi 6,
-który nie korzysta z chipsetów Qualcoma.
-W HP XS jest chip radiowy Mediatek
-MT7976.
-Chip ten obsługuje WiFi 6 dual band,
-czyli może pracować jednocześnie w
-pasmach 24 GHz i 5 GHz. Co ciekawsze, w
-5 GHz jest tutaj mimo 3 na3, a nie
-standardowo spotykane mimo 2 na2.
-Maksymalna szerokość kanału w 5 MHz to
-160 MHz. Nie mamy tutaj chipów Qualcoma,
-więc do obsługi Wi-Fi przez mikrotikowy
-router OS jest używana nowa paczka o
-nazwie WiFi Mediatek. Z punktu widzenia
-konfiguracji przez użytkownika paczka
-WiFi Mediatek nie różni się niczym od
-paczki WiFi QCOM, która jest
-przeznaczona dla Qualcoma. Ja jednak
-zauważyłem tutaj jeden problem z
-konfiguracją. W żaden sposób nie mogłem
-wybrać Super Channel jako kraju. No
-jeśli jest on nieobsługiwany, no to nie
-powinno go być w ogóle na liście.
-Wspomniałem wcześniej, że HP XS jest
-bliźniakiem nowego Hexas S, czyli
-urządzenia o oznaczeniu E60 i UGS. Oba
-urządzenia wyposażono w ten sam
-procesor, dwurdzeniowy ARM o oznaczeniu
-EN7562
-CT. Procesor taktowany jest
-częstotliwością 950 MHz. Co ciekawsze,
-ten procesor można spotkać jedynie w
-routerach Mikrotica. Jakby został
-zbudowany specjalnie dla Mikrotica
-właśnie przez Mediateka. Aczkolwiek to,
-że Mediatek jest producentem tego
-procesora, to tylko moje przypuszczenie
-i nie zostało to nigdzie oficjalnie
-potwierdzone. Router został wyposażony w
-512 MB pamięci RAM oraz 128 MB pamięci
-flash. Stosunkowo duża jak na tak mały i
-tani router. Ilość pamięci RAM daje
-możliwość uruchomienia na routerze jakiś
-prostych kontenerów do kera. Najbardziej
-ciekawi mnie wydajność tego routera HPA
-XS w WiFi, ponieważ mamy tutaj chip
-radiowy Mediatek, który to chip
-dotychczas nie był stosowany przez
-Mikrotica. Do tego są tutaj trzy chainy
-Wi-Fi, chociaż akurat tych trzech
-chainów Wi-Fi nie sprawdzę podczas
-testów, ponieważ nie mam żadnego
-urządzenia klienckiego, no z aż trzema
-polaryzacjami.
-Jest też możliwość ustawienia kanału o
-szerokości 160 MHz w paśmie 5 GHz, więc
-możemy się spodziewać tutaj dużej
-wydajności. Jednak sam Mikrodik
-twierdzi, że można tutaj osiągnąć do 900
-megbit na sekundę po Wi-Fi, więc
-przekroczenie gigabita może być ciężko.
-Do testów urządzenia wykorzystałem minis
-forum PC Mi1 Pro 125H z zamontowaną
-kartą WiFi 7 Qualcoma QCNCM
-865
-Aczkolwiek później sprawdziłem też
-wydajność z kartą Mediateka MT7925,
-którą mam zainstalowaną w swoim
-laptopie. Dlaczego wyjaśnię wam później.
-Testowany router był podpięty
-bezpośrednio do mojego domowego CCR za
-pośrednictwem 10 GBitowy wkładek
-optycznych SFP plus. Ale tutaj
-oczywiście one pracowały w trybie 2,5
-gbitowym. Musiałem też w cze ręcznie
-wymusić prędkość 2,5 Gb na porcie.
-Najpierw przeprowadziłem testy w paśmie
-5 GHz z kanałem o szerokości 160 MHz. I
-tutaj w mikrotikowym Bendwi teście
-osiągnąłem jedynie około 650 megbit na
-sekundę w pobieraniu i jedynie nieco
-ponad 400 megbit na sekundę w wysyłaniu.
-No czyli raczej słabo. W przeglądarkowym
-Open Speed Teście do serwera lokalnego
-było dużo lepiej, jeśli chodzi o
-prędkość wysyłania. Jeżeli chodzi o
-prędkość pobierania było to samo. Jednak
-zarówno jeśli chodzi o to pobieranie i
-wysyłanie, jakbym tego nie testował, to
-szklanym sufitem była prędkość około 700
-MB/undę, której w żaden sposób nie
-mogłem przekroczyć.
-Sprawdzimy jeszcze całość w kanale o
-szerokości 80 MHz i tutaj o dziwo było
-niewiele gorzej. Ponad 500 megbit na
-sekundę przy pobieraniu i ponad 400
-megbit na sekundę przy wysyłaniu.
-Aczkolwiek tutaj tak jak poprzednio przy
-testowaniu prędkości wysyłania za pomocą
-przeglądarki tym open speed testem no
-który działa w WDP, no to prędkość
-wysyłania była taka sama jak prędkość
-pobierania, czyli zwiększała się do tych
-500 MB/sundę.
-Następnie sprawdziłem całość 24 GHz.
-No i tutaj powiem wam, że było bardzo,
-bardzo źle. Było bardzo duże
-rozczarowanie i zaskoczenie.
-Jednocześnie
-prędkość pobierania nie mogła
-przekroczyć 100 megbit na sekundę i to
-dla kanału o szerokości 40 MHz. Przy
-wysyłaniu też było słabo, no ale chociaż
-udało się przekroczyć te 100 megbit na
-sekundę. Jednak ja tutaj spodziewałem
-się prędkości bliskich 200 megbit na
-sekundę, a nawet przekraczających te 200
-megbit na sekundę. Nie wiem, myślałem,
-że może to kwestia zakłóceń, więc
-zmniejszyłem szerokość kanału na 20 MHz.
-No i było jeszcze gorzej. Mogłem ledwo
-przekroczyć 40 megbit na sekundę w
-pobieraniu. Za to wysyłaniu miałem ponad
-130 megbitów na sekundę. No coś było
-bardzo, bardzo nie tak. Postanowiłem
-więc przetestować całość z kartą
-Mediateka jako klientem. I tutaj co
-ciekawsze było wyraźnie lepiej i to w
-obu pasmach. W 5 GHz dla kanału o
-szerokości 160 MHz otrzymałem ponad 750
-MB/undę. Przy czym podczas testu jeden z
-rodzaj procesora w routerze był
-obciążony na 100% więc przypuszczam, że
-tutaj procesor był wąskim gardłem, a nie
-samo radio. Za to przy wysyłaniu było
-dużo gorzej. Praktycznie jakby połowa
-prędkości jakby z jakiegoś powodu całość
-spięła się w mimo 1 na je zam mimo 2 na
-D. No i tutaj nie miało też znaczenia
-czy testowałem przeglądarkowym Open
-Speed testem czy mikrotikowym bandit
-testem. No cały czas były te same
-prędkości. Sprawdziłem jeszcze całość
-dla pasma 24 GHz i szerokości kanału 20
-MHz.
-No i tutaj doznałem szoku i to
-pozytywnego szoku. Prędkości bliskie 200
-megbit na sekundę i to zarówno w
-pobieraniu jak i w wysyłaniu w kanale o
-szerokości 20 MHz.
-Jak na mój gustie nierealna do uzyskania
-w tych 20 MHz, chociaż no teoretycznie
-na papierze możliwa w idealnych
-warunkach radiowych. U mnie faktycznie
-te warunki radiowe mogły być zbliżone do
-idealnych, bo router był bardzo blisko
-komputera, chociaż na pewno były jakieś
-zakłócenia.
-No i tutaj powiem wam, że nie wiem co
-mam myśleć o tym wszystkim. Czy radiowe
-w HP XS są identyczne jak na przykład w
-podróżnym routerze Beril AX, który
-kiedyś testowałem na kanale, a prędkości
-miałem tutaj dużo gorsze. Co więcej,
-jest jakiś problem z kompatybilnością z
-klientami na chipach Qualcoma i to tylko
-w Mikroticku.
-Z Mediatekiem całość działa dużo lepiej.
-24 GHz, no to już jest w ogóle tragedia
-z tym Qualcomem, także bardzo dziwna
-sytuacja. Przetestowałem jeszcze całość
-po kablu. No i tutaj musiałem 2
-gigabitowe porty w urządzeniu obciążyć
-jakimiś dwoma komputerami. Po prostu
-podpiąłem dwa komputery. Wydajność
-miałem bardzo zbliżoną do tego, co
-wcześniej było z heksem S2025
-z włączonym fast truckiem. Przy
-pobieraniu było około 1670 MB/undę. Przy
-czym tutaj obciążenie procesora z
-jakichś powodów dochodziło jedynie do
-70%.
-Przy wysyłaniu było dużo lepiej, no bo
-1900 MB/undę, a obciążenie procesora
-dochodziło do 95%, więc tutaj tak
-naprawdę możliwości sprzętu się kończą.
-Po wyłączeniu fast trcka prędkości
-wyraźnie spadły, ale też nie były złe.
-Otrzymałem 930 megbit/sundę przy
-pobieraniu i około 800 megbit na sekundę
-przy wysyłaniu. W obu przypadkach
-obciążenie procesora było bliskie 100%.
-Przetestowałem jeszcze wydajność w
-wiregardzie. Tutaj włączyłem fast trcka.
-No i o dziwo wydajność Wiregard była
-większa niż w przypadku Hexa i Hexa S,
-które mają ten sam procesor i to zarówno
-w pobieraniu jak i w wysyłaniu. W obu
-przypadkach miałem 260 MB na sekundę.
-Obciążenie procesora w obu przypadkach
-przekraczało 90%. Różnica wydajności
-może być spowodowana nowszą wersją
-oprogramowania niż ta, która była
-podczas testów wireguard w tych heksach.
-Mikrotic w międzyczasie coś tam
-poprawiał z wydajnością na procesorach
-właśnie tych EN7562 CT. Zmierzyłem
-jeszcze pobór mocy przez router
-zasilając go bezpośrednio z zasilacza
-laboratoryjnego. Podczas testów
-prędkości po Wi-Fi pobór mocy był
-poniżej 9 W. Oczywiście jest to pobór po
-stronie stałoprądowej zasilacza. Pobór z
-gniazdka w ścianie będzie nieco większy,
-no bo należy jeszcze doliczyć sprawność
-zasilacza. Zanim przejdę do podsumowania
-testów, pokażę wam jeszcze jak ten
-router wygląda wewnątrz. Na pierwszy
-rutoka na urządzeniu nie ma żadnych
-śrub, ale wydaje mi się, że będą one pod
-tymi gumowymi nóżkami. Nic nie ma jednak
-i to zarówno z przodu, jak i z tyłu.
-Okej. Sama podstawa odchodzi, jak się ją
-zacznie wyjmować. O kurczę, jakby na
-środku coś trzymało. I zobaczcie tutaj
-pod palcem wyczuwam,
-że na środku są śruby.
-Tak to wygląda. Przynajmniej
-pod tą naklejką chyba coś jest. No
-trochę słabo, bo na naklejce są te
-wszystkie oznaczenia tutaj, jeżeli
-chodzi o hasło i tak dalej. Tak, dobrze
-trafiłem. Jak widzicie, jedna śruba jest
-tutaj.
-Bardzo słabo pomyślane. Do tej pory
-Mikrotik nie robił takich problemów z
-rozchręcaniem ich urządzeń. Po
-zdemontowaniu tej dolnej podstawy mamy
-kolejne cztery śruby. Oj, mocno siedzą.
-Pytanie teraz, czy ta góra odejdzie, czy
-jakoś inaczej tutaj to pomyśleli.
-A nie, spód odchodzi.
-Wow, wow.
-Okej,
-mamy pastę termoprzewodzącą w ilościach
-dużych
-i to całe to jest radiator. To całe jest
-metalem.
-Plus do tego jeszcze tu są ekrany, żeby
-było śmieszniej. Tutaj są jest taka
-gąbka jakby taka pianka metalowa. Ciężko
-powiedzieć co to jest. No zobaczcie
-tutaj dolega to do tej drugiej strony,
-no nie. Czyli ciekawe rozwiązanie powiem
-szczerze, od strony konstrukcyjnej
-bardzo ciekawe. No i tutaj jakby
-pozdejmować to można by zobaczyć, jakie
-dokładnie chipy mamy. No ale jakie chipy
-mamy, to wiemy, to nie ma nawet co
-sprawdzać. Tutaj mamy coś chłodzonego od
-tyłu. Tak wygląda jeszcze. Tu są chyba
-te dwa moduły radiowe. To jest
-najprawdopodobniej główny procesor. To
-nie wiem co to jest szczerze mówiąc. No
-płytkę drukowaną da się już tutaj wyjąć
-na tym etapie. Tylko muszę uważać na
-tego Pcktaila. Niestety musiałem odpiąć
-Pcktaila. Inaczej się nie dało. Tak, pod
-spodem jest ta trzecia antena, no bo to
-ma mimo 3 na TR, więc trzy polaryzacje.
-Trzecia antena jest tutaj. Przy okazji
-się usyfiłem, widzę pastą. Tyle dobrego,
-że nie oszczędzali na tej paście.
-Śmieszny taki niebieski kolor ma. No z
-drugiej strony mamy, no trochę mamy
-rzeczy widać. Ciekawe.
-Jest coś tutaj, jak popatrzycie
-nieobsadzone, przewidziane coś tu było,
-ale tego nie ma i to idzie do SFP
-gniazda. Tak to przynajmniej wygląda.
-Ciekawe po co to. Nie obsadzone,
-nieekranowane. Hm, dziwne. Mamy tutaj
-dwie anteny, jak widzicie. jedna, druga,
-no trzecia jest na obudowie, tak tutaj
-podpięta gdzieś picktailem w tym
-miejscu. Z tyłu tak naprawdę nic
-ciekawego. Cała sekcja zasilania tak to
-wygląda. Tutaj gdzieś coś jest.
-Przetwornice najprawdopodobniej
-zasilające. Te anteny dziwnie krzywo są.
-Tak, ja ich tak nie podginałem, jakby
-były przekrzywione. Nie wiem, czy tak ma
-być, czy nie, ale ja je wyprostuję. Tu
-są na pewno jakieś transformatory
-separujące do portów Ethernet. Na
-szczęście w środku też jest druga
-naklejka z hasłem, ze wszystkim, więc no
-tutaj nie ma problemu.
-Jakby coś tam się stało z tą zewnętrzną,
-ja już ją de facto zdewastowałem trochę.
-Tutaj mamy gniazdo, które jest podpisane
-jako R232, więc przypuszczam, że RS232
-jest gdzieś na te piny wyprowadzone. No
-i właściwie z tej strony płytki niewiele
-ciekawego. Wszystkie procesory są z
-drugiej strony. Tutaj jedynie jakieś
-moje kondensatory, sekcja zasilania,
-tego typu rzeczy. Budowa wewnętrzna
-routera zrobiła na mnie bardzo dobre
-wrażenie. router jest bardzo solidny, ma
-duży radiator, wygląda tak, jakby go
-stronstruowano, żeby mógł działać
-latami. Natomiast po raz kolejny produkt
-wypuszczony przez Mikrotica, no jakby to
-powiedzieć, jest dziwny i mam bardzo
-ambiwalentne odczucia, jeśli chodzi o
-ten router.
-Jest ewidentnie jakiś problem z
-wydajnością po radiu. Nie wiem, może
-jakieś aktualizacje coś naprawią i
-zmienią w tej paczce WiFi Mediatek, bo
-wygląda to ewidentnie na program,
-problem z oprogramowaniem. W każdym
-razie radio w takim berylu AX i w HP AXS
-jest takie samo. No ten sam chip radiowy
-jest w obu urządzeniach, a prędkości się
-bardzo mocno różnią. Wiele wskazuje na
-to, że wąskim gardłem tutaj w routerze
-Mikrotica może być procesor. No bo przy
-odpowiednim kliencie, jeśli
-obciążyliśmy to na maksa, no to jeden
-rodzaj procesora był obciążony w 100%.
-Jeśli chodzi o procesor, no to tutaj też
-jest dość ciekawie i ja tutaj mam swoją
-własną teorię. Procesor jaki jest w HP
-XS i w innych mikrotikach z tej serii,
-no to procesor o oznaczeniu EN7562 CT. I
-ten procesor tak jak wcześniej mówiłem,
-występuje tylko i wyłącznie w routerach
-Mikrotica. Nie znajdziecie go w
-sprzętach innych producentów. Oczywiście
-nikt nie wyprodukowałby procesora tylko
-dla Mikrotica. Po prostu Mikrotic nie
-byłby w stanie zamówić tak dużej ilości,
-żeby było to opłacalne. Skoro mamy tutaj
-trzyprawdziowy Mediatek, no to procesor
-prawie na pewno też jest w produkcji
-Mediateka.
-No i wydaje mi się, podkreślam, wydaje
-mi się, jest to tylko moja teoria, że
-jest to ten sam procesor co w Berylu AX,
-ale taktowany niższą częstotliwością.
-Dlaczego? No możliwości obu sprzętów są
-takie same. Port USB, 1 LAN 2,5 Gbita,
-pozostałe gigabitowe. Mamy też dwa
-rdzenie ARM. Mamy interfejs USB 3.0.
-Oczywiście nie w HA XS, ale w Heksie S.
-Jednak sam procesor ma to USB 3.0. I
-teraz jak weźmiemy sobie wydajność
-Baryla AX w wiregardzie i przeskalujemy
-ją do niższej częstotliwości traktowania
-procesora w Mikroticku, no to uwaga,
-otrzymamy 230 megbit/sundę.
-No i właśnie taką wydajność w Wiregard
-miał Hex S2025 i Hex2004 na tych
-starszych wersjachos. Nowszych
-wersjachos Microck coś poprawił i jest
-nieco szybciej weguardzie. No i być może
-takich poprawek właśnie nie ma w
-oprogramowaniu Beryla, ale w sumie ich
-tam też być nie musi. No bo wydajność
-procesora jest po prostu większa.
-No i teraz powiem wam, że kompletnie nie
-rozumiem, dlaczego Microtic ma tak
-obciętą wersję tego procesora Mediateka,
-jeśli chodzi oczywiście o tą
-częstotliwość taktowania. Nie wiem, może
-ten procesor po prostu jest tańszy, może
-jest to jakiś, że tak powiem, odpad
-produkcyjny, no który nie był stabilny
-przy wyższej częstotliwości taktowania i
-sprzedali go Mikrotikowi dużo taniej. No
-bo raczej nie chodzi tu o temperaturę
-ani o pobór prądu. W końcu w dużo
-mniejszym i gorzej chłodzonym berylu
-jest 1,3 GHz, a w HP XS jest jedynie 950
-MHz. Nie może to być kwestia
-odprowadzania ciepłan, bo beryl jest
-dużo mniejszy, ma mniejszy radiator, a w
-HP XS jest ogromny radiator. Także tutaj
-trudno nie odnieść wrażenia, że Mikrotic
-celowo ten sprzęt zaprojektował tak,
-żeby nie był zbyt szybki. No nie wiem,
-może popewnił prąd konstrukcyjny, ciężko
-powiedzieć. Jednak w końcu ten HP XS
-jest wyraźnie tańszy od HPX2.
-No i nie może być od niego szybszy.
-Tylko, że tak naprawdę i tak nie byłby
-szybszy, bo ma tylko dwa rdzenie.
-No ja się zastanawiam, dlaczego?
-Dlaczego Mikrotic, dlaczego? Dlaczego
-zafundowaliście tutaj wykastrowany
-procesor o niezaniżonej częstotliwości
-taktowania i nie mogliście włożyć do
-tego routera na przykład procesora
-takiego jak jest w Berylu AX? Przecież
-to też jest Mediatek i ma 1,3 GHz, a nie
-950 MHz. Częstotliwość taktowania
-większa o około 36%, więc na papierze
-wydajność też większa o jakieś 36%.
-A dokładnie tyle brakuje do zamknięcia
-2,5 gigabitowego portu SFP plus z
-włączonym fast trckiem. Dokładnie te
-36%. Tyle samo też brakuje, żeby
-przekroczyć gigabit po radiu. No i to
-USB 2.0. No kurczę, procesor ma
-fizycznie USB 3.0. GL Inet w swoim dużo
-mniejszym berylu mógł jakimś cudem
-umieścić USB 3.0. Czy aż tak słabych
-projektantów macie? Czy to celowa
-polityka segmentowania urządzeń tak,
-żeby USB 3.0 było tylko w HP X3? Wasz
-router jest super, ale sprzęt jaki
-produkujecie sprawia wrażenie, że albo
-nie umiecie projektować dobrego sprzętu,
-albo celowo robicie go tak, żeby przez
-przypadek nie był za dobry i nie
-kalibalizował jakiś waszych innych
-produktów.
-Macie też duży problem z napisaniem
-softu, który w pełni wykorzysta
-możliwości sprzętu. No bo jak
-wytłumaczyć to, że ten sam chip radiowy
-w Bylu AX nie ma żadnych problemów z
-kompatybilnością z klientem na
-Qualcomie, a u was jest wyraźny problem
-z wydajnością 2,4 GHz, a na 5 GHz
-wydajność też jest nieco mniejsza z
-klientem, który jest na Qualcomie.
-Weźcie się wreszcie do roboty, no bo
-konkurencja nie śpi i kiedyś was
-przegoni i to nie tylko jeśli chodzi o
-sprzęt, ale również jeśli chodzi o
-możliwości oprogramowania.
-No dobra, no to sobie trochę
-ponarzekałem,
-ale tak naprawdę no to obiektywnie
-patrząc sam Hpxs to nie jest zły router.
-Ba, uważam, że on jest naprawdę bardzo
-dobry, jeśli weźmiemy pod uwagę cenę i
-możliwości jakie ma. I to nie tylko,
-jeżeli weźmiemy pod uwagę inne
-urządzenia Mikrotica, ale cały rynek.
-Jak najbardziej polecam zakup tego
-routera. Oczywiście o ile wady, które
-wymieniłem nie będą wam przeszkadzać. W
-chwili kiedy nagrywam ten film w
-sklepach, które specjalizują się w
-handlu urządzeniami sieciowymi, tego HP
-XS można kupić w cenie poniżej 270 zł
-brutto.
-Beryla AX bez kuponów i promocji ciężko
-jest znaleźć na AliExpress w cenie
-poniżej 300 zł. Także cenowo Microtic
-nie wypada źle, a nawet wypada dość
-dobrze. Co dziwniejsze, w tej chwili
-Hapa X2, który jest około 70 zł droższy
-od tego HA XS, zaczyna być no dość
-dziwnym zakupem, nie do końca sensownym.
-No chyba, chyba że potrzebujecie akurat
-w miarę wydajnego serwera Wiregard i
-jakiegoś kolejkowania ruchu, bo jednak
-procesor w HP X2 jest wyraźnie
-mocniejszy, no i dużo lepiej sobie
-poradzi jako na przykład serwer VPN.
-No i właściwie to by było tyle, jeśli
-chodzi o testy tego HP AXs. Mam
-nadzieję, że dowiedzieliście się z tego
-filmu czegoś przydatnego. Pamiętajcie,
-żeby dać łapkę w górę i zasubskrybować
-kanał, oczywiście o ile jeszcze nie
-jesteście subskrybentami. Przypominam
-też, że macie możliwość wsparcia mnie
-przez kupno kawy. Link znajdziecie w
-opisie filmu. Od jakiegoś czasu można
-wspierać mnie też cyklicznie. Jeśli
-macie jakieś pytania lub zauważyliście w
-tym filmie jakieś błędy, to oczywiście
-piszcie w komentarzach. Z mojej strony
-to było na tyle. Do następnego.
+Hey, quick question. How many of you
+have a password that looks like this?
+If you do, congratulations. You just
+made yourself less secure. Today, I'm
+going to prove it. And then I'll show
+you the system that will actually work
+today, 2026, and beyond. I've seen
+people with 10digit pins for their phone
+or another one where the password is all
+special characters. Did you know that
+something simple to type, easy to
+remember, and having no special
+characters could actually be safer? If
+you're using extremely complex
+passwords, thinking it's what's stopping
+you from getting hacked, then you may
+not actually be understanding the threat
+you're facing, and you might still get
+hacked. No, we don't need to do a deep
+dive into the mathematics of passwords
+with complex computations of entropy.
+Instead, you need to understand how you
+actually get hacked. Stay right there.
+Brute force is the technique used to
+hack passwords using the trial and error
+method. It involves trying out every
+possibility. So if the password is a
+six-digit PIN code, then the possible
+values to try are 000000
+to 99999.
+That makes 1 million possibilities. A
+brute force attacker will try all of
+that and the time it takes will be less
+than the total amount of time it takes
+to try out one million possibilities.
+using the fastest computer possible.
+Obviously, it would take nanconds to
+count them all. So, you figure that's
+the threat to your password. I did some
+math. If your password is 40 digits with
+upper and lower case with numeric and
+special characters, how long would it
+take for the fastest supercomput on
+Earth, in fact, using multiple
+supercomputers to hack it? Assuming that
+the password app requires 1 millisecond
+to respond, the answer is 10 to the 65th
+power in years. So this is way larger
+than the age of the universe, meaning it
+is not a threat. Now let's change this
+to the same rule but with an 8 character
+password. And the answer is an attacker
+with a single machine hundreds of
+thousands of years. An attacker with
+1,000 machines in parallel, 100 to 200
+years. An attacker with 100,000
+machines, one to two years. So even just
+using the typical password format is
+pretty good. But let me shock you here.
+Again, doing some math. What about a 15
+character password? Alphabetical only,
+upper, lower, and random. And the
+important part here is random. The
+solution is uncrackable.
+This alone should stop your code with
+this realization. A simple password with
+15 letters is already uncrackable using
+brute force. But this doesn't assume
+real words. I said random letters. So
+that's still pretty complex.
+Rate limits.
+In the examples I gave earlier and this
+is important to understand here. I
+assigned a time to enter each password
+at 1 millisecond per try. This is
+completely unrealistic in real life
+online. In the majority of password
+entry methods, including personal
+computers, there is always some delay
+built into password entry, sometimes
+several seconds after multiple attempts
+fail, which is thousands of times slower
+than the 1 millisecond I used to compute
+the examples I just gave. So depending
+on where you're entering the password,
+the rate limit or the number of attempts
+per window of time may not allow brute
+force attacks at all. Attempts
+limit.
+This applies to internet platforms,
+phones, and computers. And this is the
+attempts limit. After you've tried some
+number of times like 10, then the
+machine will lock up and not allow
+password entry for a day or in some
+cases forever. Most of the big platforms
+and all the best made sites have some
+attempts limit like 10 tries per day.
+two-factor authentication.
+An even more severe slowdown now is that
+many platforms require a two-factor
+authentication like text or email to
+even log in without even considering the
+issue of a successful password entry.
+This alone will make someone reconsider
+doing a brute force attack. They will
+also send a notice if a new login is
+detected from a new machine which is
+also a warning flag to you if someone is
+trying to perform a hack
+who are subject to brute force. I'm just
+going to state it as bluntly as I can.
+It may not be apparent to some of you
+but you are not that important. Bottom
+line, normal people are never brute
+forced. Nation states might try on
+billionaires, but even they usually go
+another route. Because complex passwords
+are timeconuming to enter and subject to
+mistakes, they are often reused a lot
+and that introduces the real risk.
+Have I been pawned?
+The real massive source of hacks is
+demonstrated by the website have
+ibenponed.com
+which I will just abbreviate to HIBP.
+HIBP tracks all the hack databases and
+lists you if your email has been
+included in a breach. This is the clue
+that someone may have acquired your
+password. You should go to this site and
+if you're the average person, type in
+your well-known email and see if your
+email is compromised. I will bet that
+there's a 90% chance you will be on that
+list. So, what's happened here? In the
+news, you'll hear that 23 andMe, Google,
+Ticket Master, Facebook, Twitter,
+Equifax, and LinkedIn have been hacked.
+This just goes on and on and will likely
+keep happening for the foreseeable
+future. This is important. This is the
+major way your credentials are acquired,
+not by brute force. So when a platform
+gets hacked, the typical response of
+that company is to offer you identity
+protection via Liflock and you think
+it's good. This is the biggest BS of the
+century. Unfortunately, after the hack
+happens, identity protection is the
+least of your worries. The issue is less
+about the complexity of passwords, which
+is really not that big of a concern in
+most platforms with rate limiting,
+attempt limiting, and 2FA. The issue is
+password reuse, not brute force. Yes,
+folks, there's the hacking vector,
+password reuse. The result is a data
+pair, which is email plus password. So,
+knowing this, it's a simple matter to
+make one attempt at all platforms to see
+if the login works. But the hackers will
+typically attempt to break into your
+email first since this will give them a
+way to handle two-factor authentication.
+Again, this is one attempt, not brute
+force. There are a couple of lessons to
+be learned here. The email and password
+is a pair. Passwords by themselves are
+not important if you don't know what the
+email is. So, some email providers like
+our Braxmail product has some unique
+capabilities here since it can do
+unlimited aliases. This breaks the
+password reuse problem since you can use
+a different email address for every
+platform. Lesson number two here is that
+if you reuse a password then if that
+platform is hacked then you will
+potentially have multiple accounts
+hacked. We need to learn how to
+compartmentalize this risk.
+Fishing.
+Fishing, which has that weird spelling,
+is the attack used by hackers to acquire
+your password directly, typically by
+social engineering, meaning they will
+trick you in thinking that some link is
+valid and is from the original platform
+and then you enter a password which is
+then captured. I will teach you some
+common sense rules to not be vulnerable
+to this. 80 to 90% of these attacks will
+come from email and SMS. So, if you
+respond to email and click links
+directly from emails or an SMS message,
+then you will likely get fished and your
+password acquired. If you don't do
+password reuse, then that single site
+you logged into will be hacked. If you
+reuse passwords, then it will be a
+bigger problem. So, password reuse
+expands the risks. But really, this is
+common sense in the internet. If a bank
+sends you a notice, go directly to the
+bank site and log in to see if the
+notice is valid. Don't click on any
+email that is unsolicited. Obviously, if
+you triggered an email from a website
+like to log in, that's fine because you
+initiated it. But unsolicited messages
+with links is a fishing attack. How much
+of my email is a fishing attack? Some
+days it seems like 25% of my emails in
+my case is an attack. So never ever ever
+put information in on any site you
+access via a link from an email or a
+text. At most consider it read only and
+even I won't do that.
+Spear fishing.
+Spearishing is a more targeted attack
+and is directed towards a single person
+instead of a broad hacking attempt using
+stolen personal data from the Equifax
+hack. For example, someone could trick
+you into thinking they know everything
+about you and then trick you into
+revealing pin codes on ATM cards, for
+example. This kind of attack is
+typically more personal and it's done
+through phone calls. It reminds me of
+the old scam where they call you and say
+they're from Microsoft tech support and
+they need to access your computer. For
+goodness sake, in this day and age,
+learn to hang up.
+Password strategy.
+Now that you understand where the
+attacks actually come from, we can come
+up with a password strategy. As
+demonstrated here, password complexity
+isn't particularly relevant. You do have
+to make a unique password so that the
+common password 123 type choices are
+removed. However, since most platforms
+are limited to 10 tries plus 2FA, there
+really isn't much of a brute force risk
+with any online platform. So complexity
+doesn't help. Instead, focus on no reuse
+as the goal. Now, this is a very
+difficult goal as no reuse introduces
+the problem of not being able to
+remember a password for multiple sites.
+So, I will introduce two password types.
+One for use with low security sites and
+one for high security sites and offline
+use. I'm going to start with the most
+secure version and then end with the one
+that's the most convenient, which is
+made for lower level security sites.
+Start fresh.
+This is extremely important. You must
+start fresh. You must assume that you're
+already in the HIV list and that you
+were already hacked in the past. So, you
+must not ever use passwords you've used
+in the past. This is a requirement in
+any of the solutions I'm going to offer.
+If you already used this password before
+today, then this will all fail.
+Six random words.
+The most secure password is actually not
+made up of extremely difficult to type
+special characters. The easiest way is
+to string up six random words. You can
+segregate the words with a space or
+separate them with a special character.
+up to you, whatever is easier for you to
+type. Here's an example.
+This one is 32 characters. Certain
+things you will discover here is that
+this kind of format of password is long.
+It is usually between 28 to 35
+characters. And again, you cannot reuse
+this. It's used for one platform. These
+kinds of highsecurity passwords are best
+for banks offline use like passworded
+zip files, Wi-Fi WPA2 passwords, email
+credentials. Although these passwords
+are easy to read and type, they cannot
+be remembered if you use many of them.
+So, you must use a password manager to
+store your passwords. But I wouldn't use
+these types of passwords often just for
+high security purposes. I caution you
+though not to use this format for
+everything since many sites have a
+password length limit and these can get
+quite long so it will not work
+everywhere because these are not reused
+at all. They are good for mitigating a
+fishing attack. This is important. You
+must use this kind of password for an
+email and it must never be reused. Email
+is the number one target.
+limited reuse.
+I want to create a distinction here. For
+the hundreds of sites that are not a
+financial risk, where there's no stored
+credit card, then the high security
+method of a nonreused password is
+inconvenient and overkill. This is
+because these platforms like Reddit, X,
+Tik Tok, Netflix, Prime Video, and so on
+are so frequently visited and you have
+to reenter your password over and over.
+I would group low-risk sites into three
+categories. Bucket A, social media.
+Bucket B, streaming and gaming.
+Bucket C, shopping and random sites. And
+for each of these groups, I would reuse
+a four random word password that you've
+never used before. 20 to 28 characters
+each. Short enough to type fast, but
+strong enough to not be broken online.
+Example. Yes, we're doing a reuse here,
+but by breaking this into smaller
+groups, then the risk of a hack via HIBP
+is reduced. Compartmentalization, as
+shown here, reduces the risk of a
+cascade attack. A breach in a streaming
+site does not affect shopping sites or
+your social media sites. Quick note, if
+you're finding this useful and want more
+no BS privacy tips like this every week,
+hit that subscribe button and the bell.
+Check out our other products and
+services on BraxMe at the end of the
+video. Now, let's talk about phone
+unlock in the future with pass keys.
+Phone unlock
+to unlock your phone. What is the best
+method? Typically, we choose between
+PIN, pattern, fingerprint or Face ID.
+The best way which cannot be observed by
+others is the fingerprint method. PIN
+and pattern may be discovered by others
+watching you use your phone. Fingerprint
+method does not record fingerprint. So
+if this is your fear, forget that. It
+does not photograph your fingerprint. It
+is safe. Face ID is less safe because
+it's actually based on the shape of your
+face and those values can be potentially
+retrieved and used outside of the phone.
+The main problem with biometrics is that
+someone may compel you to use
+biometrics, which does not have the same
+level of protection under the fourth
+amendment as PIN or pattern. So,
+possibly turn off the fingerprint method
+when traveling.
+Pass keys
+as an alternative to passwords plus
+two-factor authentication. Many sites
+now offer support for pass keys. This is
+actually fine as pass keys are managed
+by an exchange of certificates and there
+is no exchange of biometrics as most
+people assume. In my experience though,
+it is potentially possible to lose pass
+keys if you change computers or your
+computer breaks in some way. This is the
+problem with softwarebased TOTP
+authenticator similar to Google
+authenticator. Again, these keys are
+tied to a device. So if you lose the
+device, reset the OS, or simply forget,
+then you lose the keys. So I actually
+prefer using a hardwarebased key like a
+UB key. This has been more flawless in
+my opinion.
+Final thoughts.
+That's it. Password complexity is a lie.
+This is your 5-minute action plan. Do
+this today. Here's what actually keeps
+you safe in 2026 and beyond right now.
+Go to have ibenpone.com and check your
+main emails today. Change your email,
+banking, and Apple Google passwords to
+brand new sixword passphrases you've
+never used before. Add a UB key or pass
+key. This week, create three fresh
+three-word passphrases and assign them
+to your buckets. social media, streaming
+and gaming, shopping and random sites.
+Reuse inside each bucket only. From now
+on, never click login links from email
+or text. Type the site yourself or use a
+bookmark. Do those four things and you
+instantly become harder to hack than 99%
+of people on Earth without living in a
+password manager and without typing 40
+character nonsense every day.
+Start fresh today.
+Hey, if you're serious about privacy,
+come join us at Braxme. This is a
+growing community where real privacy
+people hang out. No censorship, no
+nonsense. While you're there, check out
+the tools we actually built and use
+ourselves.
+Braxmail, unlimited aliases, no IP
+leaks.
+Bra virtual phone, real anonymous
+numbers, BitesVPN, no logs, no big corp
+BS. The Google phones and more in the
+store. The Bra 3 phone second batch is
+open for pre-order right now at
+bratech.net.
+First batch sold out shortly after
+release. Big thanks to everyone
+supporting us on Patreon, locals, and
+YouTube memberships. You keep this
+channel alive. See you next time.
