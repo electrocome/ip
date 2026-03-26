@@ -16,7 +16,6 @@ abtauthprd.samsungcloudsolution.com
 ad.samsungadhub.com
 secure.netflix.com
 api-global.netflix.com
-samsung.net
 a1428.w12.akamai.net
 tos.razerapi.com
 observatory.mozilla.org
@@ -25,32 +24,12 @@ apis.zimoapps.com
 deff.nelreports.net
 resolver.msg.global.xiaomi.net
 tracking.intl.miui.com
-ads.aimitv.com
-ads.samsung.com
-ads.samsungads.com
-d1oxlq5h9kq8q5.cloudfront.net
-apps.samsungcloudcdn.com
-sso.internetat.tv
 samsungads.com
 config.samsungads.com
 ads.samsungads.com
-events.samsungads.com
 samsungacr.com
-log-1.samsungacr.com
-log-2.samsungacr.com
 log-config.samsungacr.com
 gpm.samsungqbe.com
-osb.samsungqbe.com
-osb-apps-v2.samsungqbe.com
-osb-v2.samsungqbe.com
-samsungcloudsolution.com
-samsungcloudsolution.net
-acr0.samsungcloudsolution.com
-notice.samsungcloudsolution.com
-noticefile.samsungcloudsolution.com
-oempprd.samsungcloudsolution.com
-samsungotn.net
-
 
 
 
