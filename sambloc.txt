@@ -14,8 +14,8 @@ pub1.sdns.360.cn
 ads.8designers.com
 abtauthprd.samsungcloudsolution.com
 ad.samsungadhub.com
-secure.netflix.com
 api-global.netflix.com
+secure.netflix.com
 a1428.w12.akamai.net
 tos.razerapi.com
 observatory.mozilla.org
@@ -30,7 +30,28 @@ ads.samsungads.com
 samsungacr.com
 log-config.samsungacr.com
 gpm.samsungqbe.com
-
+samsungotn.net
+www.samsungotn.net
+rwww.samsungotn.net
+otn.samsungcloudcdn.com
+samsungcloudcdn.com
+otnprd8.samsungcloudsolution.net
+otnprd9.samsungcloudsolution.net
+otnprd10.samsungcloudsolution.net
+otnprd11.samsungcloudsolution.net
+lcprd1.samsungcloudsolution.net
+osb.samsungqbe.com
+osb-apps-v2.samsungqbe.com
+osb-apps.samsungqbe.com
+osb-eusvc.samsungqbe.com
+osb-ussvc.samsungqbe.com
+osb-krsvc.samsungqbe.com
+notice.samsungcloudsolution.com
+noticecdn.samsungcloudsolution.com
+noticefile.samsungcloudsolution.com
+prov.samsungcloudsolution.com
+samsungcloudsolution.com
+samsungcloudsolution.net
 
 
 
