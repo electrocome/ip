@@ -1,425 +1,783 @@
-Hey, quick question. How many of you
-have a password that looks like this?
-If you do, congratulations. You just
-made yourself less secure. Today, I'm
-going to prove it. And then I'll show
-you the system that will actually work
-today, 2026, and beyond. I've seen
-people with 10digit pins for their phone
-or another one where the password is all
-special characters. Did you know that
-something simple to type, easy to
-remember, and having no special
-characters could actually be safer? If
-you're using extremely complex
-passwords, thinking it's what's stopping
-you from getting hacked, then you may
-not actually be understanding the threat
-you're facing, and you might still get
-hacked. No, we don't need to do a deep
-dive into the mathematics of passwords
-with complex computations of entropy.
-Instead, you need to understand how you
-actually get hacked. Stay right there.
-Brute force is the technique used to
-hack passwords using the trial and error
-method. It involves trying out every
-possibility. So if the password is a
-six-digit PIN code, then the possible
-values to try are 000000
-to 99999.
-That makes 1 million possibilities. A
-brute force attacker will try all of
-that and the time it takes will be less
-than the total amount of time it takes
-to try out one million possibilities.
-using the fastest computer possible.
-Obviously, it would take nanconds to
-count them all. So, you figure that's
-the threat to your password. I did some
-math. If your password is 40 digits with
-upper and lower case with numeric and
-special characters, how long would it
-take for the fastest supercomput on
-Earth, in fact, using multiple
-supercomputers to hack it? Assuming that
-the password app requires 1 millisecond
-to respond, the answer is 10 to the 65th
-power in years. So this is way larger
-than the age of the universe, meaning it
-is not a threat. Now let's change this
-to the same rule but with an 8 character
-password. And the answer is an attacker
-with a single machine hundreds of
-thousands of years. An attacker with
-1,000 machines in parallel, 100 to 200
-years. An attacker with 100,000
-machines, one to two years. So even just
-using the typical password format is
-pretty good. But let me shock you here.
-Again, doing some math. What about a 15
-character password? Alphabetical only,
-upper, lower, and random. And the
-important part here is random. The
-solution is uncrackable.
-This alone should stop your code with
-this realization. A simple password with
-15 letters is already uncrackable using
-brute force. But this doesn't assume
-real words. I said random letters. So
-that's still pretty complex.
-Rate limits.
-In the examples I gave earlier and this
-is important to understand here. I
-assigned a time to enter each password
-at 1 millisecond per try. This is
-completely unrealistic in real life
-online. In the majority of password
-entry methods, including personal
-computers, there is always some delay
-built into password entry, sometimes
-several seconds after multiple attempts
-fail, which is thousands of times slower
-than the 1 millisecond I used to compute
-the examples I just gave. So depending
-on where you're entering the password,
-the rate limit or the number of attempts
-per window of time may not allow brute
-force attacks at all. Attempts
-limit.
-This applies to internet platforms,
-phones, and computers. And this is the
-attempts limit. After you've tried some
-number of times like 10, then the
-machine will lock up and not allow
-password entry for a day or in some
-cases forever. Most of the big platforms
-and all the best made sites have some
-attempts limit like 10 tries per day.
-two-factor authentication.
-An even more severe slowdown now is that
-many platforms require a two-factor
-authentication like text or email to
-even log in without even considering the
-issue of a successful password entry.
-This alone will make someone reconsider
-doing a brute force attack. They will
-also send a notice if a new login is
-detected from a new machine which is
-also a warning flag to you if someone is
-trying to perform a hack
-who are subject to brute force. I'm just
-going to state it as bluntly as I can.
-It may not be apparent to some of you
-but you are not that important. Bottom
-line, normal people are never brute
-forced. Nation states might try on
-billionaires, but even they usually go
-another route. Because complex passwords
-are timeconuming to enter and subject to
-mistakes, they are often reused a lot
-and that introduces the real risk.
-Have I been pawned?
-The real massive source of hacks is
-demonstrated by the website have
-ibenponed.com
-which I will just abbreviate to HIBP.
-HIBP tracks all the hack databases and
-lists you if your email has been
-included in a breach. This is the clue
-that someone may have acquired your
-password. You should go to this site and
-if you're the average person, type in
-your well-known email and see if your
-email is compromised. I will bet that
-there's a 90% chance you will be on that
-list. So, what's happened here? In the
-news, you'll hear that 23 andMe, Google,
-Ticket Master, Facebook, Twitter,
-Equifax, and LinkedIn have been hacked.
-This just goes on and on and will likely
-keep happening for the foreseeable
-future. This is important. This is the
-major way your credentials are acquired,
-not by brute force. So when a platform
-gets hacked, the typical response of
-that company is to offer you identity
-protection via Liflock and you think
-it's good. This is the biggest BS of the
-century. Unfortunately, after the hack
-happens, identity protection is the
-least of your worries. The issue is less
-about the complexity of passwords, which
-is really not that big of a concern in
-most platforms with rate limiting,
-attempt limiting, and 2FA. The issue is
-password reuse, not brute force. Yes,
-folks, there's the hacking vector,
-password reuse. The result is a data
-pair, which is email plus password. So,
-knowing this, it's a simple matter to
-make one attempt at all platforms to see
-if the login works. But the hackers will
-typically attempt to break into your
-email first since this will give them a
-way to handle two-factor authentication.
-Again, this is one attempt, not brute
-force. There are a couple of lessons to
-be learned here. The email and password
-is a pair. Passwords by themselves are
-not important if you don't know what the
-email is. So, some email providers like
-our Braxmail product has some unique
-capabilities here since it can do
-unlimited aliases. This breaks the
-password reuse problem since you can use
-a different email address for every
-platform. Lesson number two here is that
-if you reuse a password then if that
-platform is hacked then you will
-potentially have multiple accounts
-hacked. We need to learn how to
-compartmentalize this risk.
-Fishing.
-Fishing, which has that weird spelling,
-is the attack used by hackers to acquire
-your password directly, typically by
-social engineering, meaning they will
-trick you in thinking that some link is
-valid and is from the original platform
-and then you enter a password which is
-then captured. I will teach you some
-common sense rules to not be vulnerable
-to this. 80 to 90% of these attacks will
-come from email and SMS. So, if you
-respond to email and click links
-directly from emails or an SMS message,
-then you will likely get fished and your
-password acquired. If you don't do
-password reuse, then that single site
-you logged into will be hacked. If you
-reuse passwords, then it will be a
-bigger problem. So, password reuse
-expands the risks. But really, this is
-common sense in the internet. If a bank
-sends you a notice, go directly to the
-bank site and log in to see if the
-notice is valid. Don't click on any
-email that is unsolicited. Obviously, if
-you triggered an email from a website
-like to log in, that's fine because you
-initiated it. But unsolicited messages
-with links is a fishing attack. How much
-of my email is a fishing attack? Some
-days it seems like 25% of my emails in
-my case is an attack. So never ever ever
-put information in on any site you
-access via a link from an email or a
-text. At most consider it read only and
-even I won't do that.
-Spear fishing.
-Spearishing is a more targeted attack
-and is directed towards a single person
-instead of a broad hacking attempt using
-stolen personal data from the Equifax
-hack. For example, someone could trick
-you into thinking they know everything
-about you and then trick you into
-revealing pin codes on ATM cards, for
-example. This kind of attack is
-typically more personal and it's done
-through phone calls. It reminds me of
-the old scam where they call you and say
-they're from Microsoft tech support and
-they need to access your computer. For
-goodness sake, in this day and age,
-learn to hang up.
-Password strategy.
-Now that you understand where the
-attacks actually come from, we can come
-up with a password strategy. As
-demonstrated here, password complexity
-isn't particularly relevant. You do have
-to make a unique password so that the
-common password 123 type choices are
-removed. However, since most platforms
-are limited to 10 tries plus 2FA, there
-really isn't much of a brute force risk
-with any online platform. So complexity
-doesn't help. Instead, focus on no reuse
-as the goal. Now, this is a very
-difficult goal as no reuse introduces
-the problem of not being able to
-remember a password for multiple sites.
-So, I will introduce two password types.
-One for use with low security sites and
-one for high security sites and offline
-use. I'm going to start with the most
-secure version and then end with the one
-that's the most convenient, which is
-made for lower level security sites.
-Start fresh.
-This is extremely important. You must
-start fresh. You must assume that you're
-already in the HIV list and that you
-were already hacked in the past. So, you
-must not ever use passwords you've used
-in the past. This is a requirement in
-any of the solutions I'm going to offer.
-If you already used this password before
-today, then this will all fail.
-Six random words.
-The most secure password is actually not
-made up of extremely difficult to type
-special characters. The easiest way is
-to string up six random words. You can
-segregate the words with a space or
-separate them with a special character.
-up to you, whatever is easier for you to
-type. Here's an example.
-This one is 32 characters. Certain
-things you will discover here is that
-this kind of format of password is long.
-It is usually between 28 to 35
-characters. And again, you cannot reuse
-this. It's used for one platform. These
-kinds of highsecurity passwords are best
-for banks offline use like passworded
-zip files, Wi-Fi WPA2 passwords, email
-credentials. Although these passwords
-are easy to read and type, they cannot
-be remembered if you use many of them.
-So, you must use a password manager to
-store your passwords. But I wouldn't use
-these types of passwords often just for
-high security purposes. I caution you
-though not to use this format for
-everything since many sites have a
-password length limit and these can get
-quite long so it will not work
-everywhere because these are not reused
-at all. They are good for mitigating a
-fishing attack. This is important. You
-must use this kind of password for an
-email and it must never be reused. Email
-is the number one target.
-limited reuse.
-I want to create a distinction here. For
-the hundreds of sites that are not a
-financial risk, where there's no stored
-credit card, then the high security
-method of a nonreused password is
-inconvenient and overkill. This is
-because these platforms like Reddit, X,
-Tik Tok, Netflix, Prime Video, and so on
-are so frequently visited and you have
-to reenter your password over and over.
-I would group low-risk sites into three
-categories. Bucket A, social media.
-Bucket B, streaming and gaming.
-Bucket C, shopping and random sites. And
-for each of these groups, I would reuse
-a four random word password that you've
-never used before. 20 to 28 characters
-each. Short enough to type fast, but
-strong enough to not be broken online.
-Example. Yes, we're doing a reuse here,
-but by breaking this into smaller
-groups, then the risk of a hack via HIBP
-is reduced. Compartmentalization, as
-shown here, reduces the risk of a
-cascade attack. A breach in a streaming
-site does not affect shopping sites or
-your social media sites. Quick note, if
-you're finding this useful and want more
-no BS privacy tips like this every week,
-hit that subscribe button and the bell.
-Check out our other products and
-services on BraxMe at the end of the
-video. Now, let's talk about phone
-unlock in the future with pass keys.
-Phone unlock
-to unlock your phone. What is the best
-method? Typically, we choose between
-PIN, pattern, fingerprint or Face ID.
-The best way which cannot be observed by
-others is the fingerprint method. PIN
-and pattern may be discovered by others
-watching you use your phone. Fingerprint
-method does not record fingerprint. So
-if this is your fear, forget that. It
-does not photograph your fingerprint. It
-is safe. Face ID is less safe because
-it's actually based on the shape of your
-face and those values can be potentially
-retrieved and used outside of the phone.
-The main problem with biometrics is that
-someone may compel you to use
-biometrics, which does not have the same
-level of protection under the fourth
-amendment as PIN or pattern. So,
-possibly turn off the fingerprint method
-when traveling.
-Pass keys
-as an alternative to passwords plus
-two-factor authentication. Many sites
-now offer support for pass keys. This is
-actually fine as pass keys are managed
-by an exchange of certificates and there
-is no exchange of biometrics as most
-people assume. In my experience though,
-it is potentially possible to lose pass
-keys if you change computers or your
-computer breaks in some way. This is the
-problem with softwarebased TOTP
-authenticator similar to Google
-authenticator. Again, these keys are
-tied to a device. So if you lose the
-device, reset the OS, or simply forget,
-then you lose the keys. So I actually
-prefer using a hardwarebased key like a
-UB key. This has been more flawless in
-my opinion.
-Final thoughts.
-That's it. Password complexity is a lie.
-This is your 5-minute action plan. Do
-this today. Here's what actually keeps
-you safe in 2026 and beyond right now.
-Go to have ibenpone.com and check your
-main emails today. Change your email,
-banking, and Apple Google passwords to
-brand new sixword passphrases you've
-never used before. Add a UB key or pass
-key. This week, create three fresh
-three-word passphrases and assign them
-to your buckets. social media, streaming
-and gaming, shopping and random sites.
-Reuse inside each bucket only. From now
-on, never click login links from email
-or text. Type the site yourself or use a
-bookmark. Do those four things and you
-instantly become harder to hack than 99%
-of people on Earth without living in a
-password manager and without typing 40
-character nonsense every day.
-Start fresh today.
-Hey, if you're serious about privacy,
-come join us at Braxme. This is a
-growing community where real privacy
-people hang out. No censorship, no
-nonsense. While you're there, check out
-the tools we actually built and use
-ourselves.
-Braxmail, unlimited aliases, no IP
-leaks.
-Bra virtual phone, real anonymous
-numbers, BitesVPN, no logs, no big corp
-BS. The Google phones and more in the
-store. The Bra 3 phone second batch is
-open for pre-order right now at
-bratech.net.
-First batch sold out shortly after
-release. Big thanks to everyone
-supporting us on Patreon, locals, and
-YouTube memberships. You keep this
-channel alive. See you next time.
+Cześć dziś mam ze sobą jedną z nowości
+mikrotika mianowicie WAP
+ax ale na samym początku przypomnienie
+żebyś dał łapkę w górę i zasubskrybował
+kanał aktualnie aż 67 proc moich widzów
+nie subskrybuje kanału jeśli cenisz
+sobie moją twórczość i chcesz żeby ten
+kanał się rozwijał to najłatwiej możesz
+mi pomóc przez subskrypcję A teraz
+wróćmy do testowanego urządzenia WPX
+jest następcą wpac czyli dość
+popularnego Access pointa microtia
+którego obudowa jest odporna na warunki
+atmosferyczne dzięki czemu możecie go
+zamontować na zewnątrz WPX jest Dopiero
+drugim urządzeniem wypuszczonym przez
+microtia które ma formę typowego Access
+pointa i ma WiFi 6 dotychczas jedynym
+Access pointem microtia WiFi 6 był capx
+routerów Oczywiście tutaj nie
+liczę WPX jest przez microtia
+pozycjonowany na rynku nieco niżej niż
+capx O czym świadczy choćby jego
+wyraźnie niższa cena i słabszy procesor
+ma też dużo mniejszy rozmiar od cax o
+dziwo WPX jest tańszy nawet od cap XL AC
+no i tutaj mikrotik chyba musi dość
+mocno zrewidować swoją politykę cenową
+bo coś tutaj jest nie tak rynek od
+dłuższego czasu oczekiwał oczywiście
+jakiegoś tańszego urządzenia które ma
+wi-fi 6 No i wreszcie je dostał co
+ważniejsze WAP x obsługuje zarówno pasmo
+24 GHz jak i 5 GHz Co oznacza że
+przynajmniej w teorii możemy się
+spodziewać naprawdę dużej wydajności
+interfejsu radiowego w tym urządzeniu
+czy faktycznie tak będzie postaram się
+odpowiedzieć w późniejszych testach Co
+ciekawsze przynajmniej na papierze WPX
+ma lepsze radio w 5 GHz od dużo od niego
+droższego
+capx Na czym polega ta lepszość Otóż WPX
+obsługuje kanały o szerokości 160 mHz W
+capx maksymalna szerokość kanału to
+jedynie 80 MH
+No i właściwie WAP ax jest pierwszym
+urządzeniem socho microtia które
+obsługuje kanał 160 mHz W ax był jeszcze
+mikrotik audience który obsługiwał 160
+MHz ale to było w aeku nawet takie chat
+Pro ax obsługuje jedynie kanał 80 MHz
+pomimo posiadania mimo 4 na 4 i pro w
+nazwie router boarda O jakże przystępnym
+oznaczeniu
+l23 ugr my 5 hax D2 hax d oraz mand
+booxa ax 15s które mają dokładnie ten
+sam moduł radiowy w 5 GHz soje z WPX nie
+uwzględniam no bo to nie są urządzenia
+sohoo bardzo dziwne jest to że w żadnych
+materiałach microtia Nie mogłem odnaleźć
+informacji z jaką mocą maksymalną może
+nadawać moduł radiowy w
+WPX dostępna jest jedynie informacja że
+anteny zarówno dla 24 GHz jak i dla 5
+GHz mają zysk 7 dbi
+przetestowałem jednak wstępnie
+urządzenie i ustaliłem że maksymalna moc
+nadawcza w paśmie 5 GHz to 23 dbm a w
+paśmie 24 GHz to 24
+dbm jeśli chodzi o wnętrze to WPX został
+wyposażony w procesor a właściwie to soc
+czyli system on chip ipq
+5010 czyli identyczny jak jest w hapax
+Lite procesor w tym soc działa w
+architekturze arm soc ma wbudowany Inter
+radiowy ax działający w paśmie 24 GHz
+ale nie ma interfejsu radiowego w 5 GHz
+więc mikrotik dołożył tutaj dodatkowy
+chip qcn
+6102 który obsługuje ax w paśmie 5 GHz
+WPX został wyposażony w 256 MB pamięci
+RAM i 128 MB pamięci Flash ma 2
+gigabitowe gniazda Ethernet jedno z tych
+gniazd służy do zasilania routera przez
+Power Over Ethernet czyli Poe dodatkowo
+mamy gniazdo zasilania 5,5 na 2,5 o
+zakresie napięć zasilających od 12 V do
+57 V w zestawie z WPX jest też
+oczywiście zasilacz i inżektor Poe jak
+przystało na porządnego Access pointa
+WPX ma możliwość zasilenia nie tylko z
+pasywnego mikrotik nowego Poe ale
+obsługuje też
+802.3 afat więc prawdziwe aktywne Poe
+niestety drugi port urządzenia nie może
+pełnić roli wyjścia zasilania
+poee tutaj chciałbym na chwilę wrócić do
+tego że urządzenie ma gigabitowe porty
+Ethernet na papierze wydaje się to być
+trochę marnowanie możliwości sprzętu
+WiFi ax w kanale o szerokości 160 MHz
+powinno spokojnie przekroczyć gigabit
+przepustowości co więcej chip ipq 5010
+ma możliwość wyprowadzenia 2,5 gigabit
+portu LAN widać to bardzo ładnie na
+routerboard l
+ugr 5 hax D2 hxd który korzysta właśnie
+z ipq 5010 i ma wyprowadzony port 2,5
+gbit w formie gniazda sfp plus nie wiem
+co stało na przeszkodzie żeby
+wyprowadzić tutaj ten port w formie
+zwykłego gniazda rios 45 pewnie microti
+kiedy nie raczy wiedzieć Przypuszczam że
+jakby zrobili tutaj 2,5 gigabit port LAN
+to po prostu nikt by nie kupował CX
+nawet
+byłaby nieco wyższa od tej która jest
+obecnie nie przeciągając zbytnio
+Przejdźmy wreszcie do testów urządzenia
+na początek to co mamy w pudełku Zróbmy
+sobie tak zwany Unboxing czyli Zobaczmy
+co dokładnie tutaj producent dołączył w
+pudełku tutaj mamy karteczkę z numerem
+seryjnym z hasłem to zawsze jest w tych
+nowych urządzeniach takie coś dołączone
+jest jeszcze szablon do montażu na
+ścianie uchwytu specjalnego do tego
+urządzenia instrukcja jak to zamontować
+więc to też może bardzo przydatne tutaj
+mamy samo
+Urządzenie to na szczęście fabrycznie
+nie jest przykręcone bo generalnie jest
+tak że tutaj po zamontowaniu tego
+urządzenia tą śrubkę Trzeba dokręcić ona
+tutaj wchodzi w to miejsce no i wtedy
+tego się już nie da zdemontować bez
+odkręcania tej śruby jak widzicie dwa
+porty LAN jeden z zasilaniem Poe mamy
+tutaj też gniazdo zasilania 5,5 na 2,5
+standardowe typowe No i przycisk reset
+tutaj gzie jest Mae możliwo uziemienia
+tego urządzenia na przykład jakbyście
+nie montowali go na jakimś mas czy czymś
+takim chociaż to ma raczej
+charakterystykę do ogólną ale mimo
+wszystko taka możliwość jest że możecie
+sobie tutaj podłączyć uziemienie to jest
+nawet oznaczone tutaj tutaj jeszcze w
+tym miejscu tego może dobrze nie widać
+jak odwrócę to może będzie lepiej widać
+jest możliwość wykonania otworu bo to
+jest tylko zaklejone tutaj nie ma metalu
+zablokowanego w tym miejscu i tutaj
+można puścić kabel do niego od spodu
+niejako Zresztą to jest też pokazane na
+szablonu tutaj który pasuje No nie jest
+Czyli po prostu każą to wywalić i
+wstawić w tym miejscu kabel Jeżeli tak
+potrzebujecie Jeżeli nie potrzebujecie
+No to tutaj sobie możecie wyłamać
+miejsca na kable on ma tu więcej niż dwa
+można też sobie nawet by wywiercić tak w
+tym metalu jakby ktoś potrzebował
+podejście do kabli No nie to już zależy
+od waszej inwencji na pewno najłatwiej
+będzie to w tym plastiku wyłamać sobie
+Jeżeli ktoś chce podejść kablem od boku
+oprócz samego urządzenia w pudełku mamy
+jeszcze zasilacz zasilacz 24 V 0,8 AMP
+tutaj też nie wiem jakim kluczem się
+kieruje mikrotik przy tych zasilaczach
+bo na przykład do CX dodaje 48 vol
+zasilacze No tutaj jest akurat 24 vow
+dalej w pudełku mamy jakąś kolejną
+instrukcję No i mamy tutaj tą blaszkę do
+mocowania całości są też opaski
+zaciskowe No bo tak jak mówiłem można to
+urządzenie zamontować do jakiegoś masztu
+wtedy za pomocą opasek zaciskowych
+chociaż białe opaski zaciskowe No trochę
+słabo jeżeli chodzi o UV lepsze byłyby
+czarne
+szczęście mamy też tutaj mocowanie takie
+porządne już metalowe to jest najlepsze
+tak naprawdę jeżeli mocuje gdzieś to na
+zewnątrz to tylko tym jest też inżektor
+Poe No i jest taka mała podstawe
+biurkowa na której można Całość sobie
+postawić na biurko Jeżeli ktoś by chciał
+tutaj na samym dnie jeszcze mamy kołki i
+śruby dodatkowo jeszcze jakaś śruba nie
+wiem do czego służąca Podejrzewam że być
+może do tego chociaż nie tutaj nie ma
+takiego gwintu taka podkładka metalowa
+jeżeli byście całość montowali do
+kasetonów tak Czyli po prostu wtedy z
+jednej strony Przychodzi ta jedna
+podkładka tutaj druga całość skręca się
+śrubami No a pomiędzy jest kasetą
+Zbudowałem takie proste stanowisko
+testowe i tym razem będę tutaj korzystać
+z laptopa a nie z komputera
+stacjonarnego ze względu na to że
+chciałbym tutaj przetestować wydajność
+tego urządzenia w wi-fi również
+natomiast na początek podpiąłem się
+kablem na początek sobie przetestujemy
+wszystko tak jak to zwykle robię czyli
+wydajność w nacie
+wzie oczywiście test jest tak robiony że
+z jednej strony mam laptopa czy jakiś
+komputer tak jak tutaj Laptop jest
+akurat po drodze jest urządzenie dalej
+to urządzenie jest podpięte do CCR 1036
+No i Bend test microtia odpalam między
+CCR 1036 a tym komputerem samo
+urządzenie jedynie robi Nata i w
+zależności od okoliczności włączam albo
+wyłączam Fast trcka No też testy Warda
+wyglądają też identycznie że wireguard
+jest jedynie tutaj szyfrowany i
+deszyfrowanie
+chodzi o to urządzenie to spodziewałbym
+się tutaj wydajności identycznej jak w
+hpx Lite No bo procesor jest ten sam na
+wszelki wypadek jednak sobie to
+sprawdzimy na początek przetestujemy
+sobie wydajność tego urządzenia w nacie
+fastrack jest jak widzicie włączony
+czyli konfiguracja całkowicie domyślna
+pobieranie no i oczywiście połączenie po
+kablu tutaj jak widzicie na porcie R1
+970 Mbit czyli praktycznie zamykamy port
+No tutaj też Książkowo 9 37 38 te 940
+które powinno być obciążenie procesora
+No jak widzimy koło 56 PR 60 więc
+praktycznie to samo co w przypadku HAP
+ax Lite dla porządku jeszcze wysyłanie
+tu też praktycznie zamykamy port też tam
+934 MB czyli praktycznie Książkowo leci
+nam tutaj tego ruchu
+TCP CPU obciążone na jakieś 63 64
+obciążenie w miarę równo rozłożone na
+dzenie dobra wyłączmy sobie Fast trcka
+No i teraz sobie przetestujemy
+pobieranie przy wyłączonym Fast
+tracku i tutaj jak widzicie mamy
+obciążenie na poziomie no jednego
+rdzenia 94 proc drugiego rdzenia 80 koło
+proc No łącznie z koło
+80 przepustowość jaką uzyskujemy to
+jakieś
+560 No 580 nawet megabit skoczyło
+natomiast no ten CPU nie jest do końca
+obciążony jak to ma miejsce w części
+procesorów arm tutaj raptem Coś się
+zaczęło rozpędzać poszedł nawet na 100%
+No w każdym razie ponad 600 Mbit tutaj
+przekroczyliśmy obciążenie CPU koło 94
+PR dobra przetestujemy sobie jeszcze
+wysyłanie dla porządku i tutaj
+obciążenie procesora Jak widzicie tym
+razem inny rdzeń jest obciążony na 100%
+ale też koło
+90 prędkości lepiej
+pad 700 MB 730 TCP 720 bardziej
+właściwie dobra dla porządku jeszcze
+polecimy z testem
+Warda No i OKE mam tu wszystko
+przygotowane już do testów Fast jest z
+powrotem włączony otwarte mamy tutaj CPU
+na tym testowanym urządzeniu też CPU na
+CSR żebyśmy widzieli czy tam przypadkiem
+nie ma wąskiego gardła no i na początek
+będziemy testować
+sobie została przeze mnie na tym WP ax
+żebyśmy tutaj mogli sobie to sprawdzić
+jak to wygląda wszystko no i tutaj jak
+widzicie ruch leci na poziomie 230 Mbit
+gdzieś 200 No 220 230 na porcie tutaj w
+TCP 216
+217 CPU No nie jest na 100% obciążony
+ale jest nieźle No bo prawie na 100
+można powiedzieć tam koło
+90 dobra przetestujemy jeszcze wysyłanie
+tu Wydaje się że jest troszeczkę
+szybciej 230 Mbit TCP ale to jest
+niewielka różnica kosmetyczna wręcz jak
+widzicie odpiąłem już kabel LAN więc
+przystąpimy sobie za chwilę do testu
+WiFi tylko najpierw Chciałbym wam
+powiedzieć w ogóle co tutaj pozmieniałem
+jeżeli chodzi o konfigurację tego
+urządzenia dlatego że przełączyłem je
+całkowicie w tryb Bridge wyłączyłem po
+prostu natowanie zridem oba interfejsy
+radiowe zdem z tymi dwoma portami
+wszystkie reguły Firewall oczywiście
+wyłączyłem w tej chwili to urządzenie
+jedynie brid Wii z tym Milan właściwie
+to obie sieci WiFi bo to są dwie osobne
+sieci w 5 GHz i w 24 GHz i będziemy
+sobie to testować dlaczego tak zrobiłem
+dlatego że nie chciałem żeby procesor
+tutaj właście nie tyle procesor co nad
+robiony przez procesor był tutaj wąskim
+gardłem Tym bardziej że Przypuszczam że
+w większości zastosowań tego rodzaju
+urządzenia będą wykorzystywane właśnie
+jako typowe Access pointy gdzie
+natowanie będzie robić inne urządzenie a
+sam Access Point będzie jedynie No
+pełnił rolę Access pointa gdzie właśnie
+będzie wszystko tutaj zbd nowan
+i tutaj teraz jak widzicie w
+registration mam zapięte tylko jedno
+urządzenie jest to ten laptop to jak
+widzicie Zapina się bardzo ładnie no nie
+no bo 24 GB czasem mniej natomiast no
+praktycznie maksymalna teoretyczna
+przepustowość tego interfejsu ustawiłem
+całość na 160 MH na początek żeby
+sprawdzić jak to się będzie zachowywać
+kanał jaki tutaj dałem No to jest
+częstotliwość 5550 ponieważ tam u mnie
+nic nie ma akurat Wybrałem ten wyższy
+zakres bo tam też więcej tego pasma Wol
+No jestem w piwnicy więc szansa na
+zakłócenia jakieś zewnętrzne jest dość
+niewielka No i mikrotik b test i tutaj
+będziemy sobie testować pobieranie no i
+na porcie th1 widzimy że ten ruch jest
+na poziomie tam
+800 megabitów z hakiem natomiast jak
+widzicie spina się dalej na 21 GB No
+czasem na 900 a prędkości mamy takie No
+trochę niezbyt wysokie jakby nie patrzeć
+no nie je procesora na 90 leci
+i teraz pytanie co jest tutaj wąskim
+gardłem Jak otworzę menager zadań w
+komputerze procesor No nie jest żaden r
+obciążony na 100% No a tutaj jak widać
+No niestety nie mamy gigabit a przy tak
+szerokim paśmie spodziewałem się że
+dostaniemy tutaj gigabit procesor 82 89
+No można powiedzieć około 80 PR średnio
+więc jeśli bym to
+ekstrapolować gigabit nie ma szans żeby
+to urządzenie pociągnęło na interfejsie
+radiowym może sam interfejs radiowy 5
+GHz jest tutaj jakimś wąskim gardłem
+Więc zróbmy sobie teraz tak że podłączę
+się tutaj telefonem na interfejs radiowy
+ten 24 GHz telefon Samsung Galaxy a55
+Ten telefon
+obsługuje Axa w 24 GHz też jak widzicie
+on tu się zapiął tu jest kanał tylko 20
+MHz ustawiony w 2.4
+i teraz soie zrobimy Speed testa
+jednocześnie zobaczymy jak to się będzie
+zachowywać czy będą jakieś zmiany czy
+może ten ruch trochę większy tutaj
+pójdzie ja tutaj mam lokalnego Open
+Speed testa postawionego na swoim
+lokalnym serwerze więc do niego w teorii
+mogłoby lecieć 1 gbit
+nawet także odpalamy sobie start no i
+zobaczcie tu mam
+29 megabitów a najciekawsze jest to że
+tutaj mi ruch spada na porcie eet No nie
+zamiast
+rosnąć CP podobne obciążenie jak było
+teraz przestało przez chwilę robić ruch
+wzrósł teraz upload
+leci Widać to na wykresie wyraźnie że
+się pojawił też ten
+upload no i coraz gorzej jest tutaj
+jeżeli chodzi o ten drugi interfejs
+radiowy jednocześnie No
+nie teraz Zobaczcie przestało pobierać
+przestał tutaj ruch
+lecieć No to
+mamy no sytuację taką że zaczęło powoli
+wracać do normy może nie do
+końca ale na pewno No teraz już wróciło
+do normy zrobiłem taki numer że
+odpaliłem No jest de facto to samo co
+było tak w tej chwili mam wysyłanie
+odpalone równoległych
+połączeń też do tego samego serwera
+lokalnego mogę jeszcze pobieranie
+odpalić jak rę tutaj
+dam no i tutaj Zobaczymy co będzie no
+tutaj znowu spadło to de facto jak Sob
+popatrzymy na interfejsy bezpośrednio
+naze Inter
+odpalimy sobie jeszcze raz tego perfa z
+telefonu no i zobaczcie Tutaj zaczyna
+spadać na tym jednym interfejsie na
+drugim jakiś tam ruch
+jest więc no CPU mamy prawie na 90 więc
+tutaj chyba CPU w tym urządzeniu nie
+daje rady takie mam wrażenie aczkolwiek
+no nie jestem w stanie tego w 100%
+zweryfikować natomiast pewne jest to że
+porty gigabitowe tutaj i tak nie zostaną
+wysycone 2,5 g tutaj byłoby de facto
+niepotrzebne dla porządku przetestuj
+soze wysyłanie w tym kanale 160 MH jak
+to tutaj wygląda żebyśmy zobaczyli jakie
+prędkości uzyskamy to jest nieco wolniej
+niestety No bo prędkości to jest tam w
+TCP No prawie 600 Mbit można powiedzieć
+około 600 Mbit Bo czasem to przekroczy
+czasem spadnie
+poniżej CPU No też ponad 80 proc tutaj
+jeszcze też dla porządku powiem że fast
+p jest aktywny tak to jest włączone
+działa jak widzicie także tutaj to na
+pewno nie jest problemem tutaj jeszcze
+podpiąłem telefon do tej sieci 5 GH
+to będzie wyglądać No i zrobimy sobie
+test też prędkości tutaj 5 g
+sieci No tu jak widzicie
+szał jakiegoś nie ma Ciężko powiedzieć
+dlaczego Bo w sumie bo ten telefon bez
+problemu wyciągał większe prędkości
+jeżeli chodzi o Wii w
+ax no przy uploadzie jest dużo dużo
+lepiej przy uploadzie mamy praktycznie
+Te 700 Mbit na lepiej mamy mieliśmy z
+komputerem wiem C syg prester SP może
+być No chyba był sygnał przesterowany
+jak rękę przyłożyłem To raptem przebiło
+600 Mbit tutaj bez problemów także no
+jest okej jeżeli chodzi o działanie tego
+to nie jest słaby Access Point jak
+widzicie zmieniłem szerokość kanału
+teraz na 80 MHz No i podobnie jak
+poprzednio najpierw pobieranie no i
+tutaj Zobaczcie mam prawie 700 Mbit przy
+tych 80 MH no dobra trochę mniej
+powiedzmy RP to 636
+tutaj jak widać CPU się dość mocno już
+nudzi 62 obciążenia No ale różnica w
+prędkości jest naprawdę niewielka więc
+nie warto chyba 160 MHz stosować z tym
+konkretnym urządzeniem przetestujemy
+jeszcze wysyłanie tu przy wysyłaniu jest
+podobnie jak przy pobieraniu widzimy że
+jest no prawie te 7 660 Mbit można
+powiedzieć No taka taką prędkość tutaj
+uzyskujemy Sprawdźmy jeszcze sobie z
+telefonem jak wygląda sytuacja Czy duża
+różnica będzie z tym telefonem w ogóle
+nie powinno być różnicy przy dlatego że
+on nie obsługuje kanałów 160 MHz
+Przynajmniej tak producent twierdzi
+tylko powinien obsługiwać kanały 80
+MHz więc no w sumie jest praktycznie
+bardzo podobnie jak było jeszcze raz
+spróbujmy pobieranie tym razem
+zasłaniając tą antenę bo jakiś przester
+sygnału dostaje takie mam wrażenie No
+tak teraz dużo lepiej jest powyżej 600
+praktycznie to samo co na 160 MH No bo
+musi być to samo bo telefon po prostu
+więcej nie obsłuży zejdźmy jeszcze niżej
+z tą szerokością kanału 40 MH
+najpierw pobieranie tutaj widz 400
+megabit leci na
+interfejsie w TCP mamy 390 około
+megabitów No tak się uspokoiło około
+tych 390 także bardzo fajna prędkość jak
+na taką szerokość kanału okej
+przetestujemy jeszcze wysyłanie No tutaj
+nie ma
+zaskoczenia prędkości na
+interfejsie praktycznie
+takie na
+Wii 36
+No i tak doś przyzwoicie 40 m to powiem
+szerze że OKE Kana 40 m to realnej pracy
+gdzieś się dość często wykorzystuje 80
+MH to jest raczej rzadziej spotykane No
+to widzimy że nawet 380 przekroczyło 400
+nawet tutaj
+przekroczyło w tej chwili na TCP więc no
+całkiem przyzwoite prędkości d porządku
+jesc spry wygl na smart
+razu on też tam w ma trochę niższe te RJ
+ustawione ale no też ponad 300 Mbit leci
+więc jest bardzo przyzwoicie tutaj do
+lokalnego serwera
+340 No jak na 40 m kanał to całkiem
+spoko w drugą stronę No prędkości
+zbliżone No może przebije 400 chyba
+przebije 400 tak przebił 400b teraz
+telefon na g zob jak tam będzie wyglądać
+sytuacja z prędkościami
+No zobaczcie
+całkiem
+przyzwoicie prawie 200
+Mbit 193 No ja przypominam że jestem w
+garażu gdzie tych zakłóceń jest mało ale
+to jest tylko 20 m
+pasma No więc jest Książkowo de facto
+można powiedzieć tyle s zło pasą gorzej
+dost No nie tutaj akurat zasłonięcie nic
+nie zmienia może jakieś zakłócenia też
+mogą być no bo tu mówię ja jestem i tak
+w piwnicy Ale sąsiedzi mają też jakieś
+sieci Wii które tu się przebijają więc
+no to może nie wyglądać tak super ale
+powiedzmy sobie szczerze na 24 GZ 200
+Mbit to jest spoko wynik Zobaczmy
+jeszcze jak to urządzenie wygląda w
+środku tutaj aby rozkręcić na pewno
+trzeba odkręcić tą jedną śrubkę która
+tutaj jest być może jeszcze tą śrubkę
+uziemienia nie chyba ta uziemienia nic
+nie zmieni ale jak już ją Odkręciłem to
+niech zostanie odkręcona przynajmniej na
+razie to jest taka mała czarna śrubka
+słabo widoczna ją trzeba
+odkręcić i całość się od razu
+wysuwa konstrukcja można powiedzieć dość
+ciekawa w środku jest oczywiście
+naklejka z hasłem jeżeli by ktoś nie
+wiem zgubił to co jest gdzieś na
+urządzeniu tam albo jakby warunki
+atmosferyczne wam to uszkodziły No co
+jest bardziej prawdopodobne tu widzimy
+że są anteny dwie na górze na dole nie
+wiem dlaczego ta jedna jest tak krzywo
+jakby ustawiona jak popatrzymy ale chyba
+tak miało być no bo tutaj się opiera z
+tej strony więc bardziej się obrócić po
+prostu nie da ten element metalowy pełni
+rolę radiatora jest skręcony tutaj z tą
+tylną częścią tego
+urządzenia przy czym płytka drukowa na
+sama tutaj jak popatrzy jest też
+przykręcona do tego do tej tylnej
+metalowej podstawy która też tutaj
+najpewniej pełni funkcję radiatora i
+Zresztą podczas pracy urządzenia też
+trochę się nagrzewa więc chłodzenie
+tutaj jest dość dobrze rozwiązane Jeśli
+o to chodzi płytka drukowana tego
+urządzenia wygląda tak jakby tutaj była
+jakaś opcja
+docelowo włożenie jakiegoś gniazda M2
+czy mini PCI Express Ciężko powiedzieć
+tak na pierwszy rzut oka natomiast no na
+pewno ten radiator tutaj nie będzie mógł
+być jeżeli tutaj dojdzie jakaś karta
+więc może będzie jakaś wersja LTE Ciężko
+powiedzieć jak popatrzymy na anteny to
+są podpisane jako Dual bandy więc oba
+pasma lecą z tych samych anten Co może
+być niejako wyjaśnieniem dlaczego w
+przypadku jeżeli uruchamiał pobieranie
+na jednym z pasm to drugie pasmo
+zwalniał Być może te anteny po prostu
+tak tutaj są zbudowane No że niestety
+jedno pasmo musi wtedy zwolnić Ciężko
+powiedzieć obsługują dwa niezależne
+chipy przypominam tutaj 24 GHz 5 GHz ale
+tor radiowy jest jak widać wspólny Nie
+chcę już tego tutaj bardziej rozkręcać
+ze względu na to że tu są termopady
+jakieś i też może się okazać że zniszczę
+podczas rozbierania a nie mam niestety
+żadnych na wymianę pod ręką z tyłu
+zresztą jest podobnie więc zbyt wiele
+sobie nie obejrzymy tego urządzenia
+jedno co im trzeba oddać że chłodzenie
+no mają bardzo fajnie rozwiązane w tym
+urządzeniu Samo to że podstawa z tyłu
+jest metalowa będzie powodować że
+charakterystyka tych anten będzie mocno
+kierunkowa czyli one będą mocno
+promieniować w tą stronę no stąd Jeżeli
+nie wiem chcecie mieć to urządzenie tak
+że z tyłu coś ma odbierać No to raczej
+słabo no bo jak widzicie tutaj wielki
+kawał metalu zasłania obie anteny
+praktycznie No i nie ma szans żeby z
+tyłu był jakiś sensowny odbiór więc
+jeśli będziecie używać tego urządzenia
+No to koniecznie zamontowanym przodem do
+użytkownika więc jeżeli go gdzieś
+montujecie to albo faktycznie na ścianie
+ale takie ścianie że po drugiej stronie
+nikt nie będzie korzystać z wi-fi albo
+ewentualnie na suficie ale też wiedząc
+że przez podłogę na górze nad tym
+sufitem też nikt za bardzo nie będzie
+mógł korzystać z tego wi-fi oczywiście
+wiadomo bardzo bliskie odległości od
+Access pointa Będzie to działać ale w
+większych odległościach będzie słabizna
+Więc kierunkowość dość duża jeżeli
+chodzi tutaj o te anteny No bo już sama
+budowa jest taka że po prostu metalowa
+tylna podstawa dość mocno będzie tłumić
+ten sygnał tutaj Chciałbym przypomnieć
+że takie filmy mogą powstawać Dzięki
+waszemu wsparciu Chciałbym serdecznie
+podziękować Każdemu kto do tej pory
+kupił mi kawę a pozostałem przypomnieć
+że mają możliwość wsparcia mojej
+twórczości właśnie przez kupno mi kawy
+link znajduje się w opisie
+filmu wyniki testów prędkości WAP x
+sprawiają że Mam bardzo mieszane
+odczucia z jednej strony za te pieniądze
+jest bardzo dobry sprzęt No bo jest dość
+tani a z drugiej strony mam bardzo duży
+niedosyt związany z tym jakie prędkości
+osiąga to urządzenie po
+Wii tutaj część osób może mieć do mnie
+zarzut że nie powinienem testować
+urządzenia na router osie w wersji beta
+i że mogło mieć to negatywny wpływ na
+otrzymane wyniki sprawdzałem poza kamerą
+i okazuje się że w tej wersji beta
+wyniki przepustowości Wii były praktycz
+ident na wersji nie beta wersj 717 beta
+4 wykorzystałem tylko dlatego że mamy
+tutaj wreszcie super Channel dla paczki
+WiFi qc Dzięki temu nie musiałem się
+bawić w czekanie na dfs po jakiejkolwiek
+tam zmianie parametrów radia oraz mogłem
+bez problemów ustalić z jaką mocą
+maksymalną nadają faktycznie te
+interfejsy
+radiowe co do samego super Channel to
+Wii dużo bardziej ubogi niż w klasycznej
+paczce
+wireless zakres kanałów jaki Możecie
+wybrać jest tutaj dość mocno ograniczony
+właściwie Jedyne co dostajecie w tym
+super Channel to jest możliwość
+dowolnego sterowania mocą No i brak
+dfs jeśli chodzi o wyniki testów
+przepustowości w Nat to z jakichś
+powodów prędkość pobierania przy
+wyłączonym fast trucku jest nieco
+większa niż była w h AP ax Lite
+chociaż procesor w obu urządzeniach mamy
+taki
+sam różnica jest nieznaczna No bo
+prędkość wzrosła raptem z 600 do 660
+Mbit na
+sekundę No przy wysyłaniu też mamy
+podobną sytuację prędkości są nieco
+wyższe niż dla hPa x l i przekraczają
+spokojnie te 720 Mbit na sekundę w
+przypadku a Garda też zaobserwowaliśmy
+nieznacznie większe prędkości w
+porównaniu do HAP ax Lite No
+przekraczają one 200 MB sek zarówno przy
+pobieraniu jak i przy
+wysyłaniu ciężko mi powiedzieć z czego
+wynikają te różnice Z czego wynika to że
+WPX osiąga nieco lepsze prędkości od hpx
+Lite chociaż oba urządzenia mają ten sam
+procesor może kwestia jest tego typu że
+hpx ma Switch shipa pomiędzy portami
+lana a procesorem którego to Switch
+shipa nie ma w
+Wax być może jakiś wpływ ma też lepsze
+chłodzenie procesora w WPX A może po
+prostu microti poprawił coś w nowszych
+wersjach
+oprogramowania ale jak to często bywa po
+prostu nie ma o tym ani słowa w część
+logu Przejdźmy jednak Wreszcie do tego
+co jest tutaj najważniejsze czyli
+wydajności w WiFi w końcu WPX ma pełnić
+głównie rolę Access
+pointa biorąc pod uwagę możliwości jakie
+na papierze ma radio w tym sprzęcie to
+można właściwie użyć tylko jednego słowa
+rozczarowanie Zanim zacząłem testy byłem
+święcie przekonany że wąskim gardłem
+będzie tutaj gigabitowy port LAN i nie
+mogłem się nadziwić Dlaczego micr nie
+wyposażył tego WPX w 2,5 gigabitowy port
+LAN Teraz już wiem dlaczego urządzenie i
+tak by nie wykorzystało przepustowości
+portu 2,5
+GB szczerze mą w ma w ogóle możliwość
+ustawienia szerokości kanału 160
+MHz jak widzieliście podczas testów
+laptop potrafił się spiąć na interfejsie
+radiowym z przepustowością ponad 2 gabit
+ale realnie w żaden sposób nie udało się
+nawet zamknąć gigabitowe portu
+LAN z tego co mi wiadomo to WiFi 6 przy
+Kanale 160 MHz z przyzwoitym
+Access może przekroczyć gigabit prę bez
+większych problemów tutaj Mieliśmy
+jedynie około 800 Mbit więc po prostu
+marnujemy możliwości chipa radiowego qcn
+6102 który odpowiada tutaj za interfejs
+radiowy 5
+GHz jeśli zmniejszymy szerokość kanału
+do 80 MHz to wyniki jakie uzyskujemy są
+jedynie nieco niższe niż przy szerokości
+kanału 160 MHz Przy 80 MHz prędkości są
+na poziomie pomiędzy tam 600 a 700 Mbit
+na
+sekundę A na papierze różnica powinna
+być prawie dwukrotna bardzo ładnie to
+widać kiedy ustawimy sobie szerokość
+kanału 40 MHz wtedy prędkości No spadają
+do tych 300 400 Mbit na sekundę Czyli
+mamy praktycznie dwa razy mniej niż dla
+kanału 80 MHz Oczywiście im bardziej
+będziemy zmniejszać szerokość
+kanału tym będziemy mieć mniej zakłóceń
+więc Ten spadek czy wzrost prędkości
+przy zmianie kanału będzie w 100%
+liniowy i
+proporcjonalny No chyba że oczywiście
+byście testowali całość gdzieś tam w
+klatce Farad gdzie nie macie żadnych
+kompletnie zakłóceń z zewnątrz jeśli
+chodzi o testy w paśmie 24 GHz to wyniki
+praktycznie nie zaskakują uzyskujemy
+prawie 200 Mbit przepustowości ja
+sprawdzałem działanie tylko dla kanału o
+szerokości 20 MHz i tylko takie
+szerokości kanału polecam używać w
+paśmie 24 GH Dlaczego Otóż po pierwsze w
+paśmie 24 GHz macie realnie tylko trzy
+kanały po 20 MHz które nie nakładają się
+na siebie w 40 MHz będziecie mieć
+realnie tylko półtora
+kanału do tego mikrotik nowe urządzenia
+z wifi 6 mają z bliżej mi nieznanych
+powodów jakieś problemy z działaniem na
+kanale 20 mHz W 24 GHz Jeżeli występują
+w otoczeniu jakiekolwiek
+zakłócenia uzyskiwane prędkości wtedy są
+tragicznie niskie dużo dużo niższe niż
+to co uzyskacie dla kanału o szerokości
+20 MHz jeśli się troszkę zastanowić No
+to nie wiem po co urządzenia które mają
+ten sam procesor i ten sam tor radiowy
+co WPX zostały wyposażone w Port sfp 2,5
+GB w żaden sposób nie da się wysycić
+gigabit na urządzeniach z procesorem ipq
+5010 ale to już jest całkiem inna
+kwestia kiedyś może przetestuję też te
+dwa pozostałe urządzenia które mają ten
+port sfp 2,5 gb i sobie to sprawdzimy
+zapomniałem jeszcze wspomnieć o jednej
+kwestii mianowicie o poborze prądu przez
+WPX podczas testów zasilał urządzenie z
+zasilacza laboratoryjnego napięcie
+zasilające ustawiłem na 24 V czyli tyle
+ile ma zasilacz dołączony do urządzenia
+podczas testów przepustowości po wi-fi
+moc pokazywana przez zasilacz nie
+przekraczała 6 wat i właściwie to by
+było tyle jeśli chodzi o testy tego
+urządzenia Przypominam że w opisie do
+filmu macie link do arkusza
+kalkulacyjnego w którym przedstawiłem
+wyniki dotychczas przetestowanych przeze
+mnie
+routerów Pamiętajcie też żeby dać łapkę
+w górę żeby subskrybować kanał jeśli
+jeszcze tego nie robicie Jeśli macie nie
+wiem jakieś pytania wątpliwości czy może
+zauważyliście błędy w tym filmie to
+piszcie w komentarzach z mojej strony to
+by była na tyle do następnego
