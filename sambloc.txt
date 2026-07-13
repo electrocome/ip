@@ -1,4 +1,5 @@
 gld.push.samsungosp.com
+cdn.samsungcloudsolution.com
 cloud.browser.360.cn
 track.easeus.com
 activation.easeus.com
