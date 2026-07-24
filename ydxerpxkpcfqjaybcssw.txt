@@ -1,159 +1,338 @@
-Privacy is dead, and that's not an
-exaggeration. It turns out with this one
-registry key, Microsoft can track you
-all the way down to an individual
-device, and it can correlate that with
-your online activity, including your
-messages, the games you play, the social
-media accounts you're logged into, to
-the point that police can show up at
-your door. This is called GDID, a global
-device identifier, and it's already
-allowed the FBI to track a
-cybercriminal. As a cybersecurity
-professional, hurrah, I'm thrilled we
-finally managed to catch someone
-associated with the Scattered Spider
-group. Great. But, what does this mean
-for privacy? This one registry key can
-connect you with your IP history, your
-full web activity. Yes, that's right,
-every website you visit, and logged in
-social media accounts, including
-Facebook, Apple, Snapchat, whatever. And
-even a VPN cannot save you. Well, there
-goes my sponsorship opportunity. But,
-I'm serious. They can track down the
-exact time you logged into a website,
-link it with the device that you were
-on, and therefore, they can not only
-have the data to spy on you, they can
-demonstrate that you did exactly what
-you did. They can show that you sent
-that message from your device. That's
-what we learned from this court case and
-the associated proceedings. Look at
-these correlations with IPs. So, yeah,
-now that's something to think about,
-Windows GDID. Now, we all know about
-Microsoft telemetry, but this particular
-court case has really highlighted the
-extent to which this really tracks you
-down as an individual. It's not simple
-as showing you relevant ads anymore.
-This is literally a one-to-one
-person-to-person tracking of your
-activity, and it's scary to imagine what
-this kind of power would mean for a
-communist government, let's say, or a
-1984 scenario, or a world ruled by AI.
-Now, someone did reverse engineer the
-entire process, and um, you know, they
-did kind of suggest some tweaks that you
-can use to limit the exposure, but let's
-be honest, this is a lost battle at this
-point. Now, you can go into your system,
-you can go into your services, and you
-can try to disable a couple services.
-CDP user service, this seems to be
-something that's associated with GDID.
-It seems to be part of the connected
-devices platform. That's what Microsoft
-calls it. It keeps track of every
-connected device. So, the moment you buy
-a computer, you turn it on, Microsoft
-knows you are on a device and it's
-connected to them. And then, if they can
-link that device to a particular social
-media account, now they know exactly
-what you did, regardless of whatever VPN
-or network firewall you're behind and
-illusion of privacy you've built for
-yourself. And this is not theoretical
-anymore. This has happened in an actual
-case. So, yes, you can kill CDPSVC,
-CDP user SVC. These are the two
-connected device platform services, and
-that's supposed to stop the activity
-uploads and you know, the constant
-syncing. And it turns out every time you
-reinstall Windows, you get a new GDID.
-Like, I'm one of those few people who
-does not want to simply accept that this
-is the future we're headed towards, so I
-would recommend, if you want to, you can
-go ahead and turn off these services.
-And of course, there's always going to
-be people who are going to say, "Well,
-what do you have to hide?" But, they
-don't realize, well, we're moving
-towards AI robot drones. And we all know
-AI doesn't hallucinate, right? It never
-makes mistakes. It couldn't possibly
-misidentify somebody based on their
-activity. I'll be honest, this is scary.
-And the fact that it's something as
-simple as a registry key on your system
-that can lead to this, I don't think
-it's something that has fully synced in
-for most people. The actual GDID value
-is inside one of these keys. I'm not
-even going to put it on screen, but you
-can find yours inside the identity CRL
-folder. Now someone involved in the
-cybersecurity industry, I see the
-massive benefits to this. I see the fact
-that we can track down ransomware
-authors and criminal gangs that are
-largely not held to account for their
-actions. So it does empower
-cybersecurity professionals, law
-enforcement, all of that stuff. But we
-all know power doesn't get misused,
-right? So I have very mixed feelings
-about that. I'd love to hear your
-thoughts in the comments below if you
-think this is a win for the
-cybersecurity industry cuz it did help
-us track down a member of a ransomware
-gang or it's more of a warning for the
-dystopian future we're headed towards.
-Now knowing how much information is now
-associated with your Microsoft account,
-it is scary to see examples of fishing
-like this that can be quite convincing,
-that can give hackers the ability to
-reach that data and get into your
-accounts. So it's even more important to
-look out for fishing attempts like this.
-As you all know, as someone who's
-interested in cybersecurity, I do like
-to play around with sandboxes. Now one
-of the tools I use most regularly is any
-dot run who a lot of our educational
-content including this one and they
-recently added a new feature to analyze
-URLs. So not only can you run malware,
-but you can basically type in any
-website you want, click a link, and
-you're going to get a full report of
-everything that's doing along with
-detection. If you're a SOC analyst, this
-means you can get the full context
-behind any URL within seconds, domain
-information, context, deobfuscated
-content, any hidden scripts that the
-website might have, and this can really
-help you detect or prevent attacks as
-they happen. If you'd like to give this
-a go, feel free to check them out using
-link in description. It's a really
-interesting tool for anybody who wants
-to reverse engineer or get into
-cybersecurity. Great tool to have in
-your organization. And of course, do
-like and share this video if you enjoyed
-it. And thank you so much for watching
-till the end. This is Leo. As always,
-stay informed, stay secure.
->> Mhm.
+Smart internet-connected devices have become
+very prevalent, and it is almost impossible to
+avoid them. Even if you don’t buy voluntary
+surveillance devices like voice assistants
+and cameras that work through the cloud, it seems
+like every light bulb, every thermostat, and every
+household appliance has its own app, and it wants
+to extort you for your WiFi password. And who
+knows what happens once they get it? Being on the
+wifi doesn’t just grant access to the internet,
+it also grants access to your whole LAN.
+Hopefully, the situation will improve in
+the future. Maybe thanks to new
+standards like Matter and Thread.
+But in this video, we will explore how
+we can deal with the WiFi connected
+‘smart devices’. Perhaps we can put them in a
+little networking prison and make them suffer.
+Or at least, we can create some separation between
+IoT and LAN devices with virtual wifi interfaces
+and vlans. And then we can use firewall rules and
+queues to keep our home network safe and reliable.
+For this demonstration I have already
+pre-configured this hEX S and this hAP
+ax2 to simulate a realistic network. The
+hEX S has a trunk port with both VLANs
+that we will use. And the hAP ax2 is just
+going to show us how the network looks from
+the perspective of an IoT device.
+So neither of them is a necessity.
+The whole configuration that you will see
+is happening on a single Access Point.
+What I have here is a hAP ax S running
+the default configuration. So far,
+I have only changed the identity
+name so it is easier to tell apart.
+The first thing that we are going to
+need is a 2.4GHz WiFi interface. You
+could repurpose an existing interface
+solely for IoT, but you don’t have to,
+because RouterOS lets you create multiple
+virtual WiFi interfaces. There are hardware
+and physics limitations, of course, so you
+couldn’t just create a million of them.
+The way that virtual interfaces
+work is that you take the radio,
+the WiFi hardware that emits the wireless signals,
+and have it advertise more than one SSID. The
+main upside is that these new WiFi networks can
+then have very specific security configurations,
+but the downside is that it all happens on
+the same physical medium. So you can’t just
+have a virtual interface operate at a different
+frequency than its parent or master interface,
+for example. And also, the hardware
+resources are limited, so overall,
+the more virtual interfaces you add,
+the slower they will get on average.
+If you are curious about the maximum limit for
+your access point, just type in the terminal:
+“/interface wifi radio print detail”,
+and look for ‘max-interfaces’.
+But let’s get on with the configuration.
+First, you will want to find the 2.4Ghz
+interface on your AP. For mine, that will be
+wifi1, and we can verify this in the Channel tab.
+You will notice later, this tab does not exist for
+virtual interfaces. Now, in the security settings,
+the IoT devices will most likely need WPA2 for
+compatibility, but if you are only using this
+as a parent interface, you can safely disable it
+and stick to WPA3 for your more important devices.
+To add a virtual WiFi interface, simply click
+‘New’ and select WiFi. In the Security settings,
+select the authentication types you need and
+enter the passphrase you want to use. In the
+Configuration tab, enter your chosen SSID.
+In the General tab, you can specify an easy
+to remember name and, of course, if you ever
+need a station instead of an access point,
+you could simply change the mode at
+the bottom. Click ‘Ok’ to complete.
+An optional crazy thing you could do to make
+your WiFi security ridiculous would be to
+give each station a unique passphrase
+and isolate them from other devices,
+so that if one got compromised, the bad
+things it could do would be very limited.
+Personally, I would not bother doing this in a
+home setup, but just to entertain the thought.
+If you go to ‘/interface/wifi/access-list’,
+you will find that you can add rules. They
+can be used to filter wifi devices by
+various properties, but most importantly,
+the mac-address. And then you can give them
+specific treatment, such as request a unique
+passphrase. Notice the created rule is an accept
+action, similar to firewall rules, so you could
+add a reject rule in the end, limiting access
+to very specific devices. Other interesting
+things you could do are client-isolation, which
+prevents a device from talking to other WiFi
+connected devices, or you could even override
+vlan configuration and assign a specific ID.
+Then there is another interesting configuration
+option that I don’t need right now, but I should
+mention it in case you are using CAPsMAN.
+Datapath settings can be found under each
+wifi interface. Notice, you could assign a bridge,
+perform client isolation, and assign a VLAN ID,
+among other things. All those settings
+can be found elsewhere, but in this tab,
+they are meant to be applied dynamically.
+This is necessary when using CAPsMAN. As it
+applies wifi configuration to other devices,
+the managed interfaces on those devices are
+essentially created at runtime, and that means you
+cannot include them in your static configuration.
+So in a nutshell, if you are running
+a CAPsMAN controller you will need to
+turn your dynamic IoT interface into an
+access port from the datapath section.
+Now, I am only setting up a single access
+point here, so I don’t need to worry about
+dynamically created interfaces, so I will
+proceed with static vlan configuration.
+But before that, we need to understand
+what happens with any new interfaces
+that are created on top of the default
+configuration. The interface list section
+in the default configuration contains
+a LAN list and a WAN list. Typically,
+you have a single WAN port, and then the LAN is
+a preconfigured bridge with all its ports. This
+allows for simplified configurations
+elsewhere, especially the firewall.
+But notice, the newly created wifi IoT interface
+is in neither LAN nor WAN. Security-wise,
+it is in a gray zone, and you will
+probably want to either add it to
+the LAN interface list or add it as a port to
+your bridge. I will address that in a moment.
+There might be cases where you want
+an interface that is neither in the
+LAN list nor the LAN bridge. Then you
+might need to adjust your firewall.
+The forward chain should not cause
+any issues, but the input chain has
+a drop rule that would prevent any non-LAN
+ports from log-in attempts into the router,
+and it could block other RouterOS features from
+working as expected. A tempting option would be
+to simply change the ‘not LAN’ interface
+list to ‘WAN’, but this is far from ideal,
+and in our case we actually want to block our IoT
+devices from interacting with our router too much.
+So I will leave this rule as it was, and later
+make a surgical exception for mDNS input.
+For our setup, we need to create a
+couple more interfaces for our VLANs.
+Let’s say we want to use vlan10 for our
+LAN network, and we want our IoT devices
+in vlan 20. Note, that we are creating
+these interfaces on top of our bridge,
+but they are not bridge ports, so
+currently they do not belong to the LAN.
+On our bridge we add our
+IoT wifi port with pvid 20,
+and we will also set the frame types to untagged.
+This creates an interesting situation
+where the wifi interface is in our LAN,
+but any incoming traffic will get immediately put
+into vlan 20 where it is no longer part of LAN.
+Next, you will want to configure any
+additional access ports for vlan 10 and vlan
+20. Most ports will probably go into vlan 10.
+Then in my setup ether4 will be a trunk port,
+so I don’t need to set its
+pvid, but I do want to change
+the frame type from ‘all’ to vlan tagged only.
+To complete the trunk port we need to go to the
+‘VLANs’ tab on the bridge and add vlan 10, tagged
+port ether4, and then vlan 20, tagged port ether4.
+Now, before we turn on vlan-filtering,
+we need to make sure our vlan10 traffic
+is part of the LAN and we do not lose
+access to our device. We will accomplish
+this by simply adding the vlan10-LAN
+interface to our LAN interface list.
+After that, we can go to the bridge settings,
+vlan tab, and check the ‘VLAN filtering’. When
+you hit ‘Ok’, you will lose the connection to
+your device, and you will need to reconnect using
+the MAC address and fix the IP configuration.
+If you open up the addresses and the DHCP server,
+you will see that there is now a problem. You
+need to update the LAN address interface from
+the bridge to the ‘vlan10-LAN’ interface, and
+then do the same with the DHCP server interface.
+After that we want to add an IP address for our
+vlan20 interface and run the DHCP setup for it,
+so that our IoT devices can also
+receive addresses through DHCP.
+Then, before we move on to the firewall setup,
+you will most likely want to enable the
+mDNS repeater in the DNS settings. For it
+to actually work with the default firewall,
+you will need to do a tweak in a second.
+Now, when it comes to the firewall, it is
+important to understand that you actually have two
+of them. If you are running IPv6 in your network,
+you will have to take any adjustments that we
+make to the IPv4 firewall and repeat them in the
+IPv6 firewall. Even if you are not distributing
+IPv6 addresses in your network, every interface
+still gets a link-local IPv6 address, and those
+link-local addresses can theoretically be used
+to bypass IPv4 firewall rules to some extent.
+But don’t worry, if you are not
+sure what you are doing with IPv6,
+you have an easy way out! You can simply
+open IPv6 settings and disable IPv6.
+In the IPv4 firewall, let’s look
+at the input chain. Remember,
+there is this rule at the bottom that
+drops everything not coming from LAN.
+For the mDNS repeater to work correctly with
+your default firewall, you might have to add
+an input firewall rule that accepts mDNS traffic,
+as any packets that will get repeated are first
+considered as input to the router. Filter for
+UDP traffic coming from port 5353 and only the
+specific interface you need to avoid unnecessary
+security holes in places like your WAN interface.
+The default firewall contains
+this accept rule for ICMP,
+and it just makes your device pingable from
+all interfaces, including WAN and any new
+interfaces you create. This is pretty much
+harmless, but it does make all your router’s
+IP addresses discoverable from any of its
+interfaces. But you might not want your
+light bulb to be able to find your WAN address
+by performing a simple network scan, for example.
+So we might as well modify the ICMP rule and
+set the ‘In Interface’ to be LAN exclusively.
+This way, any pings coming from the IoT
+network or the internet are simply rejected.
+Now, in the forward chain, we need to prevent
+IoT devices from messing with devices in the
+rest of our LAN. We can add a simple rule that
+filters for connections coming from the IoT vlan,
+going to the LAN, and we should select only
+the connections state ‘new’. As we want
+our LAN devices to be able to establish
+connections to IoT, but not vice versa.
+Just move this drop rule to
+the top of your forward chain.
+In the setup that I am going for in this
+demonstration, I do not need any more forwarding
+rules. But if we had more VLANs or a Guest wifi
+interface, for example, then we would need more.
+You would want another drop rule preventing
+IoT devices from opening new connections to
+your Guest network. And you would also
+want two more drop rules restricting
+the Guests from opening connections to
+the LAN and IoT networks as well. You
+can create all those rules in the same
+fashion as the drop rule we just added.
+Then you might also be interested
+in completely preventing the
+IoT vlan from accessing the internet.
+I suppose it is removing the ‘I’ in the ‘IoT’,
+but in some situations, that makes sense.
+You could do this by adding another drop
+rule with ‘In. Interface’ set to your IoT vlan
+and ‘Out. Interface List’ set to the WAN list.
+Okay, most likely you do not want to cut
+off internet access from your IoT network,
+but you want to make sure that your IoT
+devices can never hog up all your bandwidth.
+To set up rate limiting using the Queue
+Tree method, you will want to first open
+mangle rules and mark packets in both traffic
+directions. For downloads, select the forward
+chain and in the In/Out interfaces specify
+traffic coming from ‘Not’ your interface,
+going to it. Then, for uploads, you will want to
+do the opposite – mark traffic coming from the
+interface and going anywhere else. Then make
+sure you have disabled FastTrack. Finally,
+in Queue Tree add a global queue
+and give it a child queue using
+the download packet mark and set Max Limit.
+Do the same for Uploads, and you are set!
+Now let’s test our setup from the
+perspective of these other two devices!
+On the hAP ax2, if we try to ping the LAN address
+of our AP, it fails. And if we switch to the IoT
+address, it also fails, because we are only
+allowing incoming pings from LAN devices.
+If we switch to an IP address from another
+device in the IoT network, we do get a response
+as expected. And then in the neighbors, we can
+see that there are two other RouterOS devices.
+But let’s run a bandwidth test to a
+server that’s behind our AP’s WAN port.
+Within a couple of seconds,
+we can see that it finds
+our throughput to be around 20 megabits
+per second, which is what it should be.
+Now, let’s see about the hEX…
+It has IP addresses in both vlans, and
+currently it is set up to route the bandwidth test
+through the IoT vlan. So if we run the test, it
+will have the same throughput as on the hAP ax2.
+Do note that the limitation we put in place is
+for the whole vlan, so multiple devices won’t be
+able to achieve this throughput at the same time.
+If we switch to a route through the
+LAN, we can achieve speeds that are
+much greater than the IoT rate limits,
+although we are not reaching the top
+performance of the hEX S, because the
+bandwidth test itself is taxing the CPU.
+This completes this configuration
+guide. You should be able to use
+your new setup safely with your
+IoT devices. And on top of that,
+if you need to run some sort of home
+server that interacts with the IoT network,
+you can make that happen with the container and
+apps features – directly on your access point.
+My only advice would be to put them in the LAN
+network and not together with IoT, so that the
+firewall is protecting your containerized server
+against login attempts coming from IoT devices.
