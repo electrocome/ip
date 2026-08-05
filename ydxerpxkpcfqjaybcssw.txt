@@ -1,511 +1,2534 @@
-Is having an IPv6 address safe? Most of
-us don't even get a choice when we
-connect to the internet, but IPv6
-remains pretty mysterious to the average
-user.
-Used one way, it can actually offer some
-privacy protection. Use another way, it
-can be super dangerous. Just to quickly
-summarize for the non-techies.
-We send our data across the internet
-using two main addressing formats. The
-old one is Internet Protocol version 4,
-IPv4, which we've relied on since the
-1990s. The newer one is Internet
-Protocol version 6, or IPv6.
-It's not universally adopted yet, but
-it's being pushed hard.
-Your IP address is basically your ID
-card on the internet. It's how Big Tech
-and governments tie your online actions
-together. We're always trying to hide or
-change that unique identifier.
-IPv6 is the scary version because you
-can't always hide it as easily as you
-think. If you don't understand how it
-works, IPv6 could become a surveillance
-dream for governments and commercial
-trackers. It's extremely effective at
-what it was designed for, direct
-end-to-end connectivity.
-Most average people have no idea whether
-they're reaching sites via IPv4,
-IPv6, or both at the same time.
-Here's a reality, I'll explain in detail
-later.
-Someone could potentially observe your
-entire household on IPv6. They can see
-individual devices turning on and off
-and watch traffic flowing to specific
-websites, all tracked back to each
-particular device.
-If [snorts] I were a government wanting
-to surveil someone or a company
-hoovering up citizen data, I couldn't
-ask for a much better method without
-physically being in the room.
-And did you know your computer or phone
-can be assigned multiple IPv6 addresses
-at the same time,
-each serving a different purpose?
-There's good news in here, too, but you
-need to know the rules of the game. If
-you want to understand this extremely
-important topic that affects every
-device in your home, stay right there.
-IPv4 versus IPv6. What is the difference
-between IPv4 and IPv6? Well, first let's
-visualize what it looks like. An IPv4
-address looks like this.
-It has four slots and 255 variations in
-each of the four slots.
-In IPv6, there are eight slots and 65535
-or 64K variations in each slot. In plain
-terms, there are around 4 billion IP
-addresses in IPv4.
-In IPv6, there are 340,
-then add 36 zeros, or basically it's
-impossible to run out of IPv6 addresses.
-Since over a billion phones are sold
-every year, you can see why companies
-are moving to IPv6 since IPv4 is tapped
-out.
-Every single website or server on the
-internet has an IPv4 address. And your
-home router provided by your cable
-company will also have an IPv4 address.
-Then routers in the middle will likewise
-have an IPv4 address. These are fixed
-and they're very easily tracked. This,
-by the way, is why we need to use a VPN.
-By using a VPN, we basically hide our
-home IP address since we exit out of a
-VPN server shared by many people.
-IPv6 is commonly used by cell phone
-carriers and also by Starlink. The
-reason is that they can assign an
-unlimited number of IP addresses on
-their own for internal use. And to
-interact with the normal IPv4 network,
-they consolidate all the internal IPv6
-and then puts them through IPv4 router
-so that the external world can only see
-IPv4 traffic.
-On my home network, I have both IPv4 and
-IPv6. My normal cable company modem
-supplies only IPv4.
-But I also have Starlink and that one
-uses only IPv6. So just so you
-understand my setup, I use a VPN router
-at all times over my IPv4 network. I use
-my own Brex router device, which many of
-you also own.
-But because many sites now block VPNs,
-we have needed an alternate internet
-route when the VPN is blocked and IPv4
-offers no alternative. It is possible to
-create a safer internet solution using
-IPv6 if you have to turn off the VPN.
-But if you make a mistake, it will get
-worse and you will have identified
-yourself
-even more fully than IPv4.
-How IPv6 is used over the internet.
-First, we need to understand the
-different levels of use of IPv6. As of
-today, IPv6 is not globally used over
-the internet, but surprisingly many big
-tech organizations have enabled IPv6.
-The way you know this is by using the
-command ping6 on a network that uses
-IPv6.
-In my case, I use Starlink as my IPv6
-service. So from Starlink, I can ping
-these.
-ping6 google.com
-ping6 facebook.com
-Ping 6 akamai.com
-Ping 6 spacex.com
-But these don't work. Ping 6
-starlink.com
-Ping 6 amazon.com
-Ping 6 tesla.com
-Ping 6 microsoft.com
-Ping 6 tiktok.com
-I can also ping government sites like
-ssa.gov. It gives an IPv6 address, but
-the website doesn't respond, so these
-are not yet live on IPv6.
-What this means is that if you're using
-IPv6, then Google and Facebook, the two
-biggest threats in commercial internet
-tracking, can spot what you're doing.
-How IPv6 is used by the ISP
-As I already told you, cell carriers and
-Starlink uses IPv6 entirely.
-If I use the default configuration of
-using Starlink and I go to a public site
-like what is myip.com,
-this is what it shows me.
-This is called dual stack,
-where you connect to the internet using
-both IPv4 and IPv6. Starlink is a dual
-stack provider.
-Just to make it clear to you
-that 2605 address, well, that is unique
-to your particular computer. So, someone
-can watch you on that computer
-specifically.
-Now, here you see a dual scenario. Even
-though you are using Starlink, that is
-IPv6, if your traffic reaches an
-internet site using IPv4,
-that address shown for IPv4 is actually
-a safe version of [snorts] IPv4. It is
-like a VPN. But, the other one, the IPv6
-address, is publicly visible to sites
-that have IPv6 enabled, like Google and
-Facebook.
-I want to show you specifically how this
-works. Again, using a Starlink example,
-I will show you what IP addresses are
-assigned to me.
-This is the typical way IP addresses are
-assigned by carriers. You get multiple
-IPv6 addresses and a single IPv4
-address. Some of these are very safe,
-and one of these is very dangerous.
-I will teach you how to make IPv6 safer,
-but the actual safest solution is to
-always use a VPN.
-But, if you have to turn the VPN off,
-you will learn how to do it correctly on
-IPv6.
-You never turn it off on IPv4.
-Simplified explanation.
-Before I get into deep detail, I'll give
-you a simplified explanation first.
-First, the good news. In a Starlink or
-cell carrier case, where the IPv6 is
-used, the IPv4 address is always safe.
-You will find that this is a shared IP
-address by many users, and this is what
-you want to use if you don't have a VPN.
-But, it won't automatically use that, so
-I will teach you how to force the use of
-that a little later.
-Now, as far as IPv6 addresses, you may
-get assigned three to four IPv6
-addresses. Just to categorize that for
-you.
-One, FE80
-is always local. It is always safe and
-you may always see it. FC something is
-related to internal router
-communications within your network and
-is not internet routable. So, that too
-is safe. 26 something or up to three
-something is internet routable. This is
-what you need to pay attention to.
-In my case, I have two mark 2605.
-One of these goes to Starlink IPv4
-router which is internal. The other goes
-to the open internet.
-That is ultra dangerous. You're not
-going to know which is which though.
-Simplified how-to.
-So, how do we keep things safe on an
-IPv6 network? Well, there are a couple
-of ways, but one is unreliable and one
-is 100% always perfect. The safe way is
-demonstrated by my setup here.
-I have a Starlink Gen 3 router. Then at
-the back of it, you can attach other
-devices via Ethernet. And on mine, I
-attach an old Netgear Wi-Fi [snorts]
-router.
-This router only serves IPv4. Then what
-I did is convert Starlink Wi-Fi to a
-hidden network so no one else can see it
-and use it accidentally.
-But I exposed the Netgear router and
-everyone who needs the internet only
-connects to Netgear.
-Yes, we're still going through Starlink,
-but we are now locked into IPv4. There
-is no IPv6 address possible.
-So, our devices cannot be surveilled
-over IPv6. Yes, traffic will flow from
-Starlink as a combined source, but it
-will exit to the IPv4 router at
-Starlink, which as I said is a shared
-server. So, thousands of people will be
-using that same router.
-You will still need a VPN to keep your
-activities truly private, but if you
-need to access a site that blocks a VPN,
-which is very common nowadays, then you
-may need an alternate internet route,
-and for a 1% use case, this is perfect.
-There will be very little to see as most
-of your traffic will be on a VPN, and a
-unique IP is not revealed to commercial
-sites.
-If you don't have an IPv4 router
-attached to your Starlink, then the
-alternate way is to remove IPv6 from
-your Wi-Fi connection.
-This is hard to do as you have to do it
-on every single device.
-But just to demonstrate it, here's the
-normal connection with IPv6 enabled.
-Now, here it is after I disable IPv6.
-By the way, these are Wi-Fi network
-setup screens on Linux.
-But all OSs have the same options.
-The problem is that you would easily
-forget, and then you go to Google, and
-then you just revealed your IPv6
-address, which they will gobble up
-quickly
-and immediately. Same with Facebook.
-Putting in an IPv4 router is the safest
-solution. If the router you get also
-allows IPv6, make sure you disable IPv6.
-Old routers only allow IPv4, so this is
-a problem only on new Wi-Fi routers.
-CGNAT
-Now, let's dive deeper into the text so
-you understand why some IPv6 is safe and
-why some are not. For internal network
-communications between devices on a
-local area network, devices announce
-themselves to all in something called a
-multicast.
-In an IPv4 network, this is often
-referred to as ARP or address resolution
-protocol.
-The information exchanged inside the LAN
-are MAC addresses, and that's how you
-are able to talk inside a network even
-when there's no internet.
-Now, in IPv6, a MAC address isn't used.
-Instead, you are assigned various IPv6
-addresses, one called a link-local
-address, which starts with FE80,
-and the other is the multicast address,
-which starts with FC something,
-which is what is used by your router
-like ARP.
-These are all inside your network, so
-you never worry about them, and like I
-said, they all start with F something.
-Now, the carrier, using Starlink as an
-example here, will create a local IPv4
-network for you, which will be 192.168.
-something.something or
-10.something.something.something.
-These are not routable IPv4 addresses on
-the internet.
-But, the Starlink router handles the
-translation, so your IPv4 traffic exits
-at the IPv4 Starlink router with its
-shared CGNAT IPv4 address.
-The IPv6 addresses they use in between
-are not internet routable, so they have
-to be translated. And the translation at
-your home router level is called NAT,
-network address translation. And that
-translation done at the IPv4 router of
-the carrier is called carrier-grade NAT
-or CGNAT.
-CGNAT is safe to the outside world
-because no one knows your unique IP
-address. You are visible only using a
-shared address. Though, there are other
-implications here I will show later.
-IPv6 global.
-Now, I already explained that you will
-often get another IPv6 address on your
-device. So, you get one that goes to
-CGNAT, and that is if you are using IPv4
-originally, but if you have IPv6 enabled
-and the end site also uses IPv6, like
-Google and Facebook, then you have a
-direct device-to-device identity and you
-bypass Starlink completely and you go
-directly to Google and Facebook. This is
-a very dangerous feature of IPv6. And
-the reason this is extra dangerous is
-because it is a device level identity.
-While your home router gives a home
-identity, this IPv6 is unique to each
-device.
-So, if there are five members in your
-family and each has a phone and a
-laptop, then Google can track 10 devices
-separately.
-In addition, they can directly track
-your washer, dryer, Alexa Echo,
-refrigerator, ring camera, and so on.
-Each device has a unique IPv6 address. I
-will explain this later, but this is the
-beginning of the surveillance nightmare
-I'm talking about.
-Now, you don't have to fear this if you
-put an IPv4 router on your network, as I
-did to my Starlink. But, to those
-unaware, they've just exposed themselves
-to the ultimate surveillance risk.
-Why it's dangerous.
-IPv6 is so plentiful that there is no
-danger of running out of addresses, so
-it attaches to everything. And what's
-unique about IPv6 is that each device
-has a direct addressable link to the
-internet and there's nothing in between.
-By default, IPv6 routing is not stopped
-by anything in the middle. It's direct
-device-to-device.
-The other thing that is interesting is
-that your IPv6 provider, which is
-Starlink in my case, creates an address
-group underneath it, which clearly
-indicates that they chain up to the
-Starlink router. This is going to be
-obvious when you look at all the IPv6
-addresses in your household. Only the
-last two sets of values will change. But
-the identities in the first six sets of
-identifiers, that's your home. So if I
-were Google and I want to watch your
-home, I simply record all the devices
-with the same first six values and I
-know you're in the same household. Then
-I can watch what you're doing. I could
-tell if your dryer turned on and if your
-kid just turned on Netflix. And you went
-to YouTube and watched Mr. Beast.
-I could tell that you're not home. I
-could tell that your eldest son is not
-home.
-This is quite scary and this will get
-worse as more and more platforms go to
-IPV6.
-Forcing yourself to go CGNAT.
-Again, when you put on an IPV4 router
-between yourself and the Starlink
-router, which is a placeholder company
-for any company that uses IPV6, then you
-force yourself to only go through the
-internet using CGNAT. Shared IPV4
-router, safe outside of Starlink.
-This is safe enough for any commercial
-threat.
-But it is not safe for a government
-threat.
-Advanced threat.
-The advanced threat is that a
-three-letter agency can monitor traffic
-inside the [snorts] CGNAT, for example,
-inside Starlink. To comply with various
-laws, a three-letter agency would be
-able to access the internal IPV6 network
-easily.
-I'm not saying this is trivial, but if
-you're a high-value target, then
-consider this as a real possible threat.
->> [snorts]
->> Inside the IPV6 network, your internet
-traffic can be observed just like I gave
-you in the example of Google examining
-your household via IPV6.
-This is almost like having a
-surveillance camera at your house,
-especially if you have home assistant
-with IPv6, this would be a goldmine of
-information of what is going on in your
-specific household.
-That wasn't possible in IPv4 because by
-default IPv4 surveillance stops [snorts]
-at the home router.
-Devices are never seen.
-So, the level of information provided by
-IPv6 is multiple times more dangerous
-than IPv4.
-Now, by default, incoming connections
-are blocked by firewall at the Starlink
-router.
-However, there are plenty of ways to
-override this, including inserting a
-Trojan horse in one of the devices
-inside your network like some rarely
-used Raspberry Pi that is connected.
-Then from inside the firewall, one could
-send direct commands via IPv6, and this
-becomes extremely scary when you have an
-Intel computer running AMD vPro or the
-Intel management engine.
-This is a corporate tool used to access
-individual devices. It would be possible
-then to control your computer remotely.
-Again, none of this is trivial, but be
-aware that this is a serious
-cybersecurity risk.
-None of these can happen if you have
-IPv4 only and are going through an IPv4
-router.
-But it would still be possible to
-observe the household traffic though
-without knowing which individual devices
-were transmitting.
-Big picture.
-To again reframe this so it doesn't get
-complicated. One, IPv4 is risky because
-it identifies your home router if you
-are at home. That's why we always use a
-VPN with IPv4 at home. This is a 100%
-rule, no exceptions.
-Two, if you use a VPN with IPv6 and the
-VPN is IPv4 only like Bytes VPN, then
-you are always safe when you're on the
-VPN. The VPN is an automatic firewall to
-incoming traffic, which cannot be
-broken. Thus, a VPN is always safe with
-IPv6 or IPv4.
-Three, the good news. If you do not use
-a VPN, some IPv6 use can be safe if you
-stick an IPv4 router, or specifically
-disable IPv6 on your device, then your
-device will switch to CGNAT and convert
-to IPv4 at the exit.
-Four, government can still watch you
-over an IPv6 network, even on CGNAT, but
-it is safe against commercial threats
-like Google and Facebook. So, this is a
-VPN alternative for the average person
-with no government threats, but it is
-not perfect.
-Five, what is always unsafe is direct
-IPv6 at the device level. This is a
-common source of leaks even when using a
-VPN. This is why I don't like having
-direct IPv6 access. You will make a
-mistake. Stick an IPv4 router in there.
-Summary.
-So, to summarize, IPv4 is always
-dangerous as an internet ID. IPv6 is
-dangerous both as an internet ID and as
-a direct cybersecurity threat to your
-device if used in original form. But,
-IPv6 can actually be safe for most
-people if you stick an IPv4 router
-behind it.
-This discussion applies not just to
-Starlink and cell phones, but also to
-cell data portable routers since those
-likely use IPv6.
-You've just been armed with information
-that 99.9%
-of the population doesn't know.
-Be safe.
+ Ну да ладно, да,
+давайте сейчас с вами поговорим
+немножечко о защите. Основной фокус
+доклада у нас сегодня это защита
+периметра, а и особенность систем W IPS.
+И почему там всё сложнее, чем просто ROG
+detect. Итак, вообще с точки зрения
+безопасности можно выделить безопасность
+доступа и безопасность периметра, да,
+сети беспроводной. Если говорить о
+безопасности доступа, то здесь за всё
+отвечают там различного рода порталы.
+аутентификации, а в том числе, а
+аутентификация доступа, соответственно
+такая, как там WPA 1, 2, 3,
+соответственно, но на данный момент
+актуальные 2-три, больше и больше
+становится актуальна троечка. Вот,
+соответственно, для чего нам ВПА 1 2 3
+они обеспечивают защиту пользователь
+пользовательского трафика и
+аутентификацию сторон. Соответственно,
+сторонние устройства не могут прочитать
+трафик пользователя, да? Соответственно,
+сторонние станции не могут отправлять
+данные от нашего имени, и станции
+проверяют, что она подключилась к
+доверенной инфраструктуре. Ну, по
+крайней мере, а, скажем так, это тот
+самый то, к чему стремимся, да, при
+использовании этих алгоритмов. На самом
+деле, если мы всё сделаем правильно, то
+в целом действительно они будут это
+обеспечивать. Соответственно, ну, тут
+только маленькая галочка, да, сделать
+правильно. Аа, однако у нас есть и
+комплекс угроз, да, для Wi-Fi, от
+которых VPA, ну, никак не защитит, и где
+как раз могут быть применены такие
+системы, как WPS системы, wireless
+Intrusion Prevention System. Они
+обеспечивают наблюдение за эфиром и
+периметральную защиту выявления, в
+частности, аномалий. Соответственно,
+постоянное наблюдение за эфиром, да, в
+поисках посторонних устройств, внешний
+мониторинг корректности настроек,
+методов защиты доступа. Соответственно,
+если у вас что-то неправильно настроено,
+WPS должна об этом сообщить, да, что у
+вас есть угроза безопасности. Ну и
+обнаружение эксплуатации уязвимости
+протокольной сигнализации. Вот это вот
+очень важно, потому что большинство
+систем и большинство точек доступа,
+какую бы вы защиту там ВПА на них не
+накручивали, они вам соответственно
+эксплуатацию протокольной уязвимости не
+покажут, да. Для этого должна быть
+какая-то вот система мониторинга, может
+быть встроенная. Ну мы о встроенных
+внешних э системах сейчас как раз с вами
+поговорим, потому что это и есть фокус
+нашей сегодняшней лекции.
+И, соответственно, в бонусом ну, так как
+мы про ВПА 1 2 3 не говорим, а некоторым
+очень хочется всё-таки понять, в чём же
+между ними разница, в презентации,
+которую вам так же, как
+в прошлый раз практически, да, а скинут,
+э, будет короткое описание, когда
+используется, какой метод аутентификации
+и комментарии короткие, да, по нему
+можем использовать, не можем, ээ,
+соответственно, какова область его
+применения от открытой аутентификации
+через там Wi-Fi inhouse Token и
+портальную аутентификацию к VPA3
+Enterprise. Вот всё туда. Маленькая
+такая табличка из другого моего курса
+выдернутая. Итак, а давайте с вами, упс,
+не туда. Давайте с вами разберёмся с
+тем, собственно говоря, почему же нужен
+а WA IPS и чем он отличается от самого
+обыкновенного IPS, к которому мы
+привыкли, который в периметре сети нашей
+проводной находится. К спецификам
+проводных IPS можно отнести следующее.
+Первое - это ответственность за
+проводной внешний периметр. Да, сразу
+проводной внешний, это у нас там
+2тричетыре, сколько там внешних
+выходящих каналов, да, оптических,
+медных, там в зависимости от ситуации,
+какие они. Вот. И это, по сути,
+расположение в точке агрегации всего
+внешнего трафика. И канал, который мы
+наблюдаем, мы наблюдаем весь и сразу.
+Всю, э, все пакеты, которые мы
+наблюдаем, они все проходят через один и
+тот же физический канал. Нам не нужно
+переключаться между каналами. Мы видим
+всё и сразу. У этих устройств,
+разумеется, чтобы переварить этот
+огромный объём трафика, у них должна
+быть большая производительность. Но,
+учитывая место, в котором они находятся,
+мы можем расположить достаточно большое
+производительное устройство с сильным
+процессором, там питание, охлаждение,
+всё красиво.
+Дальше, эти самые IPS в основном
+выполняют анализ третьего тире седьмого
+уровня. То есть по модели оси, да, они
+там IP заголовочки смотрят и наверх.
+Канальный уровень достаточно редко,
+потому что коммутация до зоны, где
+находится IPS, распространяется редко.
+Ну, может быть, в ЦОДАХ, да, если у вас
+IPS находится в границе,
+а, соответственно, вашего там
+дата-центра, предположим, то туда
+какие-то или два домены от серверов,
+может быть, и будут доходить. Тогда IPS
+будет работать там в транспарент-режиме
+и что-то с ними делать. Но если мы
+говорим с вами о корпоративной границе
+сети на выходе к внешним шлюзам, там,
+как правило, канальный уровень наблюдать
+просто практически не имеет смысла,
+потому что он находится в изолированном
+L2 домене, в котором ничего не
+происходит. Вот. А и там, как правило,
+мы наблюдаем L3 и выше. Ну да, конечно,
+там L2 может быть иногда туннелировано
+внутри L3. Это за этим интересно
+смотреть, но это уже специфика, да, в
+основном. L3, L7. Ну и на этих IPS
+просто гигантское количество сигнатур,
+потому что они следят за всем трафиком и
+фактически они работают в разрешительном
+режиме с точки зрения, ну, IPS, да, в
+отличие от фаерволов обычных, обычно
+работает в разрешительном режиме режиме.
+Всё, что не запрещено, то разрешено. То
+есть, если трафик не является известно
+аномальным, да, или подозрительно
+аномальным, то он разрешён. Ну а
+подозрений нет, если на трафик нет
+сигнатуры. Уязвимость нулевого дня. Вот.
+В общем, но несмотря на это, да, угроз
+для вот всего м среза от L3 до L7, их
+настолько гигантское количество уже и
+без того известных, что для нас
+проводная IPS выглядит как что-то
+весомое. Когда ты на него заходишь и
+видишь там, не знаю, 60.000 сигнатур, ты
+понимаешь, ну, эта штука реально
+работает. Она от большого количества
+угроз защищает. Но там и специфика в
+том, что все, кто ломится в нашу сеть,
+они через этот самый парадный вход, да,
+через внешний сегмент нашей сети, они
+туда же и лобятся. То есть поэтому IPS
+действительно видит много всего, она
+видит много событий, у неё много
+сигнатур, много срабатываний.
+Система работает, да, как говорится. Вот
+всем нравится, что она что-то там ловит.
+А вот WPS-системы - это такая штука,
+которая очень она сложная. Она сложная к
+пониманию, она сложная к работе, она
+сложная к развёртыванию. В общем, у неё
+со всех сторон проблемы, скажем так,
+[смех]
+да? То есть у неё есть ряд специфических
+характеристик. Во-первых, это
+ответственность за беспроводной
+периметр. Что это означает? Это
+означает, что она работает с той
+сигнализацией, которая до проводной IPS
+она даже не дойдёт. То есть проводная
+APS угроз, связанных с беспроводным
+сегментом, просто не способна видеть,
+потому что канальный уровень до неё не
+доходит.
+Канальный уровень Wi-Fi имеется в виду.
+Дальше. W IPS-системы работают в
+радиочастотном спектре, разделённом на
+множество каналов. Что это означает? В
+отличие от обычной IPS, которая у нас
+сидит и слышит сразу и всё, мы находимся
+в ситуации, когда нам надо
+радиоинтерфейс переключать. Нам надо
+либо иметь количество радиоинтерфейсов,
+равное количеству каналов, которые у нас
+есть, либо нам нужны алгоритмы
+переключения между ними, потому что у
+нас нет возможности слышать всё и сразу.
+Дальше ещё одна особенность. В IPS у
+нас, да, в проводной IPS прилетает всё
+через один большой канал, а в
+распределённой радиосреде у нас огромная
+площадь и ослабление сигнала. Мы не
+можем поставить один сенсор и типа: "Ой,
+всё, всё хорошо". Проблема в том, что
+нам надо закрывать большую площадь
+вероятного местоположения, в том числе и
+потенциального там злоумышленника или
+там нарушителя, да? И это означает, что
+мы не можем обойтись одним. сенсором.
+Нам надо их множество распределение
+нужно. А значит, что? Ой, извините. А
+значит и что и система управления должна
+уметь, собственно говоря, а как-то
+агрегировать, коррелировать эту
+информацию. Да, система управления для
+обычного IPS, но она вот в одной точке
+сидит, у неё всё хорошо, она всё видит.
+Единственное, конечно, у вас бывают
+ситуации, когда APS-системы распределены
+тоже на нескольких периметрах, и там
+тогда система управления вышестоящая
+стоит. Вот здесь примерно та же история.
+Но она здесь обязательна. У вас много
+IPSсенсоров, которые слышат, и
+информацию с них надо коррелировать. А
+что, если, что самое интересное, две
+проводные IPS-системы, даже если вы их
+управляете ими центральной системой
+управления, они не могут одновременно
+слышать одно и то же, потому что они
+сидят на разных проводных каналах. А
+WS-сенсоры
+могут сидеть в одном и том же канале в
+какой-то момент времени и услышать
+абсолютно одно и то же. Вопрос, как
+коррелировать будете? Да. Дальше есть
+особенности распространения сигнала.
+Какой датарей вы будете слышать? Какой
+конкретно тип кадра? Да, это будет
+только менеджмент и контрол. Или, может
+быть, вы хотите слышать и копаться в
+кадрах данных. Тогда будьте добры плотно
+плотность сенсоров увеличить, потому что
+режимы модуляции должны быть повыше, вы
+должны лучше слышать сигнал. Вот,
+соответственно, мобильность устройств,
+да, одно устройство могло переключиться,
+могло уйти на другую точку доступа. Как
+вы это будете как-то оценивать или нет?
+Да, перешла из зоны ответственности
+одного IPS-сенсора в зону
+ответственности другого WPS-сенсора.
+Ну и кроме того, ещё одна особенность,
+которая дальше, знаете, ставит крест на
+всех усилиях, скажем так, да, на WPS
+из-за того, что анализ делается только
+L1, L2, по сравнению с проводными IPS
+количество сигнатур очень маленькое. То
+есть, знаете, когда вам дают сравнение,
+вот, значит, IPS проводная, там 45.000
+сигнатур, а беспроводная IPS там, ну, в
+лучшем случае, там, не знаю, 150
+сигнатур, да? И возникает вопрос: "А, а
+если они так мало, зачем она нужна?"
+Да, возникает вопрос. Но с другой
+стороны-то количество уровней гораздо
+меньше, а угрозы на L1, L2, они никуда
+не делись. Эти сигнатуры, это
+отслеживание всё равно необходимы.
+Ладно, дальше. А, хорошо. То есть мы с
+вами видим, что у
+WPS действительно есть некоторые
+особенности, да, касающиеся работы в
+беспроводной сети, в отличие от
+проводных IPS.
+Дальше, от чего мы защищаемся-то? То
+есть, казалось бы, ну, мало сигнатур,
+да, 150 там, ну, не 150 там, плюс-минус,
+да, штук. Соответственно, дальше-то что?
+Что с ними делать, как с ними работать?
+Аа, и нужно ли это вообще? И выясняется,
+что когда вы заходите на какой-нибудь
+сайт того же самого Кали Линукса,
+выясняется, что похоже нужно, да, потому
+что там есть такой раздел Wireless
+attacks и есть прям большой-большой
+листинг того, какого рода атаки могут
+быть произведены. Там не только, конечно
+же, Wi-Fi, там ещё Bluetooth есть
+присутствует, соответственно. А, то есть
+на самом деле очень большой набор
+средств для вот в кавычках пин-теста,
+да, там присутствует. Это означает, что
+любой скрипт KID может, в принципе,
+взять, даже не особо понимая, что он
+делает, взять инструмент и использовать
+его. Вот. Соответственно, что это
+означает? Это означает, что на самом
+деле беспроводной сегмент сети - это
+уязвимая точка. Возникает вопрос, почему
+её тогда никто не защищает?
+Соответственно, ну, ответ на этот вопрос
+я уже дал, да, потому что по сравнению с
+проводной IPS, беспроводная IPS, она
+гораздо более сложная, распределённая,
+её надо коррелировать события, нужна
+система управления, нужно,
+соответственно, а набор сигнатур вроде
+как и не особо-то и большой, да. Вот. Ну
+и ещё все говорят, что ой, да, у нас
+внутри точки доступа спрятан IPS и нас
+вообще больше ничего не волнует, но мы с
+вами чуть позже увидим, что это тоже
+чуть-чуть мм не так. Слышу щелчки-мышки.
+И, по всей видимости, сейчас будет
+вопрос. Нет,
+[смех]
+всё, не слышу щелчки-мышки. Ну ладно.
+Так, ну давайте посмотрим. Смотрите, а у
+нас есть много инструментов, и
+разумеется, что среди этих инструментов
+ну какие-то уязвимости эксплуатируются.
+И на самом деле большинство уязвимостей,
+которые эксплуатируются этими, а
+инструментами, они относятся вот к
+зелёному разряду по классификации угроз.
+Эту классификацию делал я
+непосредственно, да, когда-то уже лет
+пять, наверное, назад, семьво семь семь.
+Вот. Но она по-прежнему актуальна.
+Соответственно, можно разделить в целом
+угрозы на три такие главные главных
+класса. Первый класс - это угрозы вот
+аля скрипт kidди,
+>> а, который есть практически в любом
+инструменте. А вопрос какой-то?
+>> Да, вопрос у меня появился, на самом
+деле. Э, я не помню, будет ли это у тебя
+там дальше, но, возможно, стоит немножко
+откатиться назад. А, смотри, в
+классических APS у нас есть сигнатуры.
+Эти сигнатуры есть как коммерческие, так
+есть и openсорсные. Сейчас достаточно
+большое большое количество компаний,
+которые занимается публикацией этих
+самых сигнатур. Вот в том числе там и
+позитивы есть, и так далее. Так вот, а
+для WPS эти самые сигнатуры есть
+какие-то openсоourсные или не только
+openсоourсные? То есть в этом плане как
+раз в этом одна из, как это, я так
+понимаю, интереса
+влезть в этот рынок, потому что ничего
+этого нету. Но он же также и получается
+достаточно сложным, потому что сигнатуры
+придётся разрабатывать самому,
+>> да, чем мы занимаемся. То есть как
+выглядит сейчас W IPS рынок с точки
+зрения мм там каких-то угроз? Есть
+цвешки, есть а там, не знаю, статьи на
+каким-нибудь на каком-нибудь ресрчгейте,
+соответственно, есть просто описание на
+каких-нибудь хабрах и так далее, как
+кто-то что-то эксплуатировал. Угу.
+>> Всё, открытых баз сигнатур нету, потому
+что единой WS системы с открытым движком
+нету. Единственное, фактически у кого,
+наверное, есть, так это, ну, наверное, у
+Цицски когда-то было они пытались
+сделать, но они не дотянули движок свой,
+когда когда у них ещё AOS были
+контроллеры, там можно было свои
+сигнатуры кастомные заливать.
+>> Угу.
+>> Вот. Ну и у нас сейчас у нас сейчас
+фактически сигнатуры из себя
+представляют JON массивы, которые можно
+нормально редактировать. Для этого есть
+графический интерфейс, для этого есть,
+то есть и мы делаем, и самостоятельно их
+можно собирать какие хочется, скажем
+так.
+>> Спасибо.
+>> Продолжай,
+>> пожалуйста.
+Так, ну хорошо. Дальше. А с точки
+зрения, продолжаем, точнее, да, с точки
+зрения классификации. Итак, зелёненькие.
+Зелёненькие - это у нас традиционно
+известные, существующие почти во всех
+инструментах, очень широко описаны, но
+на самом деле не менее опасные. Почему?
+Потому что того самого WPS, да,
+фактически нигде не настроено. То есть
+он даже даже если есть на точках
+доступа, его очень часто даже не
+включают. А если он включён, очень часто
+не обращают внимания на то, что там
+какие-то логин пишет, потому что он не
+настроенный и начинает столько их, э,
+как это, класть в интерфейс, да, что это
+просто становится невозможно как-то там
+оценивать и прочее. [тяжело вздыхает]
+Вот. А-а, соответственно, кроме того,
+для того, чтобы, мм, отслеживать их,
+отслеживать их достаточно легко, но для
+того, чтобы их отслеживать, нужен,
+по-хорошему, отдельный дополнительный
+радиоинтерфейс для обеспечения
+своевременного обнаружения этих штук.
+Вопрос, есть ли у вас точка доступа на
+три радиоинтерфейса, где третьим
+радиоинтерфейсом вы способны
+пожертвовать. Если раньше это было
+возможно, там, ну, мы думали, да, как у
+меня 2,4 ГГц, 5 ГГц и третий
+радиоинтерфейс он под Wps, ну или под
+мониторинг, да, там и так далее. Вот. А
+сейчас что у нас получается? 2,4 56.
+Опа, три интерфейса уже использовали.
+Оказывается, четвёртый нужен. А есть ли
+у вас четвёртый интерфейс на точке
+доступа для обеспечения этих задач?
+Вопрос. Ладно. В общем, зелёные, да, они
+хорошо известны, от них легко
+защититься, но они всё равно требуют
+ресурсов. Дальше жёлтые. от жёлтых часто
+нет прямой защиты на большинстве точек
+доступа. Соответственно, они требуют
+наличие отдельной системы WPS со
+сигнатурами, способными отследить этот
+тип. Атак вот, э, несмотря на то, что
+они хорошо известны, как правило, они
+требуют навыков для эксплуатации. То
+есть недостаточно просто сказать:
+"Проведи вот эту атаку". Необходимо
+всё-таки чуть-чуть под капот залезть,
+понять, как она работает, то есть иметь
+представление о канальном уровне там,
+ну, не знаю, для крак атаки, да,
+согласование ключей, понять, что там
+происходит между первым, вторым и
+третьим сообщениями forвой хендшейка в
+мозгах станции, почему эта атака вообще
+возможна и так далее. То есть надо
+понимать подкапотное пространство. И
+последний, третий тип угроз, красный,
+соответственно, тип угроз - это, э,
+угрозы аппаратной уязвимости, которые
+можно эксплуатировать из радиосреды.
+Соответственно, если вы посмотрите на
+сайт там того же самого Интела или
+Медиатека и так далее производители
+чипсетов, вы увидите, что каждый месяц
+там выходит целая пачка Цвеешек,
+соответственно, которые говорят об
+аппаратной уязвимости устройства к
+кадрам определённого типа.
+Соответственно, да, конечно, там не
+описано, как они эксплуатируются. В
+ЦВЕшках просто говорится, вот есть
+такая-то угроза, соответственно, была,
+да, и нужно обновиться, work aroundound,
+там обновить firmware на устройстве,
+предположим, и так далее. Вот. И вот от
+этого защититься вообще никто не может.
+И никто не может от этого защитить. То
+есть мы сейчас только в эту сторону
+копаем с точки зрения развития э
+сигнатур. Почему? Это очень сложно. У
+нас, э, как у жителей, да,
+соответственно, Российской Федерации,
+отсутствует немножечко доступ к, э,
+связям с этими компаниями. И,
+разумеется, они с нами делиться
+информацией о там уязвимостях не будут,
+скорее всего. Да, не скорее всего, а
+прямо 100%. Они не будут говорить о том,
+а вот как их там, не знаю, а,
+какой-нибудь ээ атаку там переполнения,
+да, там буфера памяти, как у них это
+устроено там и так далее. Ну,
+разумеется, не будут рассказывать. То
+[фыркает] есть получается, что это
+надоследовать самостоятельно, брать
+каждый чипсет, смотреть, пытаться его
+поломать и писать для этого сигнатуру.
+Для этого нужны большие ресурсы. К
+сожалению, пока что у нас этих ресурсов
+нет. То есть есть у нас там три,
+сколько, четыре цвеешки мы смогли
+разобрать, смогли действительно
+реализовать, а остальное, ну, там их
+много, и у нас просто нет ресурсов. А
+это нужно делать, на самом деле. И ещё
+самое важное иметь возможность как-то
+наблюдать со стороны, соответственно,
+можно это делать или нельзя. Вот, ну,
+имеется в виду, не можно это делать или
+нельзя, имеется в виду, можно это
+наблюдать, эту атаку, да, каким-то
+образом или какие-то инструменты особые
+для этого нужны?
+Снова слышу щелчки. Снова, видимо,
+вопрос.
+>> Буку, наверное, вывели. А вот дальше, а,
+смотри, у меня вопросик такой. А
+условно, смотри, а есть у нас Цвеешка,
+есть у нас там условно сайты Dist и так
+далее. Как, а проводить resarch этих
+ЦВЕшек именно с точки зрения вай-фая?
+Вот какая у тебя методология на этот
+счёт используется?
+>> Мы находим похожие
+ЦВЕшки, старые, а их действительно можно
+найти. Дальше мы находим статьи им
+посвящённые, соответственно, где есть
+разбор вот детально прямо по
+походу, особенно в этом самом, господи,
+Google Zero. Господи, вылетело из
+головы. Project Zero. Во, Project Zero.
+Соответственно, у них есть хорошие
+статьи, соответственно, там чётко
+показано, как это всё дело разбирается.
+И просто по аналогии мы пытаемся
+выполнить.
+Какие какие ресурсы используете, ну вот
+для исходного понимания того, что есть
+цвешки и так далее? Общедоступные
+классические какие-то. Ну вот, например,
+выходит какая-то цвешка, естественно,
+там в месиве том, который сейчас
+происходят, ну, то есть там на том же
+самомдисте
+и прочих ресурсов, у нас сейчас из-за
+обилия нейросетей цвешек начало
+публиковаться, ну, немножко больше.
+Есть такая ситуация. [смех]
+Да. Дадада. А как в этом объёме сейчас э
+именно вычленять Wi-Fi и вычленять
+реально эксплуатируемые ЦВЕшки только
+руками? Или есть какие-то методологии на
+этот счёт? Или, может быть, есть
+какой-то ресурс, на который стоит
+обратить внимание интересующихся?
+>> Нет, мы в этом плане, учитывая, что это
+дело небыстрое, то есть, ну, сейчас
+поясню.
+А если бы у нас был ресурс на
+исследование большого количества ЦВ
+одновременно, мы бы, наверное,
+использовали какие-то инструменты
+автоматизации для сбора со всех сторон.
+А мы сейчас что делаем? Мы на сайте CVE,
+да, на том же самом мы берём по поиску
+по ключевым словам Wan, Wi-Fi и
+соответственно там
+>> Дадада MediaTek, Qualcom там и так
+далее. То есть вот по набору ключевых
+слов находим цвеешки, глазами смотрим,
+способны ли мы по их описанию более или
+менее понять, что там потом происходит,
+и дальше начинаем её разбирать. Всё. То
+есть мы не собираем массу, вычленяем
+что-то. У нас
+ну нет на это возможности пока что, к
+сожалению. То есть пока так. Потом,
+конечно, да, это должна быть какая-то
+аналитика, центральный сбор, дальше там
+отделы, там, не знаю, условно, пяти
+человек или десяти человек, которые
+сидит и этим там прямо занимается,
+занимается. Ну да, на это на это на это
+нужны ресурсы.
+>> Понятно. О'кей. Ну всё, я тогда
+>> Да.
+>> Так, ладно. Дальше. Аа
+давайте теперь поговорим о том, как же
+вот, ну вот есть у нас зелёный и жёлтый
+как минимум класс угроз, да? Мы можем
+каким-то образом от них защититься,
+каким-то образом их наблюдать. И в
+частности вот от зелёного класса, да,
+защищают нас системы там WPS в том числе
+и от жёлтого тоже. Ну вот самые
+простейшие возьмём зелёненькие, да, от
+них он, разумеется, защищает. И все
+говорят: "Ну так от этого всего, от злых
+близнецов, от и так далее, от этого
+всего может защищать классическое
+обычное там WIPS, встроенное в точку
+доступа". Ну вот давайте сейчас разберём
+с вами, а в чём суть, собственно говоря,
+этих самых встроенных систем
+предотвращения вторжения. А чем они друг
+от друга отличаются, да? И по сути их
+три варианта. Это SPВБ средствами точки
+доступа с попеременным сканированием,
+когда у вас точка доступа обслуживает
+клиента и время от времени сканирует
+другие каналы. Второй вариант - это
+когда у неё есть дополнительный
+радиоинтерфейс, который она целиком
+использует только для сканирования
+эфира. И третье, когда вы ставите прямо
+отдельную точку доступа целиком под
+задачи W, IPS, мониторинга, там
+сканирования эфира, качество там
+чего-либо ещё. Ну а четвёртое,
+соответственно, мы с вами посмотрим, как
+себя ведут оверлейные системы.
+Оверлейные системы - это вот как раз
+отдельные WPS-системы, которые
+предназначены для выполнения вот этой
+задачи на наблюдение за радиоэфиром.
+Итак, первое. Если мы с вами говорим про
+э-э SPВБ средствами и точками доступа с
+попеременным сканированием, то у вас
+возникает дилемма выбора канала, да? А
+вы должны обслуживать клиента или вы
+должны сканировать эфир. И вот здесь вот
+такой график вероятности обнаружения,
+э, угрозы. Соответственно,
+за какой интервал времени в секундах?
+Вот здесь внизу там до 250 секунд, да,
+от 0 до 250 секунд. Сколько в секундах
+нам потребуется, чтобы обнаружить
+периодически возникающую угрозу, не
+постоянно существующую точку доступа
+злой близнец, а, например, раз в 10
+секунд, раз в 10 секунд идущий кадр,
+например, арpнъекция,
+да, или, например, эт самый, как он
+называется, Л 196, эксплуатирующая
+арpнъекция, которая не через точку
+доступа, а через групповой ключ.
+шифрование идёт. Для того, чтобы
+обновлять арп-таблицы, мне нужно и,
+скажем так, перевешивать приоритет
+шлюза. Мне нужно слать арп- инъекцию с
+периодичностью где-то раз в 5 тире 10
+секунд. Ну вот возьмём пореже, да, раз в
+10 секунд. И вот возникает вопрос: за
+какой промежуток времени и с какой
+вероятностью мы обнаружим
+событие передачи такого кадра инъекции?
+Соответственно, четыре линии оранжевая,
+когда у нас радиоинтерфейс только 2,4
+ГГц. Соответственно, и полное
+сканирование. То есть мы не обслуживаем
+клиентов, а только сканируем. И всё.
+Дальше у нас есть один радиоинтерфейс.
+Он работает только в 2,4 ГГц. Он
+выполняет обслуживание и сканирование
+одновременно.
+И вот мы видим оранжевая линия, да? Вот
+сверху справа вот она оранжевая линия. В
+течение 10 секунд, если у нас только
+сканирование, мы с практически
+стопроцентной вероятностью увидим это
+событие. Если мы с вами говорим о жёлтой
+линии, то есть если мы при этом ещё
+обслуживаем клиента, мы, ну, 50% у нас
+перевалит через минуту только, а то и
+через сколько там, через 70 секунд. Если
+у нас один радиоинтерфейс вынужден
+сканировать
+два диапазона 2,4 и 5 ГГц и при этом ещё
+в каком-то канале сидеть обслуживать
+клиента, то это зелёная линия.
+Стопроцентной вероятности мы и через 250
+секунд не достигнем, да. Ну и вот это
+тёмно-коричневая, соответственно, только
+сканирование 2,45 ГГц тоже, в принципе,
+мы начинаем с меньшей вероятности,
+потому что каналов больше для
+сканирования, но в течение 10 секунд
+точно мы обнаружим вот это вот
+событие. [фыркает] Вот формула расчёта
+здесь есть. Если вдруг интересно
+поиграться, да, это, соответственно, ну,
+понять, да, к чему это вообще относилось
+дальше. Но это не единственная проблема,
+да? Мы с меньшей вероятностью, за
+меньший интервал времени обнаружим эту
+угрозу. Но это ещё не всё. Дело в том,
+что для того, чтобы угрозу обнаружить,
+нам надо сканировать каналы. А если мы
+хотим сканировать каналы, это означает,
+что мы должны на короткий промежуток
+времени покинуть канал, в котором мы
+обслуживали клиента. Ну и казалось бы,
+ну давайте покинем его на 50 мсекунд,
+чего уж там, и будем покидать его на 50
+мскунд раз в 10 секунд. Предположим, 10
+секунд мы обслуживаем клиента,
+обслуживаем, обслуживаем, ну или там вот
+всю нашу сеть, да, которая вокруг есть,
+обслуживаем, обслуживаем и потом на 50
+мсекунд прыгаем в какой-то другой канал,
+сканируем, что там происходит, и
+возвращаемся снова обслуживать клиента.
+То есть, например, были в первом канале,
+на 50 мскунд во второй, потом обратно в
+первый обслуживаем клиента, потом на 50
+мскунд в третий и обратно в первый
+обслуживаем клиента, потом на 50 мскунд
+в четвёртый и так далее. Во-первых, как
+вы понимаете, при таком сканировании
+скорость обследования всех каналов, она
+очень низкая. Соответственно, это первая
+проблема. Вторая проблема, если мы на 50
+мскунд покидаем канал, казалось бы, ну,
+это мало времени, должна должен быть там
+какой-то эффект вроде джиттера на 60
+мскунд, да? Ну, что такое 60 мскунд? Да
+это даже голосовые станции не должны, по
+идее, заметить. Но есть маленькая
+проблема. Вот вам пример. Два графика.
+Это два графика, взятые с точки доступа
+Циска. Верхний график, у неё
+сканирование эфира включено. Нижний
+график выключено, точнее, не полностью
+выключено, а настроен так называемый
+Scan defer. Scan defer - это откладывай
+сканирование до тех пор, пока вот у тебя
+есть там трафик определённого типа, да,
+определённого класса. То есть,
+соответственно, в на нижнем графике
+трафик станции активно идёт.
+И мы не отвлекаемся, мы не прыгаем в
+другие каналы, то есть мы их не
+сканируем. На верхнем графике мы
+отвлекаемся, мы сканируем. И в
+результате, как вы видите, на верхнем
+графике вот эти вот, казалось бы,
+короткие раз в 10 секунд на 50
+миллисекунд, да, перепрыгивания дают нам
+очень много пиков задержек, больше 100,
+а иногда и больше 150 мскунд. А иногда
+вот даже по 200 были миллисекунд. А вот
+эти вот пики 1.000 - это потеря пакетов.
+То есть вплоть до потери кадров. Это
+приводит к разрыву видеоконференций, к
+глюкам в аудио, там рассыпании картинок
+и прочее, прочее, прочее. Да, потом все
+ругаются, почему у меня там плохо, я
+сижу под точкой доступа, а у меня, ээ,
+значит
+почему-то иногда плохо работает там. Я
+отваливаюсь от конференции, всё хорошо,
+хорошо, хорошо, потом бац, и отвалился.
+Вот она причина сканирования. Самое
+интересное, кстати, что когда точка
+доступа Ци автономная, она работает без
+сканирования эфира по умолчанию и
+нормально себя ведёт. Но когда она
+подключена к контроллеру, она начинает
+сканировать эфир, потому что это
+дефолтная настройка контроллера. И и в
+результате люди ругаются, что точки,
+работающие с контроллером, ведут себя
+хуже, чем точки, работающие с без
+контроллера. Да, это сканирование эфира,
+потому что иначе мы не сможем там
+наблюдать злых близнецов и прочее. То
+есть, ну, это же явно плохо видно, да?
+Это видно из качества соединения, что
+это плохо. Вот. А если мы делаем
+откладывание, отложенное сканирование, с
+FER, да, то есть получается, что мы в
+этот момент не отвлекаемся в другие
+каналы, а это означает, что по сути WPS
+функция не работает.
+Вот. [тяжело вздыхает]
+То есть в результате мы увидели с вами,
+что
+по переменное вот это вот сканирование,
+да, возник, ну, у нас две проблемы
+возникает. Это, во-первых, дилемма
+выбора канала, а, во-вторых,
+попеременное сканирование
+вызывает проблему задержек джитера и
+потерь пакетов.
+>> Так, Антон, у нас тут парочку вопросов
+от наших слушателей. Не совсем про
+сканирование, но в целом, я думаю, можно
+разбавить. А, во-первых, вопрос от
+слушателя на тему того, что если у нас
+есть два SSID, открытый и условно
+менеджмент, возможно ли получить доступ
+к менеджменту через открытый Wi-Fi? Вот
+именно. Я так подозреваю, что вопрос
+здесь не про сетевую связанность и
+Firewall, а именно со стороны Wi-Fi.
+Есть ли какие-то уязвимости на этот счёт
+и вообще встречалась ли подобная
+проблема?
+>> Ну, если у вас они выгружены в один и
+тот же Вилан, но вы по Да. Это понятно.
+Я имею в виду в разных веланах. А,
+>> не, нет, если вы их выгрузили в разный
+велан, открытый SSID, ну, я не могу
+знать абсолютно всех точек доступа, да,
+соответственно, и как они работают, и
+так далее. Но если вы подключены к
+одному SSID, то вы будете вываливаться и
+у вас нету там дополнительной
+авторизации с изменением метки велана и
+прочей вот этой всей, да, то вас
+выгрузят в конкретный бридж домен, то
+есть в конкретный L2 домен, и в нём вы
+будете работать. То есть попасть из
+через открытые SSID в менеджмент, если
+всё хорошо изолировано на канальном
+уровне, нет, вы не попадёте.
+>> Угу.
+>> Точка доступа чётко видит MAC-адрес
+назначения, к которому при, ну, MACдрес
+не назначения, измените, а приёмникавер
+address. И MAC-адрес приёмника говорит о
+том, в какой SSID фактически попал
+трафик.
+>> Понятно. Ну, ты тут упомянул, что если
+не используются какие-то хитрые правила
+переклейки
+Макадреса в другой велан, но здесь уже,
+скорее всего, я так подозреваю, что
+атаки на уровне типа подсмотреть
+макаадрес, подставить Mc-адрес, то есть,
+ну, здесь это классика, понятно? То
+есть, коллеги, не переклеиваем VLН на
+открытых вай-фаях. Не надо так делать.
+[смех]
+>> И не на недостаточно защищённых тоже. А,
+и
+>> Да, потому что можете наклеить
+менеджмент, будет печально.
+>> Дададада. А, ну и есть какая-то
+статистика, насколько часто случаются
+атаки на Wi-Fi. Разверну. В отличие от
+проводных атак, атаки на Wi-Fi требуют
+физической близости к объекту атаки.
+Много ли желающих рисковать быть пойми?
+Ну, то есть 272 УКРФ, ну и так тому
+подобное.
+>> Ну да, они есть. А ча часто это даже м
+ну вот буквально недавно, полгода назад,
+да, сколько там 4 месяца, в общем,
+случай, да, был. а-а, человек очень
+упорно разворачивал свою точку доступа в
+корпоративной инфраструктуре. Сказать,
+что это злоумышленник, ну, вряд ли, да,
+но вот сказать, что это человек, который
+явно не следует корпоративным политикам
+безопасности, да, это точно. Возникает
+вопрос, как с ним бороться, если он
+упёртый, если он постоянно разворачивает
+точку доступа не корпоративную, правда,
+да, какую-то ханипот на своём
+компьютере, хотя это запрещено
+корпоративной политикой, её надо как-то
+давить. Соответственно, а то, что он
+законодательство, какое он при этом
+нарушает, не нарушает, потому что он
+вроде бы как пользуется
+публичными средствами, да, публичным
+эфиром и прочее. Если мы говорим о
+каких-то других атаках типа там
+деаутентификации,
+вот deutenication fl встречается очень
+часто, и он встречается даже не с
+позиции, знаете, кто-то опять же хочет
+именно вот прямо поломать, а с позиции
+такого интереса, что типа а поддастся,
+не поддастся, потому что это везде там
+на каждом углу написано, что такие атаки
+можно производить. Вообще, чем больше
+статей, вот вы как можно сверху
+производить, вот часто какие чаще всего
+встречаются, вот по каким статей больше
+всего выходит типом атаки, вот таких
+чаще больше всего и встречается.
+Соответственно,
+>> чаще - это просто проверка, это не не
+какая-то прямо отталка.
+>> Ну и оно опять же чинится 80211W
+man протекшном и, собственно, всё. Да, и
+ещё один момент, обратите внимание, тут
+договорю чуть-чуть, что, как правило,
+это атаки не внутри сети, где-то внутри
+периметра, а снаружи, то есть по по
+внешнему контуру помещений, зданий и так
+далее. То есть атакующие не находятся на
+территории. Он что делает? Он берёт,
+ставит направленную антенну, да, там в
+вашу сторону. Ну, если он поумнее, и
+всё. Зачем ему находиться на территории,
+если он может не находиться на
+территории?
+>> Ну да. И сидит какой-то там мужчина в
+странном плаще. с чем-то торчащим
+[смех]
+>> немножко.
+Вот. И тем самым на нас атакует. Кстати,
+а на тему
+Яп у тебя что-то будет с сегодня в
+докладе на тему Япа с логином паролем?
+>> Нет. Ипы - это всё VP история.
+>> Ипы - это проверку того, что к вам
+подключается подлинная станция и того,
+что вы являетесь подлинной сетью.
+>> Угу.
+>> Да. То есть это двухсторонняя проверка,
+и они вам доверяют, и вы им. А WIPS -
+это не про доступ, а это не проверку
+того, что станция валидна.
+>> Это в том числе про защиту. Ну опять же
+защита. условно, например, можно ли с
+помощью WP сканировать э наличие,
+а-э, условно первой версии ВПА Ипов, а
+которые древние, старые и которые
+пытаются как раз-таки клиента скинуть на
+самый древний ВПИ АИП, чтобы
+>> А ты имеешь Всё, я понял, да, ты имеешь
+в виду разные атаки даунгрейдов? Дадада.
+на самый древний там протокол. Условно
+ты точку какую-то ставишь тем же самым.
+Клиент, естественно, говорит: "Да,
+о'кей, там сертификат не тот, да, и тем
+более сертификатриптовый
+недолго получить". Вот вот что-то такое.
+Это протектировать.
+>> Да, это можно, да, это можно.
+Единственное, что ээ тут опять же
+вопрос, где вам это легче будет
+проверять? То есть WPS это может делать
+про это. У нас есть парочка сигнатур,
+да, которые тоже ИП проверяют. Но это не
+главный фокус. Почему? Потому что
+даунгрейд Ипа, в принципе, можно делать
+и на стороне радиуса, да? То есть
+запрещать ему, потому что по Ипу. Кто
+кто общается по ИПу? По ИП общается
+конечная станция и радиуссервер. Точка
+доступа туннелирует ИП-трафик, который
+она получила на радиоинтерфейс,
+инкапсулирует его в радиус протокол и
+кидает на радиуссервер. Соответственно,
+радиус обрабатывает ипсообщения. И
+вообще-то удобнее, да. Если у нас
+вражеская точка
+>> пытается даунгрейднуть ИП
+>> без нахождения в нашей инфраструктуре,
+>> то есть она пытается это злой злой
+близнец,
+>> злой близнец с древним Ипом,
+>> которые пытаются вообще чуть ли не плейн
+текстом получить ИП от клиента,
+>> да? Только это делается чуть-чуть, ну
+как у нас это наблюдается по сути двумя
+сигнатурами. Первое - это Злой Близнец
+классический. Вот она скажет, что есть
+точка доступа с тем же именем. А второе
+- это мониторинг э-э уровня
+безопасности. Соответственно, у нас есть
+сигнатуры, которые тот же самый тип Ипа
+проверяют, которые смотрят какой у вас
+заявляется метод, там, не знаю, PTLS,
+tls там и так далее. Вот. И если
+объявляется при подключении станции
+метод
+неутверждённый там вашей политикой,
+грубо говоря, тогда об этом сообщается
+сигнатурой.
+>> Угу. Угу. Да. Только мы, естественно,
+это не увидим, если это будет в
+столовой.
+>> Ну там должен быть W IPS сенсор,
+>> да? На надо туда сенсор тогда отнести.
+Можно на своих сотрудников приклеивать
+сенсор, чтобы они в столовую тоже с
+сенсором ходили.
+[смех]
+>> Батаре не, на самом деле, надо помнить,
+что исообщения они, э, как и остальные
+служебные данные, они идут на пониженных
+датарейтах, соответственно.
+>> Вот. И это позволяет увеличить радиус их
+наблюдения. А, следовательно, мы их
+можем видеть там, ну, достаточно большо,
+>> ну, -90 там условно увидеть что-то
+где-то там крича,
+>> ну, -90 вряд ли, да, но -85 потенциально
+возможно, да?
+>> Ага, понятно. Ну, и ещё один вопросик и
+продолжаем. А это есть ли по, которое
+позволяет произвести диагностику наличия
+уязвимостей, чтобы провести аудит своих
+беспроводно беспроводных сетей?
+Вообще в целом это,
+>> ну, то есть условно, как, например, есть
+сканеры уязвимости обычных сетей,
+которые там запустил, и тебе там работы
+на ближайшие полгода навалило, вот
+пачить там всякое и так далее. Есть ли
+какая-то возможность, я так понимаю,
+вопрос в этом, запустить что-то,
+>> чтобы у тебя работа по вай-фаю
+привалила?
+>> Всякие W решения, вот такие подобные.
+Вот можно в чатикхау зайти, там прямо на
+это самое накидаю.
+>> Вот реклама чатикхау. Поэтому если кто
+интересуется беспроводными сетями, то
+приглашаем всех в чат екх Урус.
+Правильно? Дада. Да, верно, верно.
+>> Да. Задавайте вопрос, я вам пришлю
+ссылку в нашем канальчике. Поэтому
+сегодня это ЕкХ Урус. Не обессудьте это
+от нас. [смех]
+>> Всё. Да, я тебя отпускаю. Давай,
+продолжай.
+>> Да. [фыркает]
+Так, ладно. Хорошо. Далее,
+соответственно, что если мы решим эти
+две проблемы, да, две проблемы выбора
+канала и по переменного сканирования,
+соответственно, когда мы не можем
+нормально, адекватно находиться в
+канале, где происходит атака на нашу
+сеть, соответственно. Ну, мы возьмём и
+выделим отдельный интерфейс под это
+дело, да, почему нет? Во-первых, э
+увеличивает стоимость точки доступа. Ну,
+здесь могут парировать, сказать, что,
+ну, вообще-то, WPS сенсор тоже,
+соответственно, имеет некоторую
+стоимость, да. Поэтому тут, наверное, не
+самое главное, не самый главный
+недостаток интерфейса, но, но проблема в
+том, что он увеличивает стоимость точек
+доступа -
+ну, везде, да, где вам необходимо,
+соответственно, наличие сенсора. А
+возникает вопрос, а если у вас
+необходима
+WPS функция где-то, где сетей нету,
+предположим, да, ну, вы хотите просто
+защититься от возникновения там сетей,
+тогда получается, вам нужно брать вообще
+отдельную точку доступа. Но это наш
+следующий как бы раз слайд, да, который
+говорит об использовании отдельной точки
+доступа. Там тоже есть свои минусы.
+Дальше, если у вас есть дополнительный
+радиоинтерфейс у точки доступа, это
+только один интерфейс для мониторинга.
+его легко отвлечь на задачи борьбы с
+ветряными мельницами. Ну, имеется в
+виду, что мы же должны не только WPS
+функцией наблюдать события, нам бы ещё
+этому как-то противодействовать. А самое
+простейшее, да, это, ну, кадры
+аутентификации, например, но это не
+единственный метод. Там есть несколько
+способов того, как противодействовать,
+собственно говоря, появившейся угрозе.
+Вот. Если у вас всего один интерфейс,
+возникает вопрос: "А что вы сканируете
+один канал и отвечаете на одну угрозу?"
+А остальные-то каналы, что делать? У
+WIPS сенсора должно быть минимум два
+интерфейса, на самом деле, для того,
+чтобы выполнять сканирование. Ну почему?
+Потому что если мы посчитаем с вами
+количество сейчас каналов, да, которые у
+нас есть, ну, их просто нереальное
+количество, да, для сканирования, а вам
+нужно на каждый минимум там 150-200
+мскунд тратить, сколько времени пройдёт,
+пока вы все просканируете. Нужно
+параллельно сканировать. А если один
+интерфейс отвлёкся на, соответственно,
+противодействие, другой должен
+подхватывать его задачи, соответственно,
+тоже продолжать сканировать те каналы, в
+которых больше не сканирует тот, кто
+отвлёкся, и так далее. То есть вот один
+интерфейс всего. Дальше, система
+управления рассчитана в первую очередь
+на предоставление сервиса доступа к
+среде передачи, а не на обеспечение
+функции WAPS. У обычных точек доступа с
+с дополнительным интерфейсом у них
+ограниченный набор угроз, против которых
+они работают, и больше они ничего не
+делают. Они просто а не дают ни добавить
+ничего, да, не убавить. Вот. Ну, вы
+можете включить выключить функцию RCK
+detect, там включитьвыключить функции
+флут детекта, предположим. Ну, и как бы
+и всё, да, на этом заканчивается их
+функция. А этот самый, как он, forensic,
+да, анализ, сбор там сведений по
+скользящему окну, например. Ну,
+произошло событие безопасности, да? А
+где взять кадры за последние 30 секунд?
+Предположим, вот, то есть, чтобы не
+просто один кадр, о, я словил кадр - это
+угроза, да? А какую-то картину вокруг по
+времени иметь, что было до, что было
+после, соответственно, какое событие-то,
+как оно выглядело. [фыркает]
+Вот и системы управления традиционно,
+они не способны это показывать. Ну, не
+традиционно, я имею в виду, а системы
+управления точками доступа. Они
+ориентированы на другую задачу. Дальше.
+Встроенная система отвечает только за
+мониторинг сети, не просто именно этого
+производителя, а и управляемый именно
+этим контроллером сети. То есть мы не
+можем нашими точками доступа, нашим СПВб
+системой там какой-то встроенной в точке
+доступа
+э помогать
+соседним там, не знаю, сетям,
+управляемым другими контроллерами. А
+что, если у вас зоопарк, да, там Циска,
+Аруба, Рукус, там, не знаю, кто-нибудь
+ещё. Соответственно, как-то
+централизованно всё мониторить можно. А
+что, если это зоопарк ещё и на одной
+площадке? Вот, соответственно, в этой
+ситуации опять же, да, защитить сеть,
+управляемую сторонним контроллером, и
+тем более другого производителя не
+представляется возможным. Вот. Но с
+задачей классического рогодетекта, да,
+вот дополнительный интерфейс и там
+обеспечение эффективного управления
+радиоресурсами, радиоресурсменеджмент,
+да, этим, ну, имеется в виду выбор
+канала, мощности вещания. Ну, для этого
+вот дополнительный интерфейс время от
+времени сканирует каналы, смотрит,
+насколько там чисто или нечисто, и может
+точку доступа туда перенести или
+обнаружить какие-то там чужие точки
+доступа с высокой утилизацией. Это тоже,
+в принципе, он может. Вот. Но вопрос
+просто во времени реакции, в том числе,
+да. Вот. Ладно. [тяжело вздыхает]
+Далее мы ставим выделенную точку
+доступа. В принципе, здесь сохраняются
+те же недостатки, которые были и у
+встроенной точки доступа. У вас
+выделенная точка доступа начинает
+выполнять несвойственные ей задачи.
+Система управления рассчитана на
+предоставление сервиса, а не на
+обеспечение функции WPS. Ну и опять же,
+да, мы
+защищаем только нашу инфраструктуру,
+управляемую нашим контроллером, и всё. А
+что, если тут рядышком считаю вещаются
+наши же сети другого производителя, да?
+А а нам надо оценивать, насколько они
+защищены, соответственно. Причём самое
+интересное, кстати, с точки зрения
+защиты, ну вот мы вы можете сказать
+сейчас такая всё, я возьму, значит,
+там в Wpй тот же, да, пройдусь,
+посмотрю, что у меня или Кали Linux, да,
+там пройдусь, сделаю там пентест базовый
+и всё, или найму людей, они приедут,
+сделают. Но проблема в том, что они
+приедут, сделают и уедут.
+А мониторинг-то нужен постоянный. У вас
+же нету такого, что, знаете, вы
+вызываете людей поставить проводной IPS,
+они, значит, ставят вам проводную IPS в
+границу сети, а потом её забирают и
+говорят, что у вас всё нормально. Нет,
+они вас именно атакуют со стороны, да? А
+IPS у вас всегда. И здесь-то то же
+самое, по идее, должно быть. Вы когда
+заказываете там пин-тест какой-то вашей
+беспроводной сети, и приезжают,
+проверяют, но они уедут. А система
+предовращения вторжения-то должна
+продолжать существовать, да? Она не
+должна никуда деваться.
+Ладно. Далее, соответственно, теперь
+давайте поговорим об оверлейных
+системах. У них, разумеется, тоже есть
+свои недостатки, но и преимущества.
+Сначала про преимущество. это отсутствие
+негативного влияния на
+производительность наблюдаемой BLВС. То
+есть мы не заставляем наши там точки
+доступа сканировать. Следовательно, они
+могут полностью посвятить себя только
+работе с клиентами, соответственно, да,
+только обслуживать их трафик. И мы с
+вами возвращаемся вот к этому
+замечательному графику. Точки доступа
+работают по принципу нижнего графика, а
+не по принципу верхнего графика, что
+хорошо. Дальше. несколько интерфейсов с
+адаптивным назначением каналов
+сканирования. Один интерфейс отвлёкся на
+выполнение задачи. Другой другой его
+спасёт, соответственно, да? А другой
+будет сканировать каналы.
+Соответственно, два заняли. Ну хорошо,
+как попеременно начинать? То есть вот
+это вот алгоритмирование, сканирование,
+да, каналов не необходимо. Кстати, у аэ
+решений встроенных в точке доступа нету
+никакого там алгоритмирования,
+сканирования каналов. какие будут
+предпочтительнее, какие
+непредпочтительнее, куда отвлечься, куда
+не отвлечься и так далее. Дальше, в
+независимости от производителя, защита
+выполняется для любых сетей, в том числе
+смешанных, неважно, какого они
+производителя. И если администратор на
+одном там контроллере всё настроил
+хорошо, а на другом допустил ошибку,
+потому что он впервые работает с этим
+интерфейсом, BLWс централизованная сразу
+скажет, что вот у вас, значит, сеть
+беспроводная здесь, здесь и здесь
+настроена некорректно. Соответственно,
+почему? Потому что любая некорректная
+настройка безопасности с точки зрения
+сигнализации Wi-Fi, да, она всегда будет
+проявляться в этой самой сигнализации,
+там, в маяках тут же, да, станет об этом
+известно и прочее. Это сразу можно
+понять. [фыркает] Дальше. Система
+управления мониторинга заточена на
+обеспечение функции СПВ. То есть вся
+система реализована с позиции работы с
+обеспечением функции WPS, в отличие от
+встроенных решений. Ну и
+специализированное наблюдение за эфиром
+в зонах, где не требуется или запрещено
+покрытие BLVS. То есть вы можете
+использовать эти сенсоры, в том числе в
+тех зонах, где покрытия как такового и
+не должно быть, чтобы не было ситуации,
+знаете, как как-то а
+не знаю, предположим, какой-нибудь
+закрытый сегмент э сети какого-нибудь
+Газпрома, да, и, значит, злоумышленник
+берёт и разворачивает там сеть, называет
+её Газпром Corp, и сотрудники такие: "О,
+наконец-то эти придурки, айтишники нам
+додумались сделать этот самый сеть.
+Wi-Fi, да, подключаются к этой сети, а
+там видят классно корпоративный
+газпромовский портал, и они вводят туда
+свой логин и пароль. И всё, да, на этом
+заканчивается. Вот возникает вопрос: а
+как вы отследите? Или вы закрыли глаза и
+сказали: "Ой, да у нас вай-фая там быть
+не должно, никогда не было. Быть не
+должно. Что нам там мониторить?" Вот что
+вам там мониторить, да? Вот. Ладно,
+дальше.
+А, разумеется, что WPS-система, она,
+[откашливается] по-хорошему должна быть
+из двух элементов. Это сигнатурный
+движок и аномальный движок. Аномальный
+движок, как сейчас можно модно говорить,
+eBased, да, на основе искусственного
+интеллекта. Ну, на самом деле, там
+машинное обучение с семантическим
+анализом. По-хорошему это должно быть. У
+нас пока этого нету. У нас это
+планируется к третьей, не к третьей мы
+не успеем. четвёртой версии софта,
+скорее всего, мы сделаем это дело. Вот
+пока что у нас чистый сигнатурный движок
+с некоторыми дополнительными
+инструментами аналитики, которые не
+вписывались в сигнатурный анализ. А вот
+именно аномальный чуть-чуть позже, пока
+а мы решаем вопрос с
+производительностью, на самом деле.
+Ладно. А, ну возникает вопрос, да, где
+будет агент сидеть, который будет
+решать, аномалия у вас или не аномалия?
+Ладно, далее. Соответственно, как может
+выглядеть сигнатура? Сигнатура WPS, она
+м может, ну, не может быть, она будет
+чуть-чуть сложнее, чем сигнатура
+обычного IPS, того же самого. Вот. А
+может быть, в зависимости от того, с
+каким IPS-проводным когда-либо работали.
+Вот. Соответственно, само правило
+сигнатуры, оно включает в себя правило
+фильтрации, которое должно выделить,
+какой вас трафик интересует, какие
+кадры, да, в каком там порядке. Дальше,
+соответственно,
+они также будут пополняться
+информацией из статических, динамических
+переменных и базы структуры полей
+заголовков, в которых вы по сути
+говорите, да, какое поле в каком
+состоянии вас интересует, какой
+переменной оно должно там
+соответствовать. Что такое динамические
+переменные? Динамические переменные -
+это переменные, ну, у вас иногда так
+бывает, что события в одном кадре
+зависят от события в другом кадре. То
+есть вы должны взять какое-то поле из
+одного кадра, а потом с этим полем
+сравнивать остальные. И вот это вот
+динамическая переменная, куда мы можем
+записывать значения из одних пакетов и
+потом сверять другие пакеты по этим
+значениям, другие кадры по этим
+значениям. Вот. И, соответственно, в
+правилах фильтрации указываются эти
+самые динамические переменные. И дальше
+мы по ним делаем соответствие. Если
+соответствие обнаружено, то дальше что
+можно делать? Можно делать расчёт
+контрольной суммы из комплекса полей, из
+одного поля или из целого комплекса, да?
+можно делать формирование гистограммы по
+определённому полю, соответственно, и
+дальше отклонение от аномалий. Ну, в
+частности, вот базово, соответственно,
+это те самые мм алгоритмические
+способы защиты от аномалий, когда мы
+просто определяем вот график, значение в
+поле, да, какое-то идёт, вот график
+строится, и если он куда-то выпрыгивает
+внезапно, мы, соответственно, понимаем,
+что это аномалия, а, и для этого даже ей
+никакой не нужен фактически. Дальше. А
+может быть активация сигнала какого-то.
+Активация сигнала - это что делать?
+Делать можно разное. Можно предупредить
+аларм администратору, да, можно м
+формировать сообщение об угрозе, можно
+соответственно
+выполнять активны, ну, команды там на
+эутентификацию, активное воздействие,
+сбор этих самых данных полезных. Ну, то
+есть, например, там запись ээ этого
+кадра и окна за прошедшие там 30 секунд,
+предположим, в буфер памяти для того,
+чтобы администратор потом посмотрел, что
+произошло. Вот. Дальше действие
+сигнатуры по совпадению. Может быть
+просто запись кадра в файл, да, или
+запись этого, опять же, окна в файл. То
+есть, ну, по событию безопасности, что
+что-то произошло. Либо просто вот как
+факт записать файл. Вот. Ну, и запись
+значения в переменную. То есть, если у
+вас есть какая-то динамическая
+переменная, в неё надо записать какое-то
+значение. Вот одно правило фильтрации,
+оно реагирует, например, на динамические
+переменные, а другое правило фильтрации,
+оно записывает значение в динамические
+переменные. И в результате вот так вот
+некоторые сигнатуры могут работать в
+группах, да, в некоторых системах IPS
+это называется ещё корреляцией событий
+там, да, типа если сработала эта
+сигнатура, эта и это и это, тогда вот
+такое событие у нас немножко по-другому
+работают. у нас не если сработала эта
+сигнатура, это и это, а если вот эта
+сигнатура записала данные в такую-то
+переменную, а потом эта переменная
+выстрелила в другой сигнатуре, тогда
+происходит событие. Это немножко удобней
+на канальном уровне обеспечивает функции
+защиты. Вот. Ну и
+также дополнительные модули, да, там
+сверки контрольной суммы, сверка
+текущего значения для определения
+аномалии, это по гистограммам, анализ
+частоты сигнала, алгоритм адаптации
+частот, сканирования каналов. Это как
+дополнительные действия. То есть, если
+сигнатура сработала, может быть, имеет
+смысл адаптировать, мм, э, изменить
+частоту сканирования канала, может быть,
+номера каналов, да, там соседних
+начинать смотреть и так далее. То есть
+это вот такая структура, которую мы
+когда-то выработали, да, и сейчас, в
+принципе, следуем ей фактически. Ну, и
+здесь небольшой пример управления
+сигнатурой. Правда, обрезанная часть
+полей. Ну, м всё-таки, да, так вот с
+девового сервера. Соответственно,
+кстати, в последней версии добавили
+функцию выбора сайтов, наконец,
+разграничения, а, сенсорные сигнатуры,
+ну, сделали, то есть, когда можно не
+только для площадки сигнатуры написать,
+но и для отдельного сенсора при
+необходимости, да, если есть какой-то
+где-то выделенный, туда можно тестовое
+что-нибудь закинуть и так далее. Вот. Аа
+далее, очень важная штука, которой на
+которую не способна ни одна точка
+доступа на данный момент времени ни у
+одного производителя- это обнаружение
+терингстанций.
+Тетерингстанция - это станция, которая
+шарит Wi-Fi. То есть станция
+подключилась к корпоративной сети по
+какому-нибудь там ИПТЛСу могучему там,
+да, по чему угодно. Её подтвердили,
+переподтвердили всю, всё хорошо. А потом
+админ на этой станции, ну, человек, да,
+берёт и говорит: "А расшарить вай-файчик
+открытый".
+Это означает, что кто угодно может
+подключиться к этой точке доступа и
+через него пройти в корпоративную сеть,
+как в открытые двери. Соответственно,
+вот для того, чтобы от этого защититься,
+нужен механизм какого-то мониторинга,
+определения терингстанции.
+И определение тетарингстанции штука
+достаточно сложная, потому что, э,
+пакеты сигнализации, которые идут от
+корпоративного клиента в направлении
+корпоративной точки доступа, они
+отличаются практически полностью от тех
+кадров, которые посылает тот же самый
+там телефон в качестве точки доступа.
+Мак-адреса отличаются, а, соответственно
+имя сети, которое подключительно, ну,
+понятно, отличается, набор Capability
+set отличается, всё отличается вообще.
+То есть теринг точка доступа на
+телефоне, она как полностью новая точка
+доступа. Ну, полностью отдельное
+устройство. Вот. Ну, вы можете подумать:
+"Так, а, подождите, кадр в неё влетает и
+из неё вылетает, они же должны быть
+как-то одинаковыми". Конечно, можно
+коррелировать по этой одинаковости, но
+проблема в том, что вообще-то с одной
+стороны ВПА и с другой стороны ВПА
+разными ключами и зашифрованный объём,
+ну, зашифрованные пакеты, они могут даже
+по объёму немного отличаться в
+зависимости от того, что конкретно
+делает телефон с этими данными. Да, ну
+там по объёму может быть и будут
+одинаковые, но по контенту они будут
+разные, потому что разные ключи
+шифрования, разные вектора
+инициализации, то есть вы не будете
+получать одинаковых данных с одной и с
+другой стороны. Они все зашифрованы,
+соответственно. То есть политl вы не
+видите, ничего не видите, вы видите
+только канальный уровень. А на канальном
+уровне макдреса тоже разные.
+Соответственно, как понять, что одни
+данные принадлежат там другой станции?
+Вот, ну, вот эти данные, которые пришли
+на телефон как на точку доступа и
+данные, которые ушли с телефона на
+корпоративную точку доступа, это на
+самом деле одно и то же. Вот как это
+определить, соответственно, вот это
+достаточно сложная задача. И мы таки
+научились это делать. Вот. И это было
+нелегко. Это требует определённый, опять
+же, алгори, ну, специфического алгоритма
+работы радиоинтерфейсов. Соответственно,
+на это требуется время, но в результате
+мы действительно можем определить
+наличие терингстанции, точки доступа
+клиента, который шарит точку доступа,
+при этом будучи подключённым к вашей
+корпоративной сети. Ну вот это вот у нас
+скриншотик с наших ранних
+как это тестов, да, корреляция
+обнаружена. Я когда вот этот скриншот
+увидел радовался просто неизмеримо, что
+у меня получилось эту штуку сделать.
+Вот. Ладно. В общем, э этот алгоритм
+сейчас реализован, да, и фактически
+работает.
+Но это ещё не всё. На самом деле любая
+WPS-система из-за того, что мы вынуждены
+работать в большом количестве разных
+каналов, и это ж огромная шерот среда,
+как-то нам нужно больше интерфейсов,
+потому что вопросов мм по смене каналов
+достаточно много, да? А что если мы
+хотим видеть вообще весь трафик соседних
+точек? А если обнаружили атаку, то что
+делать с процессом смены каналов? А если
+решили наблюдать, что за другими
+каналами? А если надо наблюдать за
+событиями в двух каналах сразу может это
+делать поочерёдно. А если надо следить
+за точкой? А если надо включить там
+этот самый Ender Security Active
+Exortation, да, наша технология. Вот. Ну
+ладно, в общем, если вот это всё нужно,
+сколько нам интерфейсов нужно? Да
+по-хорошему, вот вот если по чесноку,
+нам интерфейсов нужно столько, сколько
+есть каналов в вай-фае с шагом, в идеале
+с шагом в 5 МГц. Не в 20, не в 40, не в
+пять. Вот, разумеется, это невозможно. И
+возникает вопрос: а как работать
+алгоритмами так, чтобы правильно эти
+самые
+каналы перемешивались, смотреть более
+эффективно в средах там и так далее. Но
+и это ещё не всё. На самом деле
+нормальной WPS-системе ещё необходимо
+несколько элементов.
+Первый элемент - это спектральный анализ
+эфира. Спектральный анализатор
+критически важен, потому что не вай-фаем
+единым. И, да, и кроме того, бывает
+Wi-Fi, который работает в промежуточных
+каналах. Ну, например, мы все привыкли,
+да, что мы работаем там в 5 ГГца, каналы
+36, 40, 44, 48, да, соответственно, всё
+замечательно, мы привыкли, но вообще-то
+проблема в том, что стандарт не
+запрещает работать в тридцать седьмом,
+тридцать восьмом, тридцать девятом
+канале. И, кстати, микротик тоже не
+запрещает. И возникает вопрос: а что
+если у вас возникает некая паразитная
+сеть, которая использует промежуточный
+канал, а ваши нативные э системы, все,
+которые у вас есть, они просто не видят
+это устройство, потому что они-то идут
+по центральным частотам тридцать шестой,
+сороковой, сорок четвёртый, они
+пропускают центральные частоты там сорок
+второго канала, например, и так далее.
+Как вы это будете наблюдать? Для этого
+нужен постоянно работающий спектральный
+анализатор, который спектральной
+аномалии также будет сообщать. Или не
+Wi-Fi вообще, да, соответственно, у вас
+работает где-то занимает частоты,
+соответственно, периодически как-то, да,
+возникает. Это же тоже важно. К
+сожалению, пока что в нашем WIPS пока
+что спектрального анализатора нету, но я
+надеюсь, что он у нас появится дальше. А
+что ещё необходимо делать? необходимо
+делать декрипт менеджмент и бadcastст
+трафика.
+А, и это, на самом деле, большая м,
+скажем так, проблема, потому что если мы
+с вами говорим про VPA2 PSK, VPA2
+Enterprise, VPA3 Enterprise, дешифровать
+там что-то реально. Если мы с вами
+говорим про VPA3
+Simulance Authentication of equals, там
+же есть некоторая проблема. А,
+соответственно, так как СПВб оверлейны,
+это к проблемам, да, СПВ, если мы
+говорим, так как он оверлейный, он не
+имеет доступа к фихман ключам, которые
+были выработаны для VPA3 сессии. А это
+означает, что мы для VPA3 сая не можем
+следить за там широковещательным или
+юникастным менеджмент-трафиком, к
+сожалению, соответственно, потому что он
+защищён выпа. Но с другой стороны, это
+же защита, это же не просто так, да. Вот
+[фыркает]
+если мы с вами говорим про энтерпрайзные
+решения, то имея доступ к ключам, а их
+можно получить через радиус, можно
+выполнять декрипт широковещательных и
+менеджмент данных с целью их анализа на
+предмет угроз. Почему здесь нету обычных
+данных? Дело в том, что если мы хотим
+делать декрипт обычных данных, нам нужны
+аппаратные ускорители, которые смогут
+делать декрипт на современных скоростях.
+Менеджмент и бродкаст ходят на нижних
+скоростях. И у нас есть аппаратные
+возможности на сенсоре делать декрипт
+этого трафика и определять,
+соответственно, есть там угроза или нет,
+да? Есть там, например, эксплуатация
+уязвимости хол 196 или её нету,
+например. Есть ли там, э, не знаю,
+попытка имперсонализировать точку
+доступа или нету. Вот это вот всё можно
+сделать, ээ, дешифровав менеджмент и
+бродкаст. А трафик данных он идёт на
+высоких датарейтах.
+И трафик данных, идущий на высоких
+датарейтах, мы можем, ну, потенциально,
+да, там VPA2 PS, VPA2 Enterprise, его
+можно декриптить.
+Проблема в том, что, ну, две, на самом
+деле, проблемы. Первое - это, а,
+насколько это необходимо декриптить
+юникасный трафик? Он сейчас и так
+приведёт на точку доступа, и дальше он
+удёт в проводную сеть. То есть его можно
+анализировать обычными традиционными
+IPS-решениями, которые анализируют
+третий тире седьмой уровень. То есть это
+не совсем наша задача получается,
+во-первых. А во-вторых, просто
+аппаратных мощностей не хватает, чтобы
+декриптить трафик, идущие на скорости
+там, не знаю, плотные 800 мби в секунду.
+Предпол Ну, понятно, что не будет 800
+мби в секунду, но всё-таки, да, вот
+такой плотный трафик. Просто процессор,
+который используется в сенсоре, просто
+на это не способен. аппаратного
+ускорителя под декрипт нету. Да мы и
+разрабатывать его, вообще-то, не имеем
+права, так-то вот. А без специальной
+лицензии на то, а она стоит немало
+денег. Ладно. Дальше, а
+ещё один элемент очень важный - это
+определение местоположения источника
+угрозы. То есть, по-хорошему,
+WPS-система должна быть снабжена RTЛС,
+э, средствами для того, чтобы хотя бы
+примерно указать вам на зону угрозы. У
+нас это дело присутствует,
+соответственно, но мы не показываем
+точку, находится здесь. Мы не
+обманываем, мы понимаем, что, а,
+определение местоположения клиента там
+по мощности сигнала или какой-то
+станции, это на самом деле всегда
+пальцем в небо. То есть то, что там
+рассказывают, да, что вот мы определяем
+местоположение с точностью до 3 м. Ну
+вот если у вас есть технология там angle
+of arrival, предположим, вы используете
+для определения местоположения объекта в
+пространстве, а или там по
+Bluetooth-маякам вы делаете оценку,
+тогда может быть да. Но если мы с вами
+говорим об определении местоположения
+объекта только по сигналу, по его
+мощности,
+то рисовать точное местоположение - это
+это неправда. Просто у вас там точность,
+разброс будет, да, там 10 м в разные
+стороны. Поэтому мы рисуем не отдельную
+точку, мы рисуем облако потенциальных
+точек. И если у нас по мощностям сигнала
+так вышло, что это облако, оно может
+быть в разрыв, то есть, грубо говоря, с
+одной стороны сенсора, да, облако
+вероятного местоположения и с другого,
+мы так и нарисуем, потому что он может
+быть здесь, а может быть здесь. Мы не
+знаем точно, да, вот по математике,
+которая сейчас сходится, вот так вот
+получается [фыркает] такая история.
+Разумеется, там алгоритмы уточнения
+пытаемся использовать, но всё равно
+помощник сигнала - это всегда такое не
+очень точное. Вот есть в разработке там
+тоже по angle of arrival возможность,
+да, определения по времени прихода, но
+это всё пока что тоже на этапе такого
+проектирования, скажем так, находится.
+Может быть, будут средства, будем
+разрабатывать, как говорится. Итак, с
+точки зрения сенсоров, на данный момент
+у нас вот такой товарищ, сенсор третьей
+версии, соответственно, справа с
+внешними антеннами. А был у нас сенсор
+второй версии, сенсор первой версии,
+первый и второй с одним были с одним
+радиоинтерфейсом,
+соответственно, и версия третья уже с
+двумя радиоинтерфейсами на данный момент
+трёхдиапазонный 2,4 5,6 ГГц может
+наблюдать. Вот, соответственно, ну и под
+это дело, разумеется, менеджер системы
+управления, которая способна работать с
+этим парком сенсоров, агрегировать с них
+информацию, централизовано предоставлять
+информацию о видимых устройствах,
+предупреждениях, настраивать сигнатуры,
+сенсоры для них и прочее. Ну и,
+разумеется, всё это в графическом виде
+красивом а-э
+отображать.
+Вот. Итак, если мы будем подводить с
+вами итоги сегодняшнего нашего
+разговора, основная цель системы
+прерачения вторжения, да, это
+обеспечение комплексной защиты
+беспроводной сети от
+несанкционированного доступа и кибератак
+путём оперативного блокирования
+инцидентов, непрерывного мониторинга
+радиоэфира и автоматического обнаружения
+угроз. Конечно, оперативное блокирование
+инцидентов возможно не для всего. То
+есть, если кто-то поставил шумелку или
+если кто-то просто тупо флудит какие-то
+кадры безостановочно, мы можем админу
+сказать: "Вот он здесь, иди за ним". Да,
+но мы никак не можем прекратить его
+вещание, к сожалению. Да. Ну как? У него
+просто какой-то вот источник сигнала
+стоит. Что мы ему сделаем-то? Вот
+ничего, к сожалению. Соответственно,
+только физически идти устранять. А вот
+если это какая-то логическая история,
+да, тогда да, мы можем
+противодействовать, мы можем попытаться
+увести наши точки доступа в другой в
+другие каналы, да, там командами
+контроллеру можем попытаться задосить
+источник этой атаки, если мы
+действительно подтвердили, что это атака
+и так далее. То есть такие вот
+особенности. Слышу там опять включение
+микрофона. По всей видимости снова
+какой-то поговорить хочется. Да.
+А, то есть, ну, во-первых, первый
+вопрос, что обнуляется ли угруза
+теринга, если использовать для доступа к
+корпоративному Wi-Fi-сертификаты?
+Вот. Ну, и типа все мобильники
+отправлять МЗзону?
+>> Нет.
+>> Нет. А, о'кей. А-а, ну и второй вопрос,
+э, опять же, возможно, э как раз-таки
+более подробно рассказать, как
+обнаружить пользователя, который
+подключивший к корпоративному Wi-Fi с
+телефона, включён на нём точку доступа и
+раздал Wi-Fi всем вокруг, для
+корпоративной сети остаётся всего один
+клиент. А как будут, как это всё
+обнаруживается?
+>> Ну, как раз
+>> мы это смотрим не на основе
+логики трафика, на самом деле. Ну, на у
+меня корреляция выполняются чуть-чуть
+по-другому. Рассказывать, как именно, я
+не буду. [смех] Угу. Это это секрет,
+>> да. Но сам по себе мониторинг вот этот
+вот Ну давайте разверну, наверное, ответ
+по поводу того, что не является защитой
+сначала, а потом разверну ответ по
+поводу
+вот этого самого, что одна станция видна
+всего получается. По поводу защиты.
+Смотрите, вы мобильник, дело же не в
+мобильнике, ваши ноутбуки тоже могут это
+делать, соответственно, да? Ну да, вы
+можете отпрофилировать станцию, понять,
+если это мобильное устройство, то
+посадить его там в демилитаризованный
+велан, а там от него там, не знаю, на
+мороз через фаербол и на улицу. Ну, в
+интернет, в смысле, да. Вот. А, ну да,
+хорошо, можете так сделать. Тогда
+возникает вопрос: а зачем вам эта сеть
+корпоративная? Ну это если просто для
+гостевого доступа или для доступа в
+интернет, вопросов нет, пожалуйста,
+делайте. Вот. Но если у вас
+подразумевается какой-то доступ к
+корпоративным ресурсам, то в этой
+ситуации получается интересный эффект,
+да, что вы вроде как дали доступ к
+корпоративной сети и тут же через ваше
+устройство залезает внутрь этой
+корпоративной сети кто угодно. Почему?
+Потому чтос сертификаты распространяются
+только на вот это устройство первично
+подключающееся, но мы не контролируем,
+кто к нему подключается. Но из этого,
+правда, есть один выход такой, который
+требует строить ещё один зиккурат, да,
+это
+системы. То есть чисто теоретически вы
+можете потребовать от там, ну,
+развернуть какую-нибудь -э систему типа
+там какой-нибудь Identity Service
+Engine, что-нибудь такое, да, прикрутить
+к ней MDM Mobile device менедмен
+систему, а, заставить всех ваших
+пользователей установить специальное
+приложение, которое будет проверять
+состояние вашего телефона и в случае
+обнаружения на нём точки доступа
+блокировать это дело. Ну, то есть просто
+не давать шарить точку доступа как
+вариант, да, можно. То есть это другой
+путь решения. проблемы. Ну, как и у
+любой проблемы, есть несколько путей
+решения фактически. Один из них, да,
+такой, когда вы требуете установку
+специального приложения. Но тут вы
+нарываетесь на один маленький нюансик. А
+кто будет администрировать эту самую
+МДМ-систему с точки зрения всего зопарка
+устройств конечных, которые у вас есть?
+Ну, то есть, да, у вас начинается
+обращение: "Я не могу установить
+приложение", да, там, "Я не могу
+обновить приложение" и так далее. Ну, в
+общем, это же всё. Вы тут же попадаете в
+чудесный рынок, э, как это?
+>> Андроидов.
+>> Андроидов, [смех] да,
+и этих, как о, Хиперос, да, какой,
+>> да, и Хиперос, да,
+>> и Авро ОС,
+>> да, и вот вот этого всего. [смех]
+Дадададада. Вот, соответственно, то есть
+такие вот вещи, да? Или к вам приходит
+человек, а у него вообще какой-нибудь,
+не знаю, там сборка ручная домашняя на
+коленке его андроида, да, там
+какого-нибудь, и он говорит: "Не буду
+ничего ставить, дайте мне доступ к
+корпоративной инфраструктуре". Это
+какой-то большой большой большой большой
+вопрос к тому, что похоже здесь может
+быть надо и административные какие-то
+меры применять, что условно
+корпоративной сети только корпоративные
+девайсы с МДМом и так далее и с правами
+зарезанными в ноль.
+>> Ну да, да. То есть, ну, мы всё, мы снова
+приходим, да, как это цикл замыкается, и
+мы возвращаемся из боёт архитектуры в
+архитектуру,
+>> чисто энтерпрайзную, корпоративную,
+>> да, да, да, устройств, соответственно.
+То есть как бы, ну, вот как всегда Весы,
+да. Ну, вот один из способов защиты. Вот
+я показал, да, мы научились определять
+теринг устройства. Кстати, иногда теринг
+станции активируется вирусной
+активностью. То есть вирус, если попал
+на станцию, он может в том числе
+прозрачно для пользователя активировать
+терингточку.
+>> Классно, красивая.
+>> Да, да. [смех]
+Вот. Ну, э хорошо. А, и второй вопрос,
+да, был, который, мм, это я ответил на
+вопрос, что проникнуть в корпоративную
+сеть могут. А второй вопрос, напомни,
+пожалуйста, который касался,
+>> тоже обещал раскрыть. А по поводу этого
+как обнаружить, как обнаружить, да, там
+действительно есть проблема, что
+фактически устройство, к которому
+подключается, оно, во-первых, натит
+трафик, да? Во-вторых, на, то есть на
+сетевом уровне он заначен уже, мы не
+видим по IP-адресу, но это я сейчас не
+прос, я про проводную инфраструктуру с
+её точки зрения, с точки зрения
+проводной инфраструктуры,
+>> ну, тельку можно, конечно, подставить но
+это так, это тоже детская защита.
+>> Чего ещё раз? ТТэльку можно подставить
+внутрь корпоративной сети единичку, но
+это тоже детская защита обходится двумя
+нажавками клавиши.
+>> Да. Да. Так, а большинство мобильных
+телефонов, они вот эту ТТКУ, да, там они
+её сделяют на 64 обратно и всё. И у них
+всё замечательно. Ну или со 12.
+>> То есть при притетеринге дефолтно,
+да? Дадада. То есть они это всё делают
+сразу из коробки.
+>> Вот. Ну их операторы это научили, потому
+что операторы-то первыми начали на это
+дело реагировать. И когда был теринг
+именно мобильных сетей, ну, он до сих
+пор есть, да, вот просто с ним устали
+бороться уже, а, а сначала боролись ТТ и
+всё. Там в большинстве андроидов это уже
+как базовый функционал ТТ сбрасывать
+тоже в обычное значение. Ну, и всё, как
+бы на этом всё заканчивается. Вот.
+[фыркает]
+Поэтому, да, ну, казалось бы, ну,
+хорошо, в корпоративной сети давайте
+следить за, не знаю, за типом HTTP
+запроса, да? То есть один, у меня даже
+как-то статья одна из была, это как
+наблюдать WLtering на основе анализа
+HTTP запроса, потому что когда станция
+подключается, она гонит базовый HTTP
+запрос, в котором проверяет доступность
+интернета.
+>> Угу.
+>> Она там указывает тип платформы, который
+у нас есть. Если у нас нам с одного и
+того же айпишника сначала прилетает один
+тип платформы, а потом другой тип
+платформы, вероятно, за ней кто-то
+прячется [смех]
+>> и заблочить их нафиг, на на основе
+этого. Да. Да, да. Вот, соответственно,
+а для WPS такой подход не работает,
+потому что там ВПА всё зашифровано, да,
+трафик данных мы ничего не видим,
+>> да, мы не видим уже, поэтому как бы мы
+не можем в нём копаться, и тут уже
+другие методы нужны. Вот. Хорошо. Ну
+ладно. Вот теперь вроде ответил, да, на
+этот вопрос или или сделал его ещё более
+непонятным, [смех]
+как обычно. Вот. [тяжело вздыхает]
+Ну ладно, хорошо. Про цели рассказал,
+про основные задачи, да, выявление
+активности нарушителя, генерация отчётов
+для анализа инцидентов, адаптивное
+распределение, сканирование,
+распределённое сканирование эфира,
+мониторинг радиочастотного спектра на
+аномалии, контроль легитимных
+подключений, анализ методов подключения.
+Это вот как раз к вопросу ипов, да, и
+всё ли там хорошо с применённым
+алгоритмом именно. Вот. И выявление
+нежелательных устройств. Как видите,
+выявление нежелательных устройств здесь
+вообще последним пунктом написано,
+потому что его только ленивый не умеет,
+но вопрос в эффективности его
+выполнения, как мы уже с вами разобрали
+ранее. Ну что, на этом у меня, пожалуй,
+всё. Если есть какие-то вопросы или есть
+желание поговорить, но давайте
+поговорим.
+>> Ну, тут у меня есть некоторое количество
+вопросов. Мы пока подождём ещё вопросы
+из чата. Аа тебе придётся отдаваться от
+моих вопросов. Во-первых, смотри, на
+кого сейчас есть ориентация вот
+конкретно вашего продукта. То есть у вас
+коммерческий продукт, всё прочее, то
+есть это компании, вот условно профиль
+компании, которой это будет интересно. И
+второй тут же близкий вопрос, профиль
+компании, которая сможет это себе
+позволить.
+>> Ну, самое близкое - это банковский
+сектор. Угу. Это прямо вот вот туда,
+потому что в госы хочется, но для ВГОСов
+нужен Ой, в Госав, господи. Для госов
+нужен встек, да, это другая история
+немножко. Ну, банковский, причём
+банковский не критической информационные
+системы, потому что в критические
+информационной системы нам тоже нужен
+стек.
+>> Угука. Понятно.
+>> Вот. А кроме того, мы, кстати, сейчас
+будем выделять отдельную функцию. По
+всей видимости, она нужна. Ну, мы видим,
+что решение-то хочется, да, как-то
+продавать. И вот буквально, я думаю, в
+течение месяца мы придумываем какую-то
+политику. А как её превратить
+с чистой WPS-функцией хотя бы на функцию
+мониторинга с точки зрения тапа? Ну, то
+есть вот есть в обычных проводных сетях,
+да, у нас есть, э, там тапы различные по
+сети, чтобы там статистику какую-то
+собирать и так далее. Ну, а здесь просто
+разбросаны по сети тапы, только
+беспроводные, да, когда надо, быстро
+заказал перехват в определённые области,
+посмотрел,
+ну, и всё, дальше пошёл.
+>> Ну, то есть больше больше в сторону
+именно диагностики
+>> постоянный диагно, как вот есть класс
+устройств - это сенсоры.
+>> Сенсоры беспроводной сети для того,
+чтобы лучше решать обращение от
+пользователей, то есть сложно там под
+столами накидать и так далее.
+>> Да. Да.
+>> Хорошо. А что у вас по поводу новых
+стандартов? Есть ли какие-то сложности?
+Ну вот условно там у нас BE появился,
+там ещё что-то появится. Есть ли
+какие-то сложности, когда появляются
+новые стандарты? Приходится
+переписывать. И вот самый главный
+вопрос: а железо? Как оно к этому ко
+всему?
+приходится.
+Самый сложный момент - это на самом
+деле, когда меняется аппаратная часть с
+нашей стороны, потому что нам приходится
+обучать систему и обучать движок новым
+заголовкам Radi Tab, которые приходят с
+карточки.
+>> Угу.
+>> Вот с точки зрения работы с
+менеджменткадрами практически ничего не
+меняется. Ну, мы опять же, да, с каждым
+новым стандартом, просто если есть
+какие-то проблемы уязвимости, мы можем
+это как-то добавить новыми сигнатурами.
+С точки зрения аналитики нам приходится
+дописывать э новые шильдочки. Ну, типа,
+ой, Wi-Fi 7 появился, значит, что надо
+теперь в инфо об устройстве, да, в
+профиле устройстве писать, что он Wi-Fi
+7. Кстати, [фыркает] к вопросу о
+профилировани capability и там КВТ-тата
+отмеченые поколения и вот это всё. Ну
+ладно. А-а, соответственно, вот это
+нужно отмечать. И самая большая проблема
+вот с новыми режимами модуляции, типа
+там C96,
+нам это не сильно большую
+[откашливается] проблему даёт, потому
+что мы с на этой модуляции идут только
+кадры данных, а с кадрами данных мы
+особо и не работаем. Мы только заголовки
+первичные собираем, нам этого
+достаточно. Вот. [фыркает] А и
+сигнализация. Сигнализация всегда идёт
+на LEG, соответственно. А вот с чем
+проблемы, это, например, вот сейчас
+Wi-Fi 7 MTLink Operation. Вот с
+Multilink с Мllo мы пока не знаем, как
+правильно себя вести. То есть мы видим
+кадры, мы видим сигнализацию, мы её
+можем разбирать. В этом проблем нету.
+Проблема в том, как вот пока что
+непонятно с точки зрения уязвимости, что
+там может всплыть, да, что у вас два
+канала одновременных, и получается, что
+с устройства гонят данные по двум
+каналам, а мы видим только один. Да. Вот
+как бы нам тоже распараллелиться. У нас
+адаптер видит всё, но он не умеет в МЛО,
+потому что он шестигирцовый, но не Wi-Fi
+7. Следующий чипсет, который у нас
+будет, скорее всего, это уже будет
+иметь, но я думаю, что там всё равно
+путь не в распараллеливание одного
+интерфейса, а всё-таки наблюдение,
+скорее всего, двумя интерфейсами. Ну вы
+пока что мы вот думаем над этим.
+Непонятно пока не до конца понятно.
+Просто с МЛО, опять же, если мы
+разбираем работу с одним интерфейсом,
+там возникает вопрос, как в режиме
+мониторинга наблюдать МЛО и как
+управлять драйвером, чтобы он это
+позволил, потому что, вообще-то, МЛО он
+тоже согласуется отдельно на именно
+момент передачи данных. А как посадить
+адаптер в мониторинг-режиме в МЛО канал,
+вот это большая проблема и вопрос, и,
+скорее всего, весь перехо придётся
+перелопачивать. И тут вот прямо
+сомнительно пока что.
+А как дела у вас с интеграциями АИ и так
+далее? То есть это сейчас, я так
+понимаю, отдельно стоящая платформа, а,
+со всеми историями. Но, естественно, это
+же всё пойдёт куда-то там условно
+безопасникам или там сетевым инженерам.
+Ну, то есть к какому-то отделу, у
+которых наверняка уже есть какой-то свой
+инструментарий.
+Аа сейчас интегрируется ли ваша система
+с чем-то ещё?
+>> Зрение отправки данных. Это стандартные
+CSO и SNMP. Угу. С точки зрения
+интеграции с контроллерами, да, это
+управление. У нас есть интеграция UniF
+и, ну, там дальше мы уже мы один
+контроллер интегрировали, увидели, как
+это, ну, как это надо делать, и дальше
+уже любой контроллер, какой захотите,
+там под запрос, да, по сути, если
+скажет, что инфраструктура нациско, ну,
+о'кей, мы сделаем интеграцию с циским
+контроллером. С точки зрения интеграции
+с CM-системами, у нас есть с нашей
+стороны апи, то есть к нам можно по
+ресту запросы слать, если необходимо.
+Ну, то есть условно безопасники, если у
+них CM есть какой-то, они по растапе к
+вам цепляются и уже свои там дашборды
+какие-то смотрят.
+>> Да, да.
+>> Угу.
+>> Да, тут сложный вопрос. Я его что-то
+как-то не до конца понимаю.
+Может быть, у тебя получится, потому что
+я пытался уточнить в чате, но такое для
+меня пока остаётся туманным. А как-то
+меня спросили, ну, это вопрос, это
+цитата. А как-то меня спросили
+безопасники, как можно защитить Wi-Fi
+сееть, чтобы её не использовали как
+радиомаяк быстродвижущиеся объекты,
+чтобы её не использовал как радиомаяк.
+Быстровижущийся
+об А, всё, я понял. Навигация это по
+сути получается. То есть у вас есть
+быстровижущий объект
+>> also known as BPL, да, предположим, и
+ему нужно, соответственно, как-то
+навигироваться. его всё там рэбом глушит
+и так далее, а ему надо как-то знать. И
+вот есть Wi-Fi сеть, которая что-то
+вещает. Он видит: "О, вот эта сеть,
+значит, я вот здесь нахожусь". А если
+быстродвижущийся объект где-то вот
+вверху, ну, ставьте соответствующего
+вида антенны, чтобы вид вверх не
+светить, да, или экранируйтесь как-то и
+так далее. С точки зрения вай-фая именно
+типа, что давайте мы будем вещать что-то
+специальное, чтобы нас не могли
+использовать как маяк, нет, это, к
+[фыркает] сожалению, невозможно. Да. И
+на самом деле, даже если вы защититесь,
+вокруг вас куча других, ну, не вы же
+защищаетесь, вы
+>> может быть, хотя может быть это типа как
+вопрос скорее, как не быть целью,
+маяком целью, да, но на самом деле
+>> крытая сеть, ну, BSSID у тебя есть всё
+равно в любом случае,
+>> да, у тебя есть всегда BSSID и тебя
+всегда видят. Ты, конечно, можно,
+знаете, наверное,
+>> ежедневно его менять,
+>> скрыть SSID, да, и ежедневно менять без
+SSID точек доступа. Может быть,
+действительно,
+>> будет не очень удобно, конечно.
+>> Вот, ээ, может быть, да, направить
+антенны вниз куда-то, соответственно, ну
+или экранировать их как-то сверху. И что
+ещё? Что ещё? Что ещё? Что ещё можно
+сделать? Да и на самом деле можно
+подумать, если это вот прямо цель такая,
+да, ну, я думаю, можно защититься при
+необходимости.
+>> Приходите к Антону, подумайте с ним
+вместе. [смех]
+Вот ещё в чат КХурус можно прийти. Там
+тоже, я думаю, достаточно коллег, кто,
+возможно, даже уже сейчас об этом думал
+и продолжает думать. Я просто живу,
+видимо, в каком-то более мягком мире и
+такой даже не сразу понял, о чём
+вопрос-то у нас
+>> в [смех] чате.
+>> Вот. А, кстати, ну так, если интересно,
+также там в чатике можете посмотреть
+недавно с А и Вел Wireless ещё куда-то
+постил, можете посмотреть там. Классно.
+Я вшарark для вршарка сделал этот самый
+отдончик небольшой. И он теперь, если
+поставить его, этот плагинчик, у вас
+будет он показывать, какие блок ак
+сообщения и какие ак сообщения, какие
+кадры Wi-Fi подтверждают. Сейчас в
+Варшарке нет такой корреляции. Ставите
+плагинчик, и у вас сразу видно, что чего
+подтверждает.
+>> Я Я уже, кстати, это скачал. Спасибо.
+Да, [смех]
+>> я уже посмотрел, скачал, думаю, а как-то
+приятно, приятно.
+>> Хорошо, хорошо. Прекрасно. А как у вас
+сейчас с разработкой? И вообще вот
+условно, например, начали ли помогать
+нейронки при разработке и так далее? То
+есть продуктовая разработка - это сейчас
+ээ многие туда смотрят, активно ходят и
+так далее. У вас как-то корреляция пошла
+в плюс или всё-таки типа нет, мы только
+хардкорщики, мы там си, вот это вот всё,
+только голые драйвера, ассемблер?
+>> Не, не, не, ни в коем случае, конечно,
+используется. Вот. Но на самом деле тут
+двоякое использование, да? Иногда это
+разобраться в технологии нужно. То есть
+это просто вот как лмка спросить просто,
+да? А иногда это действительно написать
+код, но как правило, когда сроки горят,
+очень надо. И вот она завтра должна
+работать, но потом после этого разраб
+сидит и пару дней выкидает то, что там,
+да, то, что там написано. То есть для
+срочного решения задачи прямо хорошо.
+Но, конечно, там не то, что даже мусора
+много, она просто не всегда понимает
+правильно логику. И вот сейчас, если
+заметите, сейчас
+там те же самые там банки разные,
+Акбарс, например, да, они нанимают в
+штат не программиста, а промнженера.
+И вот наши сейчас на собеседованиях там
+различных, они в первую очередь они
+спрашивают: "А как вы, какой промпт вы
+напишите для яишки?"
+>> Угу.
+>> Чтобы вот эту программу сделать? Они
+говорят: "Не, я сам запрограмми". Он
+говорит: "Нет, нас не интересует, что вы
+сами сделаете. Нам нужно, чтобы вы
+правильный промпт задали". Вот. И на
+самом деле за этим будущее фактически,
+да? Ну, то есть от этого спасаться, от
+этого никак не спастись. Уже всё уже,
+да?
+>> Всё, сейчас будут все проинженеры.
+>> Очень очень круто. Очень круто.
+>> Все будут специалисты промтоинженеры.
+Ваша задача давать правильный промт,
+соответственно, ишки.
+>> А насколько, как ты думаешь, вообще ишки
+помогут именно в поиске каких-то
+уязвимостей и так далее?
+>> Ну, сильно. Сейчас уже работает от
+антропика. Господи, каждый раз забываю,
+как он называется-то.
+>> Клод.
+>> Антропик. А
+>> не, не, ну клод - это просто для
+разработки или антропик. Они сделали
+специализированного агента
+с со способностью как раз вот э анализа.
+И там даже правительство США его вроде
+бы как даже решило это прикрыть и
+предоставить доступ только крупным
+компаниям-разработчикам.
+Вот. Потому что Шибка он могучий.
+>> Угу.
+>> Вот. Ну, некоторые, конечно, говорят,
+что ой, это всё пугалка,
+это нет,
+>> местами не пугалка. Да. Сегодня, кстати,
+опубликовали уязвимость, что из-под
+контейнера можно прямо, ну, не сегодня,
+наверное, даже, это некоторое количество
+времени назад, а из-под
+непривилегированного
+пользователя Linux можно поднять свои
+права на рута практически во всех
+дистрибутивах.
+>> Да. Да. И самое интересное, это было
+обнаружено тоже яишкой. И самое
+интересное, что самое опасное Ишка
+убегает из докера. Дадада. Да, я об этом
+и говорю, что у тебя условно контейнер
+не привилегированный через ядро ты такой
+бам. А получается
+>> просто далеко ходить. У меня супруга-то
+она занимается как раз разработкой и
+соответственно и у них компания этим
+занимается. И она Ну это правда, ребят,
+это немножечко страшно. Надо,
+[фыркает] короче говоря,
+>> молиться.
+>> Да. Да.
+Вот она, правда, пытается там привить
+всеми силами инструменты защиты, потому
+что действительно сейчас большинство
+разработчиков не компании, а именно вот
+у в голове у разрабов, у них нету
+понимания того, что это на самом деле
+опасно. Они делают и агентов без
+не компаний, опять же, да, в которой она
+работает, а разработчики и вот сами
+люди, они делают с и агента, и не делают
+систем мониторинга, логирования
+входа-выхода.
+И в результате они, ну, и они и не
+собираются это делать, потому что
+скорость разработки настолько большая, у
+них просто нет времени на это. Вот. Ну,
+реально по два, по два, по три апдейта в
+день выходит. Это очень много, прямо
+больших апдейтов. неронки сами себя
+пишут, они не успевают их отслеживать,
+они не успевают коа-сервисы
+разворачивать просто для и там целая
+проблема с тем, что просто нету
+мониторинга действий, нет понимания
+того, куда нейронка пошла, что спросила
+и что сделала.
+>> Что ж, а радостная новость. [смех]
+Можно, кстати, на этом а закончить. А у
+нас, по большому счёту всё закончено.
+если у тебя есть ещё какие-то
+комментарии, вопросы и так далее, может
+быть, какие-то посылок к аудитории,
+потому что нас
+>> Я только помню, что мне надо было
+выбрать одного лучшего.
+>> Мы можем это сделать уже и после, если
+ты не помнишь. В принципе, можно сейчас,
+можно после. То есть у нас есть разные
+опции. Я обычно не помню, какие вопросы
+мне задавали. Я обычно там такой
+последний.
+>> [смех]
+>> Да, ладно, я потом, да, я потом почитаю
+вопросы, посмотрю и,
+>> да, потому что, а, тема безумно
+интересная. Конечно же, она для малого
+среднего бизнеса пока что тяжела. Вот.
+Потому что я так подозреваю, что, ну, и
+у вас тоже не так много ресурсов, чтобы
+распыляться на всех, кто угодно.
+Естественно, девайсы не може не могут
+стоить совсем дёшево.
+>> Вот. А вот ещё, кстати, у меня вопросик.
+А если вот мы работаем в условно малом,
+среднем бизнесе, никаких ресурсов у нас
+на VP-системы нету, вот что бы ты мог
+посоветовать в качестве, ну, хотя бы
+там, знаешь, не виспсистемы, а хотя бы
+что-то похожее на это, на коленки из,
+как говорится, дендрофикального метода
+что-то собрать. Вот
+>> вот Wла подобное что-то собрать в в
+лампи. В лампай.
+>> Угу. В лампай его раскидать. Ну и,
+соответственно, периодически там
+скриптами какими-то его дёргать. Да, не
+обязательно прямо вот, знаете, брать там
+и заказывать WPй.
+[смех] Я поставил его там на что-то.
+>> Вот.
+>> Да, потому что можно взять любой
+любую коробочку с медиатеком, чипсетом,
+да, Mediatek или Intel. Ну, Intel
+можно Qualcom ещё.
+Тут вопрос в том, что вас интересует,
+да? Ну, если вас интересуют именно
+вопросы безопасности, то да, медиатека
+вполне хватит. Вот. И что? Ну и на него
+всё какой-нибуд TCP дамп и базовый
+анализатор биконов хотя бы маяков. Или
+вы можете установить на него хотя бы
+какой-нибудь аэроump, и он уже будет
+рисовать таблицу, в каком канале, какая
+точка доступа, с каким именем, с каким
+алгоритмом шифрования. И хотя бы вот на
+этой основе уже там смотреть, да, [смех]
+>> ну справедли справедливости ради в
+микротике есть куча разных инструментов.
+То есть у нас есть сканер Cти, у нас
+есть там FL Scan, то есть там чуть
+больше у нас есть снифер. И,
+соответственно, устройство стоит
+недорого. А и на бидиатеке, кстати,
+нынче есть. А, и можно, в принципе, со
+скриптами, костылями в целом, наверное,
+даже что-то подобное собрать и на
+микротике прямо без в это без установки
+Open Vrе.
+То есть можно функционал использова.
+>> Самое интересное, да, я когда только вот
+разработкой начал заниматься, ещё не
+начал, точнее, да, я всегда думал, что
+ой, да там там работа-то, ну, как бы,
+ну, вот, ну, это можно сделать, это же
+простой скрипт сделает. Я вот сейчас
+возьму, разберу заголовок, и это всё
+[смех] это всё делается, да? А когда я в
+разработку погрузился, я понял, что да,
+сделать можно абсолютно всё. Вопрос в
+том, сколько это будет стоить времени,
+денег, нервов и потом,
+>> ну, и опять же, каж каждый каждая
+следующая фича, она будет, я думаю,
+экспоненциально увеличивать и стоимость
+решения, и времени на разработку и так
+далее. То есть элементарно даже,
+например, сканировать эфир, все SSйдишки
+складывать в какую-то базу и потом с
+этой базы, например, сделать сравнение
+BSSID, макадресов, того, что у тебя есть
+в контроллере. Это уже работа, это уже
+какая-то задача, которая, в принципе,
+там какое-то время займёт. А дальше уже
+там следующий шаг, например, хотим там
+наших клиентов как-то отсканировать, там
+раз ещё накинулось. Дальше следующий
+шаг, а что у нас там с аутентифика? И
+вот это вот я я отлично понимаю, что это
+не не про это какую-то одну функцию ты,
+наверное, можешь сделать прямо вот на
+коленке очень быстро. А комплексное
+решение - это Да, это прямо работа ещё
+раз работа. И самое страшное, вот мы ещё
+главное начали это всё делать, мы же
+когда начали делать, мы начали с одного
+сенсора делать. Вот. [фыркает] И мы,
+когда сделали на одном сенсоре, мы
+смотрим: "Всё, у меня фигня вопрос
+вообще всё нормально". Да, там ну всё
+обычный мониторинг, да? Там выдернули из
+бика на какие-то поля, сравнили, видимо,
+о, не подходит. Ага, сигнатура должна
+сработать. Ну, то есть всё просто. А
+потом, когда сенсоров стало 10 на одной
+площадке, ты понимаешь, что это всё надо
+дело как-то коррелировать.
+>> Угу.
+>> А что, если два сенсора слышат одно и то
+же? Они что, тебе будут всё вместе
+зафлудят сейчас? Да. А что, если надо
+коррелировать события между ними? А что,
+если один сенсор на одной стороне
+здания, а другой сенсор на другой
+стороне здания? Почему это они слышат
+одно и то же устройство с Макадресом?
+Когда одно и то же устройство, ну, два
+устройства с одинаковыми макаадресами на
+одном сенсоре, у нас сигнатура МакpвF
+легко работает. А что, если их слышат
+два разных сенсора? Один на одной
+стороне, другой на другой стороне. Как
+они коррелировать-то будут? [смех]
+Через базу, очевидно. А дальше уже
+поехали в базу, и там надо развлекаться
+с этим. Кто первый, кто не первый.
+Одного заигнорить, второго положить на
+всякий случай.
+>> Вот. Дада. Да. То есть это сразу
+настолько много всплывает всего, что и а
+на первый взгляд смотришь, какая-то
+фигня. Вопрос вообще я это вот дома
+вечером да сейчас, сейчас на коленке
+просто на баше там на накостыляю там.
+Сейчас пельмешку доем. Да. [смех]
+>> Не, ну это как когда-то мы делали
+когда была модная история с этими
+отслеживанием клиентов по макадресам,
+которые в магазинах приходят, которые
+движутся там вот этого. Это же тоже на
+коленке там делалось всё во многом. А
+потом там начинается тоже база
+>> ещё одна, вторая, третья.
+То то, как это коррелировать между
+собой, если у тебя сенсор уже не один.
+>> Вот. И ты понимаешь, что-то как-то твоё
+наколеное решение, оно немножко здесь
+это [смех] Ой.
+>> А потом на всё это, потом на всё это
+намазывается ещё структура ролей. Ну то
+есть ты думаешь: "Сейчас я буду только
+вот вай-фаем заниматься", а потом
+выясняется: "Блин, а ещё же нужно
+административный доступ как-то
+разрулить. То есть надо архитектуру
+ролей продумать, а ещё площадки разные
+могут быть." И ты как бы
+>> всё ты немножко, да, тогда ещё нейронок
+не было, в общем, а ты немножко
+впарываешься в программистов, которые
+такие типа: "Ребята, отстаньте,
+пожалуйста". Вы нам просили просто вот
+это сделать, а тут что-то уже не это.
+>> Дада.
+Я помню даже местами вздохнул с
+облегчением, когда пошла рандомизация
+маков везде и всё. Везде и всюда. Я
+[смех] такой:
+"Похоронили". Такие:
+>> "Хано умерло само". [смех]
+Дададада.
+>> Вот.
+>> Да. [фыркает] А у нас когда рандомизация
+маков, ну, она же активна, насколько
+помню, там где-то девятнадцатый год
+получился.
+>> Да. Да. Да. То есть вот до
+девятнадцатого года оно ещё плюс-минус
+там,
+>> да? Я только только начал WПСом
+заниматься, и тогда всё было, ну, там
+всё очевидно, к макадресу всё
+привязываешь и всё, да? А потом где-то в
+двадцатом году так что-то голову чешу и
+понимаю, что всё, [смех]
+>> всё закончилось,
+>> да? Всё.
+>> Ну что, на этой радостной ноте а мы
+заканчиваем. 
