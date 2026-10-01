@@ -51,42 +51,7 @@ notice.samsungcloudsolution.com
 noticecdn.samsungcloudsolution.com
 noticefile.samsungcloudsolution.com
 prov.samsungcloudsolution.com
-samsungcloudsolution.com
-samsungcloudsolution.net
-a.line.me
-ad-feedback.line-apps.com
-ads-d.integration.viber.com
-ads-d.viber.com
-ads.cdn.viber.com
-ads.line.me
-ads.viber.com
-analytics.rocket.chat
-collector.jaeger.matrix.org
-collector.rocket.chat
-crashlogs.whatsapp.net
-crs-event.line.me
-crs-hometab-event.line.me
-data-event-proxy.viber.com
-data-events.cdn.viber.com
-dc-telemetry.net
-idt-bkn63f-mu4tw6ra.loc-tr-tr.chk-webapp.res-ok.dur-0.v1.dc-telemetry.net
-logstash-deployment-tracking.linecorp.com
-matterlytics.com
-mixpanel.cdn.viber.com
-o64374.ingest.sentry.io
-pdat.matterlytics.com
-pixel.messenger.com
-point-ads.line-apps.com
-posthog-element-call.element.io
-posthog-metrics.element.io
-posthog.element.io
-posthog.hss.element.io
-sentry-metrics.tools.element.io
-sentry-th.line-apps.com
-sentry-uit.line-apps.com
-sentry.matrix.org
-sentry.tools.element.io
-telemetry.mattermost.com
+
 
 
 
