@@ -18,7 +18,6 @@ download.mikrotik.com
 xmpps.conversations.im
 _xmpp-client._tcp.conversations.im
 10.0.1.15.sytes.net
-10.0.1.15
 sns.synology.com
 home-cdn.reolink.us
 apis.reolink.com
